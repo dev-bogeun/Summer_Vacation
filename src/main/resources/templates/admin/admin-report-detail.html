@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신고내역</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin-report-detail.css">
+</head>
+<body>
+<main>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="/image/Logo.png" class="admin-logo">
+        </div>
+        <nav class="nav">
+            <ul class="side-menu">
+                <li class="site-shortcut">
+                    <input type="button" class="side-menu-button" value="사이트 바로가기"
+                           onclick="location.href='../mypage/main.html'">
+                </li>
+                <div class="management-title">사이트 관리</div>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="메인페이지"
+                           onclick="location.href='admin-main.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="회원목록"
+                           onclick="location.href='admin-member.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="프로그램목록"
+                           onclick="location.href='admin-program.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="상품관리"
+                           onclick="location.href='admin-product.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="신고내역"
+                           onclick="location.href='admin-report.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="문의게시판목록"
+                           onclick="location.href='admin-QnA.html'">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="management-main-content">
+        <div class="management-top">
+            <div class="page-name">신고내역 상세보기</div>
+        </div>
+
+        <div class="report-main">
+
+            <div class="report-box">
+
+                <table class="table-contents">
+                    <tr>
+                        <td>신고글 번호</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>신고자 이름</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>신고자ID</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>신고일</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>신고내용</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>답변내용</td>
+                        <td>
+                            <textarea class="summernote" name="editordata"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div class="button-box">
+                    <input type="button" name="report-list" value="신고내역 목록"
+                           onClick="location.href='admin-report.html'"/>
+                    <input type="button" name="report-answer" value="답변 등록"/>
+                </div>
+
+
+            </div>
+
+    </section>
+</main>
+</body>
+</html>

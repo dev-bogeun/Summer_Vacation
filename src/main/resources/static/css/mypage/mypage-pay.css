@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: 'Pretendard';
+    overflow-x: hidden;
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    display: block;
+}
+body, table th {
+    font-weight: 400;
+}
+body, button, input, select, textarea {
+    font-family: Pretendard,Apple SD Gothic Neo,Segoe UI,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,-apple-system,blinkmacsystemfont,sans-serif;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+body>#root, #wadizTopBanner, #page-container {
+    transform-origin: 50% 0;
+    transition-property: opacity,transform;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+#page-container, #wadizTopBanner, body>#root {
+    transform-origin: 50% 0;
+    transition-property: opacity,transform;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+#page-container, #wadizTopBanner, body>#root {
+    transform-origin: 50% 0;
+    transition-property: opacity,transform;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+a, em, div {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+article, main, section {
+    display: block;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.MainWrapper_content__GZkTa {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.MainWrapper_content__GZkTa {
+    transition: padding-top .25s;
+    padding-top: 0;
+}
+.MyRewardContainer_container__2qXDp {
+    margin: 0 auto;
+    padding: 32px 0;
+    max-width: 1032px;
+    box-sizing: border-box;
+}
+.MyRewardContainer_title__2TKbO {
+    line-height: 44px;
+    letter-spacing: -.6px;
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1032px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.MyRewardContainer_title__2TKbO {
+    line-height: 34px;
+    letter-spacing: -.51px;
+    font-size: 24px;
+    font-weight: 700;
+    display: none;
+    padding: 0 0 32px;
+    text-align: center;
+}
+.MyRewardContainer_column__1d06O {
+    padding: 0 16px;
+}
+
+.MyRewardContainer_column__1d06O {
+    position: relative;
+    box-sizing: border-box;
+}
+.SimplePayInfo_simplePayInfo__ejCel {
+    max-width: 420px;
+}
+.SimplePayInfo_simplePayInfo__ejCel .SimplePayInfo_title__1a9F1 {
+    margin-bottom: 32px;
+    line-height: 28px;
+    letter-spacing: -.6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #495057;
+}
+.SimplePayCard_simplecard__2wYo7.SimplePayCard_info__3rLl3 {
+    max-width: 464px;
+}
+.SimplePayCard_simplecard__2wYo7 {
+    position: relative;
+    transform: translateY(0);
+    transition: max-width .45s,transform .45s;
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    color: #1d2129;
+    box-sizing: border-box;
+}
+.SimplePayCard_simplecard__2wYo7.SimplePayCard_noInfo__pdX40 .SimplePayCard_unregisted__2uiqp {
+    display: block;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_unregisted__2uiqp {
+    text-align: center;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_addCard__2eagF {
+    padding: 72px 0;
+}
+
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_addCard__2eagF {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: dashed 1px #00c4c4;
+    border-radius: 9px;
+    background-color: #fafbfc;
+    cursor: pointer;
+    padding: 44px 0;
+    color: #60656a;
+    font-size: 13px;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_addCard__2eagF .SimplePayCard_description__IFa0t {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #868e96;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_notice__3PRPU {
+    display: none;
+    position: relative;
+    padding-top: 17px;
+    padding-left: 27px;
+    line-height: 18px;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_notice__3PRPU svg {
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    color: rgba(0,0,0,.54);
+    font-size: 18px;
+}
+.withIcon_icon__3VTbq.withIcon_inline__1lwwX {
+    display: inline;
+}
+.withIcon_icon__3VTbq {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_notice__3PRPU svg {
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    color: rgba(0,0,0,.54);
+    font-size: 18px;
+}
+
+.withIcon_icon__3VTbq.withIcon_inline__1lwwX {
+    display: inline;
+}
+.withIcon_icon__3VTbq {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_notice__3PRPU em {
+    padding: 0;
+    color: rgba(0,0,0,.85);
+    font-size: 13px;
+    font-style: normal;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_notice__3PRPU p {
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.54);
+    font-size: 13px;
+}
+.SimplePayCard_simplecard__2wYo7.SimplePayCard_noInfo__pdX40 .SimplePayCard_registed__2yAC4 {
+    display: none;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_registed__2yAC4 .SimplePayCard_creditCard__2nvHf {
+    padding: 106px 20px;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_registed__2yAC4 .SimplePayCard_creditCard__2nvHf {
+    position: relative;
+    border: 1px solid #5cdede;
+    border-radius: 8px;
+    background-color: #e7f9f9;
+    padding: 77px 20px;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_cardName__1no5L {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    align-items: center;
+    color: #495057;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_editButton__Q120P {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    padding: 24px;
+    color: #495057;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_deleteIcon__1tC7k {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+.withIcon_icon__3VTbq {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_deleteIcon__1tC7k {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.withIcon_icon__3VTbq {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_cardNumber__3fnJ- {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 28px;
+    letter-spacing: -.6px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #00b2b2;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_createdAt__Alwbk {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    display: block;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    margin-top: 6px;
+    text-align: center;
+    color: #868e96;
+    font-size: 14px;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_createdAt__Alwbk>span {
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.SimplePayCard_simplecard__2wYo7.SimplePayCard_info__3rLl3 .SimplePayCard_registed__2yAC4 .SimplePayCard_notice__3PRPU {
+    display: block;
+    margin-top: 12px;
+    padding: 0;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_notice__3PRPU {
+    display: none;
+    position: relative;
+    padding-top: 17px;
+    padding-left: 27px;
+    line-height: 18px;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_notice__3PRPU em {
+    padding: 0;
+    color: rgba(0,0,0,.85);
+    font-size: 13px;
+    font-style: normal;
+}
+a, em, div {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.SimplePayInfo_noticeList__VXr7r {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 16px;
+    color: #495057;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.SimplePayInfo_noticeList__VXr7r li {
+    list-style: disc;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.SimplePayInfo_noticeList__VXr7r li {
+    list-style: disc;
+}
+button:not(:disabled), input:not(:disabled), input:not(:disabled)+label {
+    cursor: pointer;
+}
+a, input, optgroup, select, textarea {
+    color: inherit;
+}
+body, button, input, select, textarea {
+    font-family: Pretendard,Apple SD Gothic Neo,Segoe UI,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,-apple-system,blinkmacsystemfont,sans-serif;
+}
+input, textarea {
+    background: none;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_addCard__2eagF {
+    padding: 72px 0;
+}
+
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_addCard__2eagF {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: dashed 1px #00c4c4;
+    border-radius: 9px;
+    background-color: #fafbfc;
+    cursor: pointer;
+    color: #60656a;
+    font-size: 13px;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_addCard__2eagF .SimplePayCard_addIcon__2DOov {
+    width: 32px;
+    height: 32px;
+    color: #00b2b2;
+    font-size: 24px;
+}
+
+.withIcon_icon__3VTbq {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_addCard__2eagF .SimplePayCard_title__PpPWZ {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 8px 0;
+    color: #00b2b2;
+}
+.SimplePayCard_simplecard__2wYo7 .SimplePayCard_addCard__2eagF .SimplePayCard_description__IFa0t {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #868e96;
+}
+.MyRewardContainer_title__2TKbO {
+    line-height: 44px;
+    letter-spacing: -.6px;
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1032px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

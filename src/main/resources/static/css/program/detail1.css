@@ -1,0 +1,362 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style: normal;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body, input, textarea, select, button, table {
+    font-family: Roboto, 'Noto Sans KR', sans-serif;
+    color: #4d5256;
+    letter-spacing: -.03em;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    font-family: Roboto, 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1;
+    color: inherit;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+}
+
+body, table th {
+    font-weight: 400;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style: normal;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe, img, video {
+    vertical-align: top;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+a, button {
+    outline: none;
+    -webkit-appearance: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.school-container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    background: #f4f4f4;
+}
+
+.school-sub-con {
+    width: 920px;
+    margin: 0 auto;
+}
+
+.school-title {
+    padding-top: 40px;
+    padding-bottom: 32px;
+    text-align: left;
+}
+
+.school-title h3 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #0d0f12;
+}
+
+.school-title .sub-text {
+    width: 700px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #44484b;
+}
+
+.school-summary {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.school-summary::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.school-summary .school-img-con {
+    float: left;
+    width: 540px;
+    height: 390px;
+}
+
+.school-summary .school-img-con img {
+    width: 540px;
+    height: 390px;
+}
+
+
+.school-summary .school-sum-info {
+    float: right;
+    position: relative;
+    width: 348px;
+    height: 390px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+}
+
+.school-summary .school-sum-info dl {
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.school-summary .school-sum-info dl::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.school-summary .school-sum-info dl dt {
+    float: left;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.school-summary .school-sum-info dl dd {
+    float: right;
+    width: 225px;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 20px;
+    font-size: 11px;
+    text-align: right;
+}
+
+.school-summary .school-sum-info dl dd span {
+    color: #6B95FC;
+}
+
+.school-summary .school-sum-info .done-info {
+    display: none;
+    padding-top: 35px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.school-summary .school-sum-info .done-info .done-apply {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.school-summary .school-sum-info p {
+    line-height: 14px;
+}
+
+.school-summary .school-sum-info dl.long {
+    border: none;
+}
+
+.school-summary .school-sum-info dl.long dt {
+    float: none;
+    width: 300px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.school-summary .school-sum-info dl.long dd {
+    float: none;
+    width: 300px;
+    height: auto;
+    text-align: left;
+    line-height: 100%;
+    padding-left: 20px;
+}
+
+input[type=text].lect-val-num {
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border: 1px solid #e4e4e4;
+    text-align: center;
+    font-size: 16px;
+}
+
+.school-summary .school-sum-info .school-value {
+    font-size: 18px;
+    text-align: right;
+    padding-right: 20px;
+    height: 50px;
+    line-height: 50px;
+    color: #6B95FC;
+}
+
+.school-summary .school-sum-info .school-btn-apply {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.school-summary .school-sum-info .school-btn-apply a {
+    display: block;
+    width: 347px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #6B95FC;
+    border: none;
+    border-radius: 3px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.school-sns {
+    margin-bottom: 35px;
+    text-align: right;
+}
+
+.school-sns span {
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+[class^=icon_sns] {
+    width: 31px;
+    height: 31px;
+    margin-right: 5px;
+    background: url(https://www.wadiz.kr/resources/equity/img/icon_sns.png);
+}
+
+[class^=icon_] {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+    vertical-align: middle;
+    text-indent: -1000em;
+}
+
+.icon_sns_tw {
+    background-position: 72px 0;
+}
+
+button:not(:disabled), input:not(:disabled), input:not(:disabled)+label {
+    cursor: pointer;
+}
+
+.icon_sns_share {
+    background-position: 100% 0;
+}
+
+.school-con {
+    margin-bottom: 50px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+}
+
+.school-con .school-tab {
+    width: 100%;
+}
+
+.school-con .school-tab::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.school-con .school-tab li {
+    float: left;
+    width: 33.333333333%;
+}
+
+.school-con .school-tab li.tab-on a {
+    height: 50px;
+    color: #4d5256;
+    border-bottom: 0;
+    background: #fff;
+}
+
+.school-con .school-tab li a {
+    display: block;
+    height: 49px;
+    text-align: center;
+    line-height: 49px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border-right: 1px solid #e4e4e4;
+    background: #415061;
+}
+
+.school-con .school-tab li:last-child a {
+    border-right: 0;
+}
+
+.school-con .tab-con {
+    display: none;
+    padding: 60px;
+}
+
+.school-con .tab-con img {
+    width: 100%;
+}
+
+.school-summary .school-sum-info .school-btn-apply a:hover{
+    background-color: #4874E1;
+}

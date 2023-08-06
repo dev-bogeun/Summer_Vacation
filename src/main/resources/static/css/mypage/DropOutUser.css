@@ -1,0 +1,695 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: 'Pretendard';
+    background: #f9f9f9;
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    display: block;
+}
+
+body, table th {
+    font-weight: 400;
+}
+
+body, button, input, select, textarea {
+    font-family: Pretendard, Apple SD Gothic Neo, Segoe UI, Malgun Gothic, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, -apple-system, blinkmacsystemfont, sans-serif;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+html.scroll-top .web-header, html.wadiz-app.scroll-top .web-header, html.wadiz-app .web-header {
+    top: 0;
+}
+.web-header {
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: top .25s;
+    z-index: 99;
+    width: 100%
+}
+
+#wz-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99
+}
+
+#wz-header .web-header-large {
+    display: none
+}
+
+@media screen and (min-width: 1097px) {
+    #wz-header {
+        position:static
+    }
+
+    #wz-header .web-header-mobile {
+        display: none
+    }
+
+    #wz-header .web-header-large {
+        display: block
+    }
+}
+
+#main-app .web-header {
+    z-index: 1201
+}
+
+html.scroll-top .web-header,html.wadiz-app.scroll-top .web-header,html.wadiz-app .web-header {
+    top: 0
+}
+
+@media screen and (min-width: 1097px) {
+    .web-header {
+        position:static
+    }
+}
+
+.web-header .title-bar {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    line-height: 48px
+}
+
+.web-header .title-bar .back-btn {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 24px;
+    font-size: 24px
+}
+
+.web-header .title-bar .home-btn {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    width: 24px;
+    font-size: 24px
+}
+
+.web-header .title-bar .content {
+    line-height: 24px;
+    font-size: 17px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: calc(100% - 120px);
+    text-align: center;
+    line-height: 48px;
+    color: #212529;
+    font-weight: 500
+}
+
+.web-header .web-header-mobile {
+    display: block;
+    position: relative
+}
+
+.web-header .header-wrapper {
+    position: relative;
+    top: 0;
+    z-index: 9998;
+    background-color: #fff;
+    width: 100%;
+    height: 56px;
+    text-align: center
+}
+
+@media screen and (min-width: 1097px) {
+    .web-header .header-wrapper {
+        position:relative;
+        border-bottom: 1px solid #f2f4f6;
+        padding: 0;
+        height: 56px;
+        text-align: left
+    }
+}
+
+.web-header .header-wrapper .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1440px;
+    height: 100%
+}
+
+@media screen and (min-width: 1097px) {
+    .web-header .header-wrapper .header-container {
+        padding:0 80px
+    }
+}
+
+.web-header .wadiz-logo {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    margin: 0;
+    line-height: 22px;
+    font-size: 32px
+}
+
+@media screen and (min-width: 1097px) {
+    .web-header .wadiz-logo {
+        position:static
+    }
+}
+
+.web-header .wadiz-logo>a {
+    display: block;
+    padding: 11px 0 13px
+}
+
+.web-header .wadiz-logo>a svg {
+    max-width: none
+}
+
+@media screen and (min-width: 1097px) {
+    .web-header .wadiz-logo>a {
+        padding:14px 0 18px
+    }
+}
+
+.web-header .wadiz-logo .icon {
+    color: #00b2b2
+}
+
+.web-header .wadiz-logo .label {
+    display: block;
+    position: absolute;
+    left: -9999px;
+    visibility: none;
+    height: 1px
+}
+
+.web-header .gnb-large {
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+    z-index: 1;
+    margin-left: 0;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,.15);
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    vertical-align: top
+}
+
+.web-header .gnb-large li {
+    width: 100%
+}
+
+@media screen and (min-width: 1097px) {
+    .web-header .gnb-large {
+        display:inline-block;
+        position: relative;
+        position: -webkit-sticky;
+        position: static;
+        margin-left: 24px;
+        box-shadow: none;
+        width: auto
+    }
+
+    .web-header .gnb-large li {
+        float: left;
+        width: auto
+    }
+
+    .web-header .gnb-large li i {
+        display: none
+    }
+}
+
+.web-header .gnb-large .item {
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: #495057
+}
+
+.web-header .gnb-large .item.active span {
+    color: #00b2b2
+}
+
+.web-header .gnb-large .item i {
+    display: block;
+    margin-bottom: 2px;
+    line-height: 1;
+    font-size: 24px
+}
+
+.web-header .gnb-large .item span {
+    display: block;
+    line-height: 16px;
+    font-size: 10px
+}
+
+@media screen and (min-width: 1097px) {
+    .web-header .gnb-large .item {
+        padding:0 16px
+    }
+
+    .web-header .gnb-large .item span {
+        padding-top: 1px;
+        line-height: 55px;
+        color: #000;
+        font-size: 19px;
+        font-weight: 700
+    }
+}
+
+.web-header .web-header-simple {
+    display: block;
+    position: relative;
+    text-align: cdenter
+}
+
+.web-header .web-header-simple .wadiz-logo {
+    display: inline-block;
+    position: static
+}
+
+.web-header .web-header-simple .header-container .gnb-large {
+    display: none;
+    position: absolute;
+    right: 80px;
+    left: auto;
+    color: #495057
+}
+
+@media screen and (min-width: 1097px) {
+    .web-header .web-header-simple .header-container .gnb-large {
+        display:block
+    }
+}
+
+.web-header .web-header-simple .header-container .gnb-large .item {
+    margin-left: 16px;
+    padding: 0
+}
+
+.web-header .web-header-simple .header-container .gnb-large .item span {
+    font-size: 15px;
+    font-weight: 400
+}
+
+.web-header .web-header-simple-logo-center .header-container {
+    text-align: center
+}
+
+.web-header .web-header-utils {
+    position: absolute;
+    top: 0;
+    right: 0;
+    vertical-align: top
+}
+
+@media screen and (min-width: 1097px) {
+    .web-header .web-header-utils {
+        display:flex;
+        position: relative;
+        margin-left: auto
+    }
+}
+
+.web-header .web-header-utils .funding-open {
+    margin-left: 12px
+}
+
+.web-header .web-header-funding-open {
+    display: inline-block;
+    vertical-align: top
+}
+
+.web-header .web-header-funding-open .funding-open-button {
+    margin-top: 8px;
+    border-radius: 4px;
+    vertical-align: top
+}
+.account-drop {
+    background: #fff;
+    font-weight: 400
+}
+
+.account-drop .verify-box .user-verify input,.account-drop .verify-box .user-verify-confirm input,.account-drop .reason-text input {
+    margin-bottom: 0;
+    padding: 0 16px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 17px
+}
+
+.account-drop .reason-text em,.account-drop .selectbox em {
+    display: block;
+    color: #f66;
+    font-size: 13px
+}
+
+.account-drop .wrap {
+    margin: 0 auto;
+    padding: 43px 16px 64px;
+}
+
+.account-drop .btn {
+    text-shadow: none
+}
+
+.account-drop h1,.account-drop h2,.account-drop p {
+    margin-bottom: 8px
+}
+
+.account-drop h1 {
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 500
+}
+
+.account-drop h2 {
+    margin-top: 64px;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 400
+}
+
+.account-drop p {
+    line-height: 28px;
+    letter-spacing: -.4px;
+    color: #868e96;
+    font-size: 17px
+}
+
+.account-drop p em {
+    letter-spacing: -.5px;
+    color: #f25555;
+    font-size: 15px
+
+}
+
+.account-drop p label {
+    margin-right: 0;
+    line-height: 28px;
+    letter-spacing: -.3px;
+    cursor: pointer;
+    font-size: 15px
+}
+.account-drop p label input {
+    margin-right: 8px;
+    vertical-align: middle
+}
+
+.account-drop dl {
+    margin-bottom: 20px;
+    border-top: 1px solid #e9ecef
+}
+
+.account-drop dl dt,.account-drop dl dd {
+    line-height: 24px;
+    letter-spacing: -.4px
+}
+
+.account-drop dl dt {
+    padding-top: 16px;
+    font-size: 15px;
+    font-weight: 500
+}
+
+.account-drop dl dd {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 20px;
+    color: #495057;
+    font-size: 13px
+}
+
+.account-drop hr {
+    margin: 40px -16px 24px;
+    border: 0;
+    border-top: 1px solid #e9ecef
+}
+
+.account-drop .message-box {
+    margin: 20px auto;
+    border: 1px solid #adb5bd;
+    background: #f2f4f6;
+    padding: 16px
+}
+
+.account-drop .message-box dl {
+    margin-bottom: 0;
+    border-top: 0
+}
+
+.account-drop .message-box dt,.account-drop .message-box dd {
+    line-height: 24px
+}
+
+.account-drop .message-box dt {
+    padding-top: 0;
+    letter-spacing: -.3px;
+    font-size: 15px;
+    font-weight: 500
+}
+
+.account-drop .message-box dd {
+    margin-bottom: 20px;
+    border-bottom: 0;
+    padding-bottom: 0;
+    letter-spacing: -.2px;
+    color: #495057;
+    font-size: 13px
+}
+
+.account-drop .message-box dd:last-child {
+    margin-bottom: 0
+}
+
+.account-drop .message-box a {
+    transition: color .2s;
+    text-decoration: underline;
+    color: #395bbf
+}
+
+.account-drop .message-box a:hover,.account-drop .message-box a:focus {
+    color: #4167d9
+}
+
+.account-drop .selectbox {
+    position: relative;
+    margin: 24px 0;
+    border: 1px solid #e9ecef;
+    background: #fff;
+    max-width: 350px;
+    height: auto;
+    font-size: 0
+}
+
+.account-drop .selectbox:after,.account-drop .selectbox select,.account-drop .selectbox span {
+    padding: 16px;
+    line-height: 25px
+}
+
+.account-drop .selectbox:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    line-height: 25px;
+    font-size: 24.99px;
+    display: inline-block;
+    margin-top: -.2em;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: wadizicon!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    content: "\e94e"
+}
+
+.account-drop .selectbox select {
+    position: relative;
+    opacity: 0;
+    z-index: 2;
+    border: 0;
+    border-radius: 0;
+    background: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none
+}
+
+.account-drop .selectbox select:disabled,.account-drop .selectbox select[disabled] {
+    z-index: 1;
+    background-color: #f2f4f6
+}
+
+.account-drop .selectbox span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: 43px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #495057;
+    font-size: 17px;
+    box-sizing: border-box
+}
+
+.account-drop .selectbox.disabled {
+    background-color: #f2f4f6
+}
+
+.account-drop .selectbox.disabled span {
+    z-index: 3
+}
+
+.account-drop .selectbox em {
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    line-height: 1.3em
+}
+
+.msie .account-drop .selectbox span {
+    line-height: normal
+}
+
+.msie .account-drop .selectbox:after {
+    bottom: -5px
+}
+
+.account-drop .reason-text {
+    margin-top: 40px;
+    max-width: 350px
+}
+
+.account-drop .reason-text input {
+    width: 100%
+}
+
+.account-drop .reason-text em {
+    margin-top: 2px
+}
+.account-drop .verify-box {
+    width: 350px;
+}
+
+.account-drop .verify-box {
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.wz.button.primary {
+    background-color: #6B95FC ;
+    color: #fff;
+}
+.wz.button.primary:hover{
+    border-color: #4874e1;
+    background-color: #4874e1;
+}
+.input-text:hover {
+    border-color: #4874e1;
+}
+
+.DesktopSearchApp_footer__2T9ts {
+    position: relative;
+    padding: 13px 16px 11px;
+    text-align: right
+}
+
+.DesktopSearchApp_footer__2T9ts button {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 8px;
+    color: #adb5bd;
+    font-weight: 500
+}
+
+.DesktopSearchApp_footer__2T9ts button:hover {
+    background-color: #f2f4f6;
+    color: #343a40
+}
+.account-drop .wrap {
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+    width: 700px;
+}
+
+
+.wz.button {
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 1.4117647059em;
+    height: 48px;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 17px;
+    font-weight: 400;
+    box-sizing: border-box !important;
+    -webkit-appearance: none;
+}
+.wz.button.red {
+    background-color: #f66;
+    color: #fff;
+}
+.wz.button.red:disabled {
+    color: rgba(255, 255, 255, 0.7);
+}
+.account-drop h2 {
+    line-height: 36px;
+    font-size: 28px;
+}
+.account-drop h1, .account-drop h2, .account-drop p {
+    margin-bottom: 26px;
+}
+.account-drop h1 {
+    line-height: 44px;
+    font-size: 36px;
+}

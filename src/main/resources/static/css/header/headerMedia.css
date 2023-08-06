@@ -1,0 +1,69 @@
+@media screen and (min-width: 1097px) {
+    .web-header {
+        position: static;
+    }
+}
+    .web-header .header-wrapper {
+        position: relative;
+        border-bottom: 1px solid #f2f4f6;
+        padding: 0;
+        height: 56px;
+        text-align: left;
+    }
+    .web-header .header-wrapper .header-container {
+        padding: 0 80px;
+    }
+    .web-header .wadiz-logo {
+        position: static;
+    }
+    .web-header .wadiz-logo>a {
+        padding: 14px 0 18px;
+    }
+    .MoreMenuBanner_container__320Tc {
+        width: 200px;
+    }
+    .MoreMenuBanner_inner__18xuA {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .MoreMenuBanner_icon__pjjkW {
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+    .MenuListItem_button__8-ecU svg {
+        display: none!important;
+    }
+
+    .web-header .web-header-utils {
+        display: flex;
+        position: relative;
+        margin-left: auto;
+    }
+
+    .SearchController_container__35K5i {
+        border: 1px solid #00c4c4;
+    }
+
+    .SimpleRecentKeywordList_container__1CVDt {
+        max-width: 255px;
+    }
+
+@media screen and (min-width: 1360px) {
+    .DesktopSearchApp_container__2VF9O {
+        min-width: 360px;
+    }
+}
+
+    .CurateList_container__6Ih5B {
+        padding: 20px;
+    }
+    .DesktopSearchCondition_bottomSection__1ktxB {
+        flex-direction: row;
+    }
+    .SimpleRecentKeywordList_emptyList__3k6tN {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        padding: 12px;
+    }

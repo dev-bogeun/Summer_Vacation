@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tikkeul.app.mapper.DoranCommentMapper">
+        <select id="selectAll" resultType="doranCommentDTO">
+        SELECT ID, CONTENT, REGISTERDATE, NAME, USER_ID
+        FROM
+        (
+            SELECT ROWNUM R, RE.ID, CONTENT,REGISTERDATE,NAME, USER_ID
+            FROM
+            (
+                SELECT RE.ID, CONTENT, REGISTERDATE, U.NAME, U.ID USER_ID
+                FROM USERS U JOIN DORANCOMMENT RE
+                ON U.ID = RE.USER_ID AND DORANBOARD_ID = #{id}
+                ORDER BY RE.ID DESC
+            ) RE
+            WHERE
+            <![CDATA[
+                ROWNUM <= #{pagination.page} * #{pagination.rowCount}
+            ]]>
+        )
+        <![CDATA[
+        WHERE R > (#{pagination.page} - 1) * #{pagination.rowCount}
+        ]]>
+    </select>
+
+    <insert id="insert">
+        INSERT INTO DORANCOMMENT (ID, CONTENT, USER_ID, DORANBOARD_ID)
+        VALUES(SEQ_DORANCOMMENT.NEXTVAL, #{content}, #{userId}, #{doranboardId})
+    </insert>
+
+    <update id="update">
+        UPDATE DORANCOMMENT
+        SET CONTENT = #{content}, UPDATEDATE = SYSDATE
+        WHERE ID = #{id}
+    </update>
+
+    <delete id="delete">
+        DELETE FROM DORANCOMMENT WHERE ID = #{id}
+    </delete>
+
+    <delete id="deleteAll">
+        DELETE FROM DORANCOMMENT WHERE DORANBOARD_ID = #{doranboardId}
+    </delete>
+</mapper>

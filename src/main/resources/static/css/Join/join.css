@@ -1,0 +1,980 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    font-weight: 400;
+}
+body, button, input, select, textarea {
+    font-family: 'Pretendard';
+}
+li, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+a, button {
+    outline: none;
+}
+body, button, input, select, textarea {
+    font-family: Pretendard;
+}
+
+#page-container{
+    transform-origin: 50% 0;
+    transition-property: opacity,transform;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+
+.web-header{
+    transition: top .25s;
+    width: 100%;
+}
+
+.web-header .web-header-simple {
+    display: block;
+    position: relative;
+    top: 0;
+    z-index: 9998;
+    background-color: #fff;
+    width: 100%;
+}
+.web-header .header-wrapper .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100%;
+}
+.web-header .web-header-simple .wadiz-logo {
+    display: inline-block;
+    position: static;
+}
+.web-header .wadiz-logo {
+    margin: 0;
+    line-height: 22px;
+    font-size: 32px;
+}
+
+.web-header .wadiz-logo>a {
+    display: block;
+    padding: 11px 0 13px;
+}
+.web-header .wadiz-logo>a svg {
+    max-width: none;
+}
+.web-header .web-header-simple .header-container .gnb-large {
+    position: absolute;
+    right: 80px;
+    left: auto;
+    color: #495057;
+}
+
+
+.web-header .gnb-large {
+    bottom: 0;
+    z-index: 1;
+    padding: 0;
+    list-style: none;
+    vertical-align: top;
+}
+.web-header .gnb-large li {
+    float: left;
+    width: auto;
+    margin-bottom: 15px;
+}
+.web-header .web-header-simple .header-container .gnb-large .item {
+    margin-left: 16px;
+    padding: 0;
+}
+
+.web-header .gnb-large .item {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #495057;
+}
+.web-header .web-header-simple .header-container .gnb-large .item span {
+    font-size: 15px;
+    font-weight: 400;
+}
+.web-header .gnb-large .item span {
+    display: block;
+}
+
+.web-header .header-wrapper {
+    position: relative;
+    border-bottom: 1px solid #f2f4f6;
+    padding: 0;
+    height: 56px;
+    text-align: left;
+}
+
+.AccountContainer_container__PwFiE {
+    position: relative;
+    margin: 78px auto 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 390px;
+    overflow: hidden;
+}
+
+.AccountTitle_title__2gD-3 {
+    line-height: 48px;
+    letter-spacing: -.6px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.Button_button__3MO4n.Button_lg__D7OVb {
+    padding: 9px 24px;
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+.Button_button__3MO4n.Button_block__3npc4 {
+    width: 100%;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.SNSButtonList_spacer__38ac5 {
+    margin-top: 12px;
+}
+
+.SNSButtonList_kakaoButton__2lTDs {
+    border-color: #fee500;
+    background-color: #fee500;
+}
+.Button_button__3MO4n {
+    position: relative;
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: 500;
+    box-sizing: border-box!important;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    white-space: nowrap;
+    color: #495057;
+
+}
+
+.return {
+    background-color: #0000;
+}
+
+.Button_button__3MO4n span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.SNSButtonList_appleIcon__e42Y0, .SNSButtonList_googleIcon__1DgBx, .SNSButtonList_naverIcon__3TjPM, .SNSButtonList_kakaoIcon__1s6gw {
+    position: absolute;
+    left: 16px;
+    width: 22px;
+    height: 22px;
+}
+
+.withIcon_icon__2KxnX {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+.Button_button__3MO4n.Button_lg__D7OVb {
+    padding: 9px 24px;
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+.SNSButtonList_naverButton__1rzZ_ {
+    border-color: #00d337;
+    background-color: #00d337;
+    color: #fff;
+}
+
+.SNSButtonList_circularButtonWrapper__hZCKN {
+    margin-top: 56px;
+}
+
+.SNSButtonList_circularButtonWrapper__hZCKN {
+    display: flex;
+    justify-content: center;
+}
+
+.SNSButtonList_circularButton__2WsLD:first-child {
+    margin-left: 0;
+}
+
+.Button_button__3MO4n.Button_circular__2OlVa {
+    border-radius: 999em;
+}
+
+.SNSButtonList_circularButton__2WsLD {
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px
+}
+
+.SNSButtonList_googleButton__1u6eV {
+    border-color: #ced4da;
+    background-color: #fff;
+}
+
+.SignUpIntroApp_divider__24Rgj {
+    margin-top: 55px;
+    background-color: #f2f4f6;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #f2f4f6;
+}
+
+.SignUpIntroApp_signUpIntroEmailContainer__3sN5d {
+    margin-top: 49px;
+}
+
+.SignUpIntroApp_signUpIntro__2v2wv .SignUpIntroApp_simpleSignUpTitle__3aC7M {
+    line-height: 28px;
+    letter-spacing: -.6px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.EmailAuthField_emailAuthField__2E9P2 {
+    padding-bottom: 8px;
+}
+
+.EmailAuthField_emailAuthField__2E9P2 .EmailAuthField_fieldLabel__1jS_Z {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+.EmailAuthField_emailAuthField__2E9P2 .EmailAuthField_inputFieldContainer__1BgHY {
+    display: flex;
+}
+
+.EmailAuthField_emailAuthField__2E9P2 .EmailAuthField_inputField__y3EHZ {
+    position: relative;
+    width: 100%;
+}
+
+.Input_input__1bbbo.Input_md__1Nsby {
+    height: 48px;
+    min-height: 48px;
+}
+
+
+button:not(:disabled), input:not(:disabled), input:not(:disabled)+label {
+    cursor: pointer;
+}
+
+.Input_input__1bbbo {
+    display: block;
+    transition-property: border-color, background-color, color;
+    transition-duration: .15s;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 3px;
+    background-color: #fff;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;
+    color: #212529;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Button_button__3MO4n.Button_primary__29fd0.Button_contained__1kfgl {
+    border-color: #6B95FC;
+    background-color: #6B95FC;
+    color: #fff;
+}
+
+.EmailAuthField_emailAuthField__2E9P2 .EmailAuthField_cta__1K3Hz {
+    margin-left: 8px;
+    min-width: 103px;
+}
+
+.Button_button__3MO4n.Button_md__3TvVa {
+    padding: 9px 16px;
+    line-height: 1.45;
+    font-size: 14px;
+}
+
+.Button_button__3MO4n.Button_disabled__2II9A, .Button_button__3MO4n:disabled, .Button_button__3MO4n[disabled] {
+    opacity: .45;
+    pointer-events: none;
+}
+
+.EmailSignUpFormContainer_formField__1vy9Q, .EmailSignUpFormContainer_emailField__3ksue {
+    margin-top: 24px;
+}
+
+.TextField_textField__2k9OA {
+    display: block;
+    position: relative;
+}
+
+.TextField_textField__2k9OA.TextField_md__2Z-6K>label {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.TextField_textField__2k9OA>label {
+    display: block;
+    padding-bottom: 4px;
+}
+
+.TextField_textField__2k9OA .TextField_field__3gj8N {
+    position: relative;
+}
+
+
+
+.TextField_textField__2k9OA button.TextField_icon__eNiI4 {
+    position: absolute;
+    top: 0;
+    outline: none;
+    border: none;
+    background-color: #0000;
+    cursor: pointer;
+    padding: 0;
+    height: 100%;
+    pointer-events: auto;
+    box-sizing: content-box!important;
+}
+
+.Button_button__3MO4n.Button_iconOnly__1yhFC {
+    line-height: 1;
+}
+
+.TextField_textField__2k9OA.TextField_right__3aUp8.TextField_md__2Z-6K svg {
+    padding-right: 16px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+
+.TextField_textField__2k9OA button.TextField_icon__eNiI4 svg {
+    fill: #adb5bd;
+}
+
+
+.TextField_textField__2k9OA.TextField_right__3aUp8 .TextField_endIcon__2DGw_, .TextField_textField__2k9OA.TextField_right__3aUp8 .TextField_endText__1t3v1 {
+    right: 0;
+    text-align: left;
+}
+
+.Input_input__1bbbo[readonly], .Input_input__1bbbo[disabled] {
+    border-color: #f2f4f6;
+    background-color: #f9fafb;
+    cursor: default;
+    pointer-events: none;
+}
+
+.Input_input__1bbbo[disabled], .Input_input__1bbbo.Input_disabled__325ag {
+    color: #adb5bd;
+}
+
+.SignUpAllCheckTermsCheckbox_termsAllCheckWrapper__2f6i3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.SignUpAllCheckTermsCheckbox_termsAllCheckWrapper__2f6i3 .SignUpAllCheckTermsCheckbox_termsAllCheck__PauIo {
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.Checkbox_checkbox__10cSJ {
+    position: relative;
+}
+
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_ {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 4px;
+    border: none;
+    background-color: #0000;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.Checkbox_checkbox__10cSJ.Checkbox_md__39fd8 .Checkbox_icon__GLNHN {
+    font-size: 20px;
+}
+
+.Checkbox_checkbox__10cSJ .Checkbox_icon__GLNHN {
+    display: block;
+    position: relative;
+    transition-property: opacity, border-color, background-color;
+    transition-duration: .15s;
+    opacity: 1;
+    z-index: 1;
+    border: 1px solid #cdd3d8;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+}
+.SignUpAllCheckTermsCheckbox_termsAllCheckWrapper__2f6i3 .SignUpAllCheckTermsCheckbox_termsAllCheckLabel__3TxCG .SignUpAllCheckTermsCheckbox_checkboxLabel__28Tow {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.SignUpAllCheckTermsCheckbox_termsAllCheckWrapper__2f6i3 .SignUpAllCheckTermsCheckbox_termsAllCheckLabel__3TxCG {
+    display: inline-block;
+    width: 80%;
+}
+
+.SignUpAllCheckTermsCheckbox_termsAllCheckWrapper__2f6i3 .SignUpAllCheckTermsCheckbox_termsAllCheckLabel__3TxCG .SignUpAllCheckTermsCheckbox_checkboxDescription__2X16H {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.Button_button__3MO4n.Button_iconOnly__1yhFC>span svg {
+    width: 20px;
+    height: 20px;
+
+}
+
+.SignUpAllCheckTermsCheckbox_termsAllCheckWrapper__2f6i3 .SignUpAllCheckTermsCheckbox_termsMoreButton__wal9S {
+    display: block;
+    margin-top: 4px;
+    border: 0;
+    padding: 2px;
+    line-height: normal;
+    background-color: #0000;
+}
+
+.EmailSignUpFormContainer_signUpSubmitButton__3cZeI {
+    margin-top: 32px;
+}
+
+#ppassword, #ppasswordcheck{
+    font-size: 13px;
+    color: #f66;
+}
+
+button {
+    cursor: pointer;
+}
+
+#pemail, #pname {
+    font-size: 13px;
+    color: #f66;
+}
+
+/* modal */
+
+.ConfirmModal_overlay__3z622 {
+    display: inline-flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 9998;
+    background-color: #0000;
+    overflow: hidden;
+}
+.ConfirmModal_confirmModal__1IdNW {
+    display: inline-flex;
+    flex-direction: column;
+    outline: none;
+    border-radius: 16px;
+    box-shadow: 0 32px 40px -2px #0a16461f, 0 0 5px #0a16460f;
+    background: #fff;
+    padding: 24px;
+    max-height: calc(100vh - 160px);
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+}
+.ConfirmModal_sizeSm__17Y6Y {
+    width: 400px;
+    max-width: calc(100% - 48px);
+}
+.App_modal__1KJpd {
+    padding: 16px 0;
+}
+.ConfirmModal_confirmModal__1IdNW .ConfirmModal_header__oy2wU {
+    display: flex;
+    flex-direction: column;
+}
+.ConfirmModal_confirmModal__1IdNW .ConfirmModal_closeIconRoot__LZKp5 {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 8px;
+}
+.App_modal__1KJpd [class*='ConfirmModal_closeIconWrapper'] {
+    top: 20px !important;
+    left: 4px;
+    z-index: 11;
+}
+.ConfirmModal_confirmModal__1IdNW
+.ConfirmModal_closeIconRoot__LZKp5
+.ConfirmModal_closeIconWrapper__1RoyF {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(6px, -6px);
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding: 6px;
+}
+.withIcon_icon__2KxnX {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.ConfirmModal_confirmModal__1IdNW
+.ConfirmModal_closeIconRoot__LZKp5
+.ConfirmModal_closeIconWrapper__1RoyF
+.ConfirmModal_closeIcon__KQjlQ {
+    width: 24px;
+    height: 24px;
+}
+.ConfirmModal_confirmModal__1IdNW .ConfirmModal_titlePlaceholder__2JOjQ {
+    height: 24px;
+}
+.ConfirmModal_confirmModal__1IdNW .ConfirmModal_content__O4lpA {
+    display: inline-flex;
+    flex-direction: column;
+    overflow: auto;
+    color: #495057;
+}
+.App_container__11y0W {
+    max-width: 400px;
+    max-height: calc(100vh - 160px);
+    overflow: auto;
+}
+.TermsConfirmContainer_modalInner__1q1yU {
+    position: relative;
+}
+.TermsConfirmContainer_header__2xVhi {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    padding: 12px 16px 0;
+}
+.TermsConfirmHeader_container__poLUd {
+    position: relative;
+    margin-bottom: 24px;
+    padding-top: 16px;
+}
+.TermsConfirmHeader_title__3CDUZ {
+    line-height: 38px;
+    letter-spacing: -0.6px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.TermsConfirmHeader_description__3SEFB {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.FullAgreementCheckbox_container__3yWi7 {
+    margin-bottom: 12px;
+}
+.Checkbox_checkbox__10cSJ {
+    display: block;
+    position: relative;
+}
+.FullAgreementCheckbox_checkbox__15HFu {
+    align-items: center;
+    transition: box-shadow 0.2s, background-color 0.3s;
+    border-radius: 3px;
+    box-shadow: 0 16px 16px -1px #0a16461a, 0 0 5px #0a16460f;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_labeled__1HTwN {
+    display: inline-flex;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_ {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    border: none;
+    background-color: #0000;
+    padding: 0;
+}
+.Checkbox_checkbox__10cSJ .Checkbox_icon__GLNHN {
+    display: block;
+    position: relative;
+    transition-property: opacity, border-color, background-color;
+    transition-duration: 0.15s;
+    opacity: 1;
+    z-index: 1;
+    border: 1px solid #cdd3d8;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_labeled__1HTwN .Checkbox_icon__GLNHN {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_md__39fd8 .Checkbox_icon__GLNHN {
+    font-size: 20px;
+}
+.withIcon_icon__2KxnX {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+.Checkbox_checkbox__10cSJ .Checkbox_icon__GLNHN svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: opacity, width, fill;
+    transition-duration: 0.15s;
+    width: 0.7791666667em;
+    height: 0.7791666667em;
+    fill: #fff;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_md__39fd8 .Checkbox_removeIcon__10mz3 {
+    width: 10px;
+}
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_ + .Checkbox_icon__GLNHN .Checkbox_checkIcon__pmCQr,
+.Checkbox_checkbox__10cSJ
+.Checkbox_input__UIZH_
++ .Checkbox_icon__GLNHN
+.Checkbox_removeIcon__10mz3 {
+    opacity: 0;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_labeled__1HTwN .Checkbox_content__3AASl {
+    display: inline-block;
+    color: #495057;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_labeled__1HTwN.Checkbox_sm__8LHaC .Checkbox_content__3AASl,
+.Checkbox_checkbox__10cSJ.Checkbox_labeled__1HTwN.Checkbox_md__39fd8 .Checkbox_content__3AASl {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.FullAgreementCheckbox_text__3VFz0 {
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.FullAgreementCheckbox_subtext__3aKjx {
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.AccordionCheckbox_accordionHeader__7fp2J {
+    position: relative;
+}
+.ServiceAgreementCheckbox_container__LME1_ {
+    padding: 12px 0;
+}
+.TermsConfirmBody_service__2uPF1 {
+    padding-right: 16px;
+    padding-left: 24px;
+}
+.Checkbox_checkbox__10cSJ {
+    display: block;
+    position: relative;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_labeled__1HTwN {
+    display: inline-flex;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_ {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    border: none;
+    background-color: #0000;
+    padding: 0;
+}
+.Checkbox_checkbox__10cSJ .Checkbox_icon__GLNHN {
+    display: block;
+    position: relative;
+    transition-property: opacity, border-color, background-color;
+    transition-duration: 0.15s;
+    opacity: 1;
+    z-index: 1;
+    border: 1px solid #cdd3d8;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_sm__8LHaC .Checkbox_icon__GLNHN {
+    font-size: 16px;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_labeled__1HTwN .Checkbox_icon__GLNHN {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.Checkbox_checkbox__10cSJ.Checkbox_sm__8LHaC .Checkbox_removeIcon__10mz3 {
+    width: 8px;
+}
+strong {
+    font-weight: 700;
+}
+.ServiceAgreementCheckbox_required__1KYhI {
+    color: #6B95FC;
+}
+.AccordionCheckbox_accordionButton__2T705 {
+    position: absolute !important;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 11px 15px;
+}
+.AccordionCheckbox_accordionButton__2T705 svg {
+    width: 20px;
+    height: 20px;
+    fill: #495057;
+}
+.AccordionCheckbox_accordionHeader__7fp2J {
+    position: relative;
+}
+.ServiceAgreementCheckbox_container__LME1_ {
+    padding: 12px 0;
+}
+.TermsConfirmBody_service__2uPF1 {
+    padding-right: 16px;
+    padding-left: 24px;
+}
+.HelperMessage_helperMessage__1xhad {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    margin-top: 4px;
+    color: #868e96;
+    font-style: normal;
+}
+.Checkbox_message__1if3P {
+    margin-top: 12px;
+    padding-left: 28px;
+}
+.AccordionCheckbox_checkbox__1x0TO + em {
+    color: #495057;
+}
+.Checkbox_message__1if3P.Checkbox_sm__8LHaC {
+    padding-left: 24px;
+}
+.TermsConfirmBody_notice__3lqSF {
+    line-height: 14px;
+    letter-spacing: 0;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 20px 0;
+    padding-right: 16px;
+    padding-left: 24px;
+    color: #495057;
+}
+.TermsConfirmFooter_container__22Zte {
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    background-color: #fff;
+    padding: 16px;
+    width: 100%;
+}
+.App_footer__19hsP {
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+    background-color: #fff;
+}
+.FixedToast_toast__UhjeV {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: transform 0.15s, opacity 0.1s, background-color 0.3s, color 0.3s,
+    padding 0.05s ease-in;
+    opacity: 0;
+    border-radius: 6px;
+    background-color: #0000;
+    padding: 0;
+    width: calc(100% - 32px);
+    text-align: center;
+    color: #0000;
+}
+.Button_button__3MO4n.Button_xl__DdjPf {
+    padding: 14px 28px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+/* active */
+.FullAgreementCheckbox_checked__fRhQa {
+    transition: box-shadow 0.2s, background-color 0.3s;
+    box-shadow: none;
+    background-color: #f2f4f6;
+}
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_:checked + .Checkbox_icon__GLNHN svg,
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_:indeterminate + .Checkbox_icon__GLNHN svg {
+    fill: #fff;
+}
+.Checkbox_checkbox__10cSJ
+.Checkbox_input__UIZH_:checked
++ .Checkbox_icon__GLNHN
+.Checkbox_checkIcon__pmCQr {
+    opacity: 1;
+}
+.SNSButtonList_circularButton__2WsLD span {
+    vertical-align: text-top;
+}
+.Checkbox_checkbox__10cSJ
+.Checkbox_input__UIZH_:checked
++ .Checkbox_icon__GLNHN
+.Checkbox_checkIcon__pmCQr {
+    opacity: 1;
+}
+
+input:hover {
+    border-color: #6B95FC;
+}
+
+input::placeholder {
+    color: #adb5bd;
+}
+
+.SNSButtonList_naverButton__1rzZ_:hover {
+    color: black;
+    border-color: #868e96;
+}
+
+.SNSButtonList_kakaoButton__2lTDs:hover {
+    border-color: #868e96;
+}
+
+.submitButton {
+    margin-bottom: 30px;
+}
+
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_ {
+    cursor: pointer;
+}.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_+.Checkbox_icon__GLNHN .Checkbox_checkIcon__pmCQr, .Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_+.Checkbox_icon__GLNHN .Checkbox_removeIcon__10mz3 {
+     opacity: 0;
+ }
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_:checked+.Checkbox_icon__GLNHN .Checkbox_checkIcon__pmCQr {
+    opacity: 1;
+}
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_:checked+.Checkbox_icon__GLNHN, .Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_:indeterminate+.Checkbox_icon__GLNHN {
+    border: solid 1px #6B95FC;
+    background-color: #6B95FC;
+}
+
+.Checkbox_checkbox__10cSJ .Checkbox_input__UIZH_:checked+.Checkbox_icon__GLNHN svg {
+    fill: #fff;
+}
+
+.Button_button__3MO4n.Button_secondary__2ECH- {
+    border-color: #cdd3d8;
+    color: #495057;
+}
+
+.EmailAuthField_emailAuthField__2E9P2 {
+    padding-bottom: 8px;
+}
+
+.EmailAuthField_emailAuthField__2E9P2 .EmailAuthField_inputFieldContainer__1BgHY {
+    display: flex;
+}
+
+.EmailAuthField_emailAuthField__2E9P2 .EmailAuthField_inputField__y3EHZ {
+    position: relative;
+    width: 100%;
+}

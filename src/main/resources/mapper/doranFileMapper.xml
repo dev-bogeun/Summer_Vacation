@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tikkeul.app.mapper.DoranFileMapper">
+    <select id="selectAll" resultType="DoranFileVO">
+        SELECT ID, FILE_PATH, FILE_UUID, FILE_NAME, FILE_SIZE, DORANBOARD_ID, FILE_TYPE
+        FROM DORANFILE
+        WHERE DORANBOARD_ID = #{doranBoardId}
+    </select>
+
+    <insert id="insert">
+        INSERT INTO DORANFILE
+        (ID, FILE_PATH, FILE_UUID, FILE_NAME, FILE_SIZE, DORANBOARD_ID, FILE_TYPE)
+        VALUES(SEQ_DORANFILE.NEXTVAL, #{filePath}, #{fileUuid}, #{fileName}, #{fileSize}, #{doranBoardId}, #{fileType})
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM DORANFILE WHERE ID = #{id}
+    </delete>
+
+    <delete id="deleteAll">
+        DELETE FROM DORANFILE WHERE DORANBOARD_ID = #{doranBoardId}
+    </delete>
+
+    <select id="selectYesterday" resultType="DoranFileVO">
+        SELECT ID, FILE_PATH, FILE_UUID, FILE_NAME, FILE_SIZE, DORANBOARD_ID, FILE_TYPE
+        FROM DORANFILE WHERE FILE_PATH = TO_CHAR(SYSDATE - 1, 'YYYY/MM/DD')
+    </select>
+
+</mapper>

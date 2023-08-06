@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleag.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의게시판목록</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin-QnA-detail.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/modal.css">
+</head>
+<body>
+<main>
+    <div class="modal">
+        <div class="warn-modal">
+            <div id="content-wrap"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="/image/Logo.png" class="admin-logo">
+        </div>
+        <nav class="nav">
+            <ul class="side-menu">
+                <li class="site-shortcut">
+                    <input type="button" class="side-menu-button" value="사이트 바로가기"
+                           onclick="location.href='/join/mainpage'">
+                </li>
+                <div class="management-title">사이트 관리</div>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="메인페이지"
+                           onclick="location.href='/admin/main'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="회원 목록"
+                           onclick="location.href='/admin/user/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="프로그램 목록"
+                           onclick="location.href='/admin/program/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="상품 목록"
+                           onclick="location.href='/admin/item/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="도란게시판 목록"
+                           onclick="location.href='/admin/doranBoard/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="문의게시판 목록"
+                           onclick="location.href='/admin/inquiry/list'">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="management-main-content">
+        <div class="management-top">
+            <div class="page-name">문의게시판 상세보기</div>
+        </div>
+
+        <div class="QnA-main">
+            <form th:action="@{/admin/inquiry/write}" method="post" th:object="${answerVO}">
+                <input type="hidden" name="inquireId" th:value="${inquiryBoard.id}">
+                <input type="hidden" name="id" th:value="${inquiryBoard.id}">
+
+                <div class="QnA-box">
+                    <table class="table-contents">
+                        <tr>
+                            <td>문의 번호</td>
+                            <td th:text="${inquiryBoard.id}"></td>
+                        </tr>
+                        <tr>
+                            <td>이름</td>
+                            <td th:text="${inquiryBoard.name}"></td>
+                        </tr>
+                        <tr>
+                            <td>ID</td>
+                            <td th:text="${inquiryBoard.identification}"></td>
+                        </tr>
+                        <tr>
+                            <td>작성일</td>
+                            <td th:text="${inquiryBoard.inquireDate}"></td>
+                        </tr>
+                        <tr>
+                            <td>문의내용</td>
+                            <td th:text="${inquiryBoard.inquireContent}"></td>
+                        </tr>
+                        <tr>
+                            <td>답변내용</td>
+                            <td>
+                                <textarea class="summernote" th:field="*{answerContent}"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="button-box">
+                        <input type="button" name="report-list" value="문의게시판 목록" onClick="location.href='/admin/inquiry/list'"/>
+                        <input type="submit" name="report-answer" value="답변 등록"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script th:inline="javascript">
+    let inquiryBoard = [[${inquiryBoard}]];
+</script>
+</html>

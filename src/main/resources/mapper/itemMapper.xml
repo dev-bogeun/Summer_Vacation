@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tikkeul.app.mapper.ItemMapper">
+    <!--김보령 작업공간-->
+    <!--열매샵 제품 목록 가져오기 : list.html-->
+    <select id="selectAll" resultType="itemDTO">
+
+        SELECT ROWNUM R, IID, NAME, PRICE, CURRENT_STOCK, ORIGIN_STOCK, STATUS, BRAND, CATEGORY, REGISTERDATE, UPDATEDATE, SAVINGLEVEL_ID, SAVINGLEVELNAME, COUNT_OF_USER
+        FROM
+        (
+        SELECT ROWNUM R, IID, NAME, PRICE, CURRENT_STOCK, ORIGIN_STOCK, STATUS, BRAND, CATEGORY, REGISTERDATE, UPDATEDATE, SAVINGLEVEL_ID, SAVINGLEVELNAME, COUNT_OF_USER
+        FROM
+        (
+        SELECT I.ID IID, I.NAME NAME, I.PRICE PRICE, I.CURRENT_STOCK CURRENT_STOCK, I.ORIGIN_STOCK ORIGIN_STOCK, I.STATUS STATUS, I.BRAND BRAND, I.CATEGORY CATEGORY, I.REGISTERDATE REGISTERDATE, I.UPDATEDATE UPDATEDATE, I.SAVINGLEVEL_ID SAVINGLEVEL_ID, SL.NAME SAVINGLEVELNAME, COUNT(DISTINCT U.ID) COUNT_OF_USER
+        FROM ITEM I LEFT OUTER JOIN SAVINGLEVEL SL
+        ON SL.ID = I.SAVINGLEVEL_ID
+        LEFT OUTER JOIN ORDERS O
+        ON O.ITEM_ID = I.ID
+        LEFT OUTER JOIN USERS U
+        ON O.USER_ID = U.ID
+        GROUP BY I.ID, I.NAME, I.PRICE, I.CURRENT_STOCK, I.ORIGIN_STOCK, I.STATUS, I.BRAND, I.CATEGORY, I.REGISTERDATE, I.UPDATEDATE, I.SAVINGLEVEL_ID, SL.NAME
+        <choose>
+            <when test="sort.equals('인기순')">
+                ORDER BY COUNT_OF_USER DESC
+            </when>
+            <otherwise>
+                ORDER BY I.REGISTERDATE DESC
+            </otherwise>
+        </choose>
+        ) ST
+        <choose>
+            <when test="level!='전체' and category!='전체'">
+                WHERE SAVINGLEVELNAME=#{level} AND CATEGORY=#{category}
+            </when>
+            <when test="level!='전체' and category=='전체'">
+                WHERE SAVINGLEVELNAME=#{level}
+            </when>
+            <when test="level=='전체' and category!='전체'" >
+                WHERE CATEGORY=#{category}
+            </when>
+        </choose>
+        ) ST
+        <![CDATA[
+           WHERE R>=#{count} AND R<#{count}+12
+        ]]>
+    </select>
+
+
+    <!--열매샵 제품 상세 보기 : readDetail.html-->
+    <select id="select" resultType="itemDTO">
+        SELECT I.ID, I.NAME, PRICE, CURRENT_STOCK, ORIGIN_STOCK, I.STATUS, BRAND, CATEGORY, REGISTERDATE, UPDATEDATE, I.SAVINGLEVEL_ID, SL.NAME SAVINGLEVELNAME, COUNT(L.ID) COUNT_OF_LIKES
+        FROM ITEM I LEFT OUTER JOIN LIKES L
+        ON I.ID = L.ITEM_ID
+        LEFT OUTER JOIN USERS U
+        ON U.ID = L.USER_ID
+        LEFT OUTER JOIN SAVINGLEVEL SL
+        ON SL.ID = I.SAVINGLEVEL_ID
+        GROUP BY I.ID, I.NAME, PRICE, CURRENT_STOCK, ORIGIN_STOCK, I.STATUS, BRAND, CATEGORY, REGISTERDATE, UPDATEDATE, I.SAVINGLEVEL_ID, SL.NAME
+        HAVING I.ID = #{id}
+    </select>
+
+
+    <!--제품후기, 별점-->
+    <select id="selectScoreAndCountOfReview" resultType="orderDTO">
+    SELECT ITEM_ID, AVG(SCORE) AVB_SCORE, COUNT(ITEM_ID) COUNT_OF_REVIEWS
+    FROM
+    (
+        SELECT R.ID REVIEW_ID, CONTENT, SCORE, R.REGISTER_DATE REVIEW_DATE, ORDER_ID, I.ID ITEM_ID, I.NAME ITEM_NAME, U.NAME USER_NAME
+        FROM ORDERS O JOIN USERS U
+        ON O.USER_ID = U.ID JOIN ITEM I
+        ON O.ITEM_ID = I.ID JOIN REVIEW R
+        ON O.ID = R.ORDER_ID
+    )
+    GROUP BY ITEM_ID
+    HAVING ITEM_ID = ${id}
+    </select>
+
+    <!--같은레벨 제품 불러오기 : 제품 상세페이지-->
+    <select id="selectItemsEqualsLevel" resultType="orderDTO">
+
+    </select>
+
+    <insert id="insertItem">
+        <selectKey keyProperty="id" order="BEFORE" resultType="Long">
+            SELECT SEQ_SAVINGLEVEL.NEXTVAL FROM DUAL
+        </selectKey>
+        INSERT INTO ITEM (
+        ID, "NAME", PRICE,
+        ORIGIN_STOCK, BRAND, CATEGORY, SAVINGLEVEL_ID
+        )
+        VALUES(
+        #{id}, #{name}, #{price}, #{originStock},
+        #{brand}, #{category}
+        (
+        SELECT ID FROM SAVINGLEVEL
+        WHERE NAME = #{name}
+        )
+        )
+    </insert>
+
+
+
+
+
+
+
+
+
+
+<!--홍윤기 작업공간-->
+<!-- 메인페이지에 모든 아이템용-->
+    <select id="selectAllItem" resultType="itemFileSavingLevelDTO">
+        SELECT I.ID ITEM_ID, I.NAME ITEM_NAME, PRICE, CURRENT_STOCK, ORIGIN_STOCK, I.STATUS, BRAND, CATEGORY, REGISTERDATE, UPDATEDATE, I.SAVINGLEVEL_ID, SL.NAME SAVINGLEVELNAME,
+               F.ID FILE_ID,F.FILE_SIZE ,F.ORIGIN_NAME FILE_ORIGIN_NAME ,F.UUID FILE_UUID,F.FILE_PATH ,F.FILE_PATH
+        FROM ITEM I JOIN SAVINGLEVEL SL ON I.SAVINGLEVEL_ID = SL.ID JOIN ITEMFILE ITF ON I.ID = ITF.ITEM_ID JOIN FILES F ON ITF.ID =F.ID
+    </select>
+<!--메인페이지 옵션선택 아이템용-->
+    <select id="selectAllOptionItem" resultType="ItemFileSavingLevelDTO">
+        SELECT I.ID ITEM_ID, I.NAME ITEM_NAME, PRICE, CURRENT_STOCK, ORIGIN_STOCK, I.STATUS, BRAND, CATEGORY, REGISTERDATE, UPDATEDATE, I.SAVINGLEVEL_ID, SL.NAME SAVINGLEVELNAME,
+               F.ID FILE_ID,F.FILE_SIZE ,F.ORIGIN_NAME FILE_ORIGIN_NAME ,F.UUID FILE_UUID,F.FILE_PATH ,F.FILE_PATH
+        FROM ITEM I JOIN SAVINGLEVEL SL ON I.SAVINGLEVEL_ID = SL.ID JOIN ITEMFILE ITF ON I.ID = ITF.ITEM_ID JOIN FILES F ON ITF.ID =F.ID
+        WHERE I.SAVINGLEVEL_ID = #{savingLevelId}
+    </select>
+
+
+
+
+
+
+
+
+</mapper>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleag.org">
+<head>
+    <meta charset="UTF-8">
+    <title>도란도란</title>
+    <link rel="stylesheet" href="/css/dorandoran/doranboard.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranboard1.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranboard2.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranboard3.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranboard4.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+</head>
+<body>
+<div class="wcommunity-wrap">
+    <div class="web-header">
+        <div class="web-header">
+            <header class="header-wrapper web-header-simple">
+                <div class="header-container">
+                    <h1 class="wadiz-logo">
+                        <a href="/join/mainpage">
+                            <img src="/image/Logo.png">
+                        </a>
+                    </h1>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="wcommunity-content-wrap">
+        <div class="wcommunity-section1">
+
+            <div class="top-category-menu">
+                <h3><em>도란도란 게시판</em></h3>
+                <div class="sub-category-list">
+                    <ul>
+                        <li>
+                            <button type="button" onclick="location.href='/doranboard/doranboard?ItemName=씨앗'">씨앗
+                            </button>
+                        </li>
+
+                        <li>
+                            <button type="button" onclick="location.href='/doranboard/doranboard?ItemName=새싹'">새싹
+                            </button>
+                        </li>
+
+                        <li>
+                            <button type="button" onclick="location.href='/doranboard/doranboard?ItemName=열매'">열매
+                            </button>
+                        </li>
+
+                        <li class="active">
+                            <button type="button" onclick="location.href='/doranboard/doranboard'">자유이야기</button>
+                        </li>
+                        <li style="margin-left: 282px";>
+                            <button type="button" onclick="location.href='/doranboard/doranwrite'">글 작성</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wcommunity-webzine-list">
+                <ul>
+
+                </ul>
+            </div>
+
+
+            <div class="wcommunity-page-list">
+                <div id="paging-wrap">
+                    <a th:if="${pagination.prev}" th:href="${pagination.startPage - 1}"
+                       class="change-page paging paging-move"><img src="/image/prev.png" width="15px"></a>
+                    <th:block th:each="page:${#numbers.sequence(pagination.startPage, pagination.endPage)}">
+                        <a th:if="${page eq pagination.page}" class="paging paging-checked" th:text="${page}"></a>
+                        <a th:unless="${page eq pagination.page}" th:href="${page}" class="change-page paging"
+                           th:text="${page}"></a>
+                    </th:block>
+                    <a th:if="${pagination.next}" th:href="${pagination.endPage + 1}"
+                       class="change-page paging paging-move"><img src="/image/next.png" width="15px"></a>
+                    <div></div>
+                </div>
+            </div><!-- //wcommunity-page-list -->
+            <!-- 컨텐츠 없을 시 -->
+            <div id="notExist" class="wcommunity-contents-none" style="display: none;">
+                <p id="notExistContents">컨텐츠를 준비중입니다.<br>조금만 기다려주세요!</p>
+                <!-- 검색 결과없을 시 -->
+                <p id="notExistResult">검색결과가 없습니다.</p>
+            </div>
+
+            <div class="wcommunity-bottom-util">
+                <form th:action="@{/doranboard/doranboard}">
+                    <div class="search-story">
+                        <select id="searchSelectInBoard" class="select-list" name="type">
+                            <option value="tc" th:selected="${search.type eq 'tc'}">제목+내용</option>
+                            <option value="t" th:selected="${search.type eq 't'}">제목</option>
+                            <option value="c" th:selected="${search.type eq 'c'}">내용</option>
+                            <option value="w" th:selected="${search.type eq 'w'}">작성자</option>
+                        </select>
+                        <div class="wcommunity-search-area">
+                            <input type="text" id="searchTextInBoard" name="keyword" th:value="${search.keyword}"
+                                   placeholder="도란도란 검색">
+                            <button type="submit" class="search">검색</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+<script src="/js/doranboard/doranboard.js"></script>
+<script th:inline="javascript">
+    let boards = [[${doranboards}]];
+    let nowPage = [[${pagination.page}]]
+    let pagination = [[${pagination}]]
+    let memberId = [[${session.id}]];
+
+    console.log(boards);
+    console.log(nowPage);
+    console.log(pagination);
+    console.log(memberId);
+</script>
+<script src="/js/doranboard/paging.js"></script>
+</html>

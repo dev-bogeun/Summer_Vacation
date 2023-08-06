@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>아이디찾기</title>
+</head>
+<link rel="stylesheet" href="/css/Join/FindId.css">
+<link rel="stylesheet" href="/css/header/headerking.css">
+<body>
+    <div id="page-container">
+        <div class="web-header" th:replace="~{/header/header::.web-header}"></div>
+        <div class="account-find">
+            <div class="page-header">
+                <h2 class="text display1">아이디∙비밀번호 찾기</h2>
+                <div class="tab-list">
+                    <ul>
+                        <li class="active">
+                            <a href="/join/findid">아이디 찾기</a>
+                        </li>
+                        <li>
+                            <a href="/join/findpw">비밀번호 찾기</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="container id-check" style="min-height:calc(100vh - 187px);">
+                    <p class="text headline2"></p>
+                    <p class=" text body1">
+                        티끌은 이메일을 아이디로 사용합니다.
+                        <br>
+                        소유하고 계신 계정을 입력해보세요.
+                        <br>
+                        가입여부를 확인해드립니다.
+                    </p>
+                    <form action="" class="form">
+                        <div class="label-hidden field">
+                            <div class="input">
+                                <input id="email" class="input-text" type="email" value placeholder="이메일 계정">
+                                <p id="pemail"></p>
+                            </div>
+                        </div>
+                        <button class="primary block button" id="chkidbtn" type="button">확인</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div >
+            <footer id="footer" th:replace="~{/footer/footer::footer}"></footer>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/js/Join/FindId.js"></script>
+<script src="/js/header/header.js"></script>
+</html>

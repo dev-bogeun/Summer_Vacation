@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tikkeul.app.mapper.UserMapper">
+
+    <select id="adminSelectUserAll" resultType="userVO">
+        SELECT ID, NAME, IDENTIFICATION, ADDRESS, PHONENUMBER
+        FROM USERS
+    </select>
+
+    <select id="selectById" resultType="userVO">
+        SELECT ID,IDENTIFICATION, PASSWORD, NAME, PHONENUMBER, ADDRESS, STATUS,ROLL, CREATEDDATE, PROFILEIMAGENAME, PROFILEIMAGESIZE, PROFILEIMAGEUUID, SAVINGLEVEL_ID, REGISTERED_TYPE
+        FROM USERS
+        WHERE IDENTIFICATION = #{identification}
+
+    </select>
+    <select id="selectpassword" resultType="String">
+        SELECT PASSWORD FROM USERS WHERE IDENTIFICATION= #{identification}
+    </select>
+
+    <!--회원가입-->
+    <insert id="insert">
+        INSERT INTO USERS (ID, IDENTIFICATION, PASSWORD, NAME, REGISTERED_TYPE, SAVINGLEVEL_ID)
+        VALUES (SEQ_USER.NEXTVAL, #{identification}, #{password}, #{name}, #{registeredType}, #{levelId})
+    </insert>
+
+    <!--소셜 회원 업데이트-->
+    <update id="updatekakao">
+        UPDATE  USERS
+        SET IDENTIFICATION=#{identification}, PASSWORD = #{password}, NAME = #{name}
+        WHERE IDENTIFICATION = #{identification}
+    </update>
+
+    <update id="updateNaver">
+        UPDATE  USERS
+        SET IDENTIFICATION=#{identification}, PASSWORD = #{password}, NAME = #{name}
+        WHERE IDENTIFICATION = #{identification}
+    </update>
+
+</mapper>

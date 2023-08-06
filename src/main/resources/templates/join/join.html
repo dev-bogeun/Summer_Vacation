@@ -1,0 +1,323 @@
+    <!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입</title>
+
+    <link rel="stylesheet" href="/css/Join/join.css">
+<link rel="stylesheet" href="/css/header/headerking.css">
+<link rel="stylesheet" href="/css/modal/modal.css">
+<script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+</head>
+<body>
+<div id="page-container">
+    <div class="web-header" th:replace="~{/header/header::.web-header}" >
+
+    </div>
+    <!--    메인 시작    -->
+    <main>
+        <div class="AccountContainer_container__PwFiE">
+            <h2 class="AccountTitle_title__2gD-3">간편가입</h2>
+            <div>
+                <button class="Button_button__3MO4n Button_lg__D7OVb Button_block__3npc4 SNSButtonList_kakaoButton__2lTDs SNSButtonList_spacer__38ac5" onclick="location.href='https://kauth.kakao.com/oauth/authorize?client_id=98ad659e9ee57a8f915dfab301a25608&redirect_uri=http://localhost:10000/kakao/login&response_type=code\n';" type="button">
+                    <span class="Button_children__raEW4">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__2KxnX SNSButtonList_kakaoIcon__1s6gw" aria-hidden="true">
+                                <path d="M16 4.64c-6.96 0-12.64 4.48-12.64 10.08 0 3.52 2.32 6.64 5.76 8.48l-.96 4.96 5.44-3.6 2.4.16c6.96 0 12.64-4.48 12.64-10.08S22.96 4.56 16 4.64z"></path>
+                            </svg>
+                            카카오로 시작하기
+                        </span>
+                </button>
+                <button class="Button_button__3MO4n Button_lg__D7OVb Button_block__3npc4 SNSButtonList_naverButton__1rzZ_ SNSButtonList_spacer__38ac5" onclick="location.href='https://nid.naver.com/oauth2.0/authorize?response_type=token&client_id=ny2peuJ25fyfAu4Z7mI9&redirect_uri=http%3A%2F%2Flocalhost%3A10000%2Flogin%2Foauth2%2Fcode%2Fnaver&state=6d1726f6-864f-457c-a722-58f04da57f8d'" type="button">
+                    <span class="Button_children__raEW4">
+                            <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__2KxnX SNSButtonList_naverIcon__3TjPM" aria-hidden="true">
+                                <path d="M19.52 5.76v10.32L12.48 5.76H4.8v20.48h7.68V15.92l7.12 10.32h7.6V5.76z"></path>
+                            </svg>
+                            네이버로 시작하기
+                        </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="SignUpIntroApp_divider__24Rgj"></div>
+        <div class="AccountContainer_container__PwFiE SignUpIntroApp_signUpIntroEmailContainer__3sN5d">
+            <h3 class="SignUpIntroApp_simpleSignUpTitle__3aC7M">이메일 간편가입</h3>
+            <div class="EmailSignUpFormContainer_formField__1vy9Q">
+                <!--/*@thymesVar id="userVO" type=""*/-->
+                <form th:action="@{/join/join}" name="join" method="post" th:object="${userVO}">
+                    <div class="EmailAuthField_emailAuthField__2E9P2">
+                        <label class="EmailAuthField_fieldLabel__1jS_Z">이메일</label>
+                        <div class="EmailAuthField_inputFieldContainer__1BgHY">
+                            <div class="EmailAuthField_inputField__y3EHZ">
+                                <input th:field="*{identification}" id="email" name="memail" placeholder="이메일 계정" type="email" class="Input_input__1bbbo Input_md__1Nsby">
+                            </div>
+                            <button class="Button_button__3MO4n Button_primary__29fd0 Button_contained__1kfgl Button_md__3TvVa Button_disabled__2II9A EmailAuthField_cta__1K3Hz" id="checkEmail" type="button">
+                                <span>인증하기</span>
+                            </button>
+                            <button class="Button_button__3MO4n Button_secondary__2ECH- Button_md__3TvVa EmailAuthField_cta__1K3Hz return" type="button">
+                                <span>
+                                    <span class="Button_children__raEW4">재전송
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                        <p id="pemail"></p>
+                    </div>
+                <div>
+                <div class="EmailAuthField_emailAuthField__2E9P2 EmailAuthField_showTimer__Z71HO">
+                        <div class="EmailAuthField_inputFieldContainer__1BgHY">
+                            <div class="EmailAuthField_inputField__y3EHZ">
+                                <label for="memailconfirm" id="memailconfirmTxt"></label>
+                                <input name="authCode" id="memailconfirm" maxlength="8" placeholder="인증번호 입력" type="tel" class="Input_input__1bbbo Input_md__1Nsby Input_error__3XENr checkEmail" aria-invalid="true">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="TextField_textField__2k9OA TextField_md__2Z-6K EmailSignUpFormContainer_formField__1vy9Q">
+                        <label>이름</label>
+                        <div class="TextField_field__3gj8N">
+                            <input  id="name" placeholder="이름 입력" th:field="*{name}" type="text" class="Input_input__1bbbo Input_md__1Nsby">
+                            <p id="pname"></p>
+                        </div>
+                    </div>
+                    <div class="TextField_textField__2k9OA TextField_md__2Z-6K TextField_right__3aUp8 EmailSignUpFormContainer_formField__1vy9Q">
+                        <label>비밀번호</label>
+                        <div class="TextField_field__3gj8N">
+                            <input id="password" placeholder="비밀번호 입력" type="password" th:field="*{password}"  class="Input_input__1bbbo Input_md__1Nsby" >
+                            <p id="ppassword"></p>
+                            <button id="lookpassword" class="Button_button__3MO4n Button_iconOnly__1yhFC iconButton TextField_icon__eNiI4 TextField_endIcon__2DGw_" type="button">
+                                <span>
+                                       <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX firstsvg" style="width: 46px; height: 46px;">
+                                            <path d="M23.589 7.895l.411.001c10.56 0 20.16 6.504 23.34 15.78l.132.432-.144.396c-3.216 9.168-12.816 15.6-23.328 15.6A24.84 24.84 0 0 1 .684 24.492l-.168-.432.156-.42A24.804 24.804 0 0 1 24 7.896zM24 14.46a9.6 9.6 0 1 0 0 19.2 9.6 9.6 0 0 0 0-19.2zm0 4.14a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8z"></path>
+                                       </svg>
+                                       <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX secondsvg" style="width: 46px; height: 46px;">
+                                           <path d="M42.48 3.864l2.04 2.04-6.324 6.324-.864.852-.864.876-4.68 4.668-3.072 3.084-7.2 7.2-3.084 3.072-3.804 3.816-.912.912-.912.9-7.02 7.032-2.04-2.04 6.408-6.444a23.868 23.868 0 0 1-9.6-11.652l-.168-.432.156-.42A24.816 24.816 0 0 1 23.868 7.968c4.08.008 8.101.978 11.736 2.832l6.876-6.936zm-1.788 10.308a22.296 22.296 0 0 1 6.516 9.516l.072.444-.144.396c-3.216 9.168-12.816 15.6-23.328 15.6a25.676 25.676 0 0 1-7.872-1.2l5.532-5.532a9.06 9.06 0 0 0 2.4.312 9.6 9.6 0 0 0 9.6-9.6 9.06 9.06 0 0 0-.312-2.4zm-10.776 2.4a9.6 9.6 0 0 0-15.6 7.536l-.048-.036A9.6 9.6 0 0 0 16.332 30l3.12-2.964a5.316 5.316 0 0 1-.876-2.928 5.412 5.412 0 0 1 5.4-5.4c1.04 0 2.059.304 2.928.876z"></path>
+                                       </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="TextField_textField__2k9OA TextField_md__2Z-6K TextField_right__3aUp8">
+                        <label></label>
+                        <div class="TextField_field__3gj8N">
+                            <input id="passwordcheck" placeholder="비밀번호 확인" type="password" class="Input_input__1bbbo Input_md__1Nsby">
+                                <p id="ppasswordcheck"></p>
+                            <button aria-label="비밀번호 보기" class="Button_button__3MO4n Button_iconOnly__1yhFC iconButton TextField_icon__eNiI4 TextField_endIcon__2DGw_" type="button">
+                                <span>
+                                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX checkfirstsvg" aria-hidden="true" style="width: 46px; height: 46px;">
+                                            <path d="M23.589 7.895l.411.001c10.56 0 20.16 6.504 23.34 15.78l.132.432-.144.396c-3.216 9.168-12.816 15.6-23.328 15.6A24.84 24.84 0 0 1 .684 24.492l-.168-.432.156-.42A24.804 24.804 0 0 1 24 7.896zM24 14.46a9.6 9.6 0 1 0 0 19.2 9.6 9.6 0 0 0 0-19.2zm0 4.14a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8z"></path>
+                                        </svg>
+                                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX checksecondsvg" style="width: 46px; height: 46px;">
+                                           <path d="M42.48 3.864l2.04 2.04-6.324 6.324-.864.852-.864.876-4.68 4.668-3.072 3.084-7.2 7.2-3.084 3.072-3.804 3.816-.912.912-.912.9-7.02 7.032-2.04-2.04 6.408-6.444a23.868 23.868 0 0 1-9.6-11.652l-.168-.432.156-.42A24.816 24.816 0 0 1 23.868 7.968c4.08.008 8.101.978 11.736 2.832l6.876-6.936zm-1.788 10.308a22.296 22.296 0 0 1 6.516 9.516l.072.444-.144.396c-3.216 9.168-12.816 15.6-23.328 15.6a25.676 25.676 0 0 1-7.872-1.2l5.532-5.532a9.06 9.06 0 0 0 2.4.312 9.6 9.6 0 0 0 9.6-9.6 9.06 9.06 0 0 0-.312-2.4zm-10.776 2.4a9.6 9.6 0 0 0-15.6 7.536l-.048-.036A9.6 9.6 0 0 0 16.332 30l3.12-2.964a5.316 5.316 0 0 1-.876-2.928 5.412 5.412 0 0 1 5.4-5.4c1.04 0 2.059.304 2.928.876z"></path>
+                                        </svg>
+                                    </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="SignUpAllCheckTermsCheckbox_termsAllCheckWrapper__2f6i3 EmailSignUpFormContainer_formField__1vy9Q">
+                        <label class="Checkbox_checkbox__10cSJ Checkbox_md__39fd8 SignUpAllCheckTermsCheckbox_termsAllCheck__PauIo">
+                            <input id="termsUpdateRequestCheckBox" type="checkbox" class="Checkbox_input__UIZH_">
+                            <span class="Checkbox_icon__GLNHN">
+                                <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_removeIcon__10mz3" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
+                                </svg>
+                                <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_checkIcon__pmCQr" aria-hidden="true">
+                                    <path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="SignUpAllCheckTermsCheckbox_termsAllCheckLabel__3TxCG">
+                            <p class="SignUpAllCheckTermsCheckbox_checkboxLabel__28Tow">전체동의</p>
+                            <p class="SignUpAllCheckTermsCheckbox_checkboxDescription__2X16H">회원·서비스(필수), 스타트업찾기 서비스 (선택), 이벤트·혜택알림 동의(선택), 만 14세 이상(필수)</p>
+                        </label>
+
+                        <button class="Button_button__3MO4n Button_text__2zg08 Button_iconOnly__1yhFC iconButton SignUpAllCheckTermsCheckbox_termsMoreButton__wal9S btn_check_modal_view" type="button">
+                            <span>
+                                    <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__2KxnX" aria-hidden="true">
+                                        <path d="M16 22.4L5.6 12l1.12-1.12L16 20.16l9.28-9.28L26.4 12 16 22.4z"></path>
+                                    </svg>
+                                </span>
+                        </button>
+                    </div>
+                    <button class="Button_button__3MO4n Button_primary__29fd0 Button_contained__1kfgl Button_lg__D7OVb Button_block__3npc4 Button_disabled__2II9A EmailSignUpFormContainer_signUpSubmitButton__3cZeI submitButton" type="submit" disabled>
+                        <span>완료</span>
+                    </button>
+                </form>
+            </div>
+            <!-- [S] modal -->
+            <div class="ReactModalPortal">
+                <div class="ReactModal__Overlay ReactModal__Overlay--after-open ConfirmModal_overlay__3z622 waffle__modal__overlay" style="z-index: 99999; background-color: rgba(0, 0, 0, 0.2)">
+                    <div class="ReactModal__Content ReactModal__Content--after-open ConfirmModal_confirmModal__1IdNW ConfirmModal_sizeSm__17Y6Y App_modal__1KJpd" tabindex="-1" role="dialog" aria-modal="true">
+                        <div class="ConfirmModal_header__oy2wU">
+                            <div class="ConfirmModal_closeIconRoot__LZKp5">
+                                <button class="btn_modal_close ConfirmModal_closeIconWrapper__1RoyF">
+                                    <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__2KxnX ConfirmModal_closeIcon__KQjlQ" aria-hidden="true">
+                                        <path d="M33.4 8L32 6.6l-12 12-12-12L6.6 8l12 12-12 12L8 33.4l12-12 12 12 1.4-1.4-12-12 12-12z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div title="" class="ConfirmModal_titlePlaceholder__2JOjQ ConfirmModal_showCloseButton__3rs_K"></div>
+                        </div>
+                        <div class="ConfirmModal_content__O4lpA">
+                            <div class="App_container__11y0W">
+                                <article class="TermsConfirmContainer_modalInner__1q1yU">
+                                    <div class="TermsConfirmContainer_header__2xVhi">
+                                        <header class="TermsConfirmHeader_container__poLUd">
+                                            <h1 class="TermsConfirmHeader_title__3CDUZ">약관확인</h1>
+                                            <p class="TermsConfirmHeader_description__3SEFB">
+                                                약관에 동의하셔야 해당 서비스를 이용할 수 있습니다.
+                                            </p>
+                                        </header>
+                                        <section class="FullAgreementCheckbox_container__3yWi7">
+                                            <label class="Checkbox_checkbox__10cSJ Checkbox_md__39fd8 Checkbox_labeled__1HTwN FullAgreementCheckbox_checkbox__15HFu">
+                                                <input name="fullAgreement" type="checkbox" class="Checkbox_input__UIZH_"/>
+                                                <span class="Checkbox_icon__GLNHN" aria-hidden="true">
+                                                <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_removeIcon__10mz3" aria-hidden="true">
+                                                     <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
+                                                </svg>
+                                                <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_checkIcon__pmCQr" aria-hidden="true">
+                                                    <path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
+                                                </svg>
+                                            </span>
+                                                <span class="Checkbox_content__3AASl">
+                                                    <span>
+                                                        <span class="FullAgreementCheckbox_text__3VFz0">전체 동의</span>
+                                                        <span class="FullAgreementCheckbox_subtext__3aKjx">(선택항목 포함)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </section>
+                                    </div>
+                                    <div>
+                                        <div class="AccordionCheckbox_accordionHeader__7fp2J ServiceAgreementCheckbox_container__LME1_ TermsConfirmBody_service__2uPF1">
+                                            <div data-testid="service-agreement-checkbox">
+                                                <label class="Checkbox_checkbox__10cSJ Checkbox_sm__8LHaC Checkbox_labeled__1HTwN AccordionCheckbox_checkbox__1x0TO">
+                                                    <input name="funding" required="" type="checkbox" class="chk essential_chk Checkbox_input__UIZH_"/>
+                                                    <span class="Checkbox_icon__GLNHN" aria-hidden="true">
+                                                        <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_removeIcon__10mz3" aria-hidden="true">
+                                                          <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
+                                                        </svg>
+                                                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_checkIcon__pmCQr" aria-hidden="true">
+                                                             <path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="Checkbox_content__3AASl">
+                                                        <span>
+                                                            <div>
+                                                                <strong>회원·서비스</strong> 가입
+                                                                <span class="ServiceAgreementCheckbox_required__1KYhI">(필수)
+                                                                </span>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="AccordionCheckbox_accordionHeader__7fp2J ServiceAgreementCheckbox_container__LME1_ TermsConfirmBody_service__2uPF1">
+                                            <div data-testid="service-agreement-checkbox">
+                                                <label class="Checkbox_checkbox__10cSJ Checkbox_sm__8LHaC Checkbox_labeled__1HTwN AccordionCheckbox_checkbox__1x0TO">
+                                                    <input name="funding" type="checkbox" class="Checkbox_input__UIZH_"/>
+                                                    <span class="Checkbox_icon__GLNHN" aria-hidden="true">
+                                                        <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="chk withIcon_icon__2KxnX Checkbox_removeIcon__10mz3" aria-hidden="true">
+                                                            <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
+                                                        </svg>
+                                                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_checkIcon__pmCQr" aria-hidden="true">
+                                                             <path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="Checkbox_content__3AASl">
+                                                        <span>
+                                                            <div>회원·서비스 이벤트 혜택 알림(선택)</div>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                                <em class="HelperMessage_helperMessage__1xhad Checkbox_message__1if3P Checkbox_sm__8LHaC">펀딩·프리오더·스토어 서비스, 이벤트·할인 혜택 등에 대한 정보를 이메일, 앱 알림(앱 회원가입 시)로 받아볼 수 있습니다. (동의 철회 시까지)</em>
+                                            </div>
+                                        </div>
+                                        <div class="AccordionCheckbox_accordionHeader__7fp2J ServiceAgreementCheckbox_container__LME1_ TermsConfirmBody_service__2uPF1">
+                                            <div data-testid="service-agreement-checkbox">
+                                                <label class="Checkbox_checkbox__10cSJ Checkbox_sm__8LHaC Checkbox_labeled__1HTwN AccordionCheckbox_checkbox__1x0TO">
+                                                    <input name="startup" type="checkbox" class="chk Checkbox_input__UIZH_"/>
+                                                    <span class="Checkbox_icon__GLNHN" aria-hidden="true">
+                                                        <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_removeIcon__10mz3" aria-hidden="true">
+                                                             <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
+                                                        </svg>
+                                                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_checkIcon__pmCQr" aria-hidden="true">
+                                                             <path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="Checkbox_content__3AASl">
+                                                        <span>
+                                                            <div>
+                                                                <strong>스타트업 찾기</strong> 서비스 가입
+                                                                <span class="">(선택)</span>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="AccordionCheckbox_accordionHeader__7fp2J ServiceAgreementCheckbox_container__LME1_ TermsConfirmBody_service__2uPF1">
+                                            <div data-testid="service-agreement-checkbox">
+                                                <label class="Checkbox_checkbox__10cSJ Checkbox_sm__8LHaC Checkbox_labeled__1HTwN AccordionCheckbox_checkbox__1x0TO">
+                                                    <input name="funding" required="" type="checkbox" class="chk essential_chk Checkbox_input__UIZH_"/>
+                                                    <span class="Checkbox_icon__GLNHN" aria-hidden="true">
+                                                        <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_removeIcon__10mz3" aria-hidden="true">
+                                                            <path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
+                                                        </svg>
+                                                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__2KxnX Checkbox_checkIcon__pmCQr" aria-hidden="true">
+                                                            <path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="Checkbox_content__3AASl">
+                                                        <span>
+                                                            <div>만 14세 이상입니다.
+                                                                <span class="ServiceAgreementCheckbox_required__1KYhI">(필수)
+                                                                </span>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="TermsConfirmBody_notice__3lqSF">
+                                            ·선택 동의를 거부해도 펀딩·프리오더·스토어 서비스(스타트업찾기 제외) 이용이
+                                            가능합니다.
+                                        </p>
+                                    </div>
+                                    <div class="TermsConfirmFooter_container__22Zte App_footer__19hsP">
+                                        <div class="FixedToast_toast__UhjeV"></div>
+                                        <button id="btn_modal_agree" aria-label="confirmation" class="Button_button__3MO4n Button_primary__29fd0 Button_contained__1kfgl Button_xl__DdjPf Button_block__3npc4" type="submit">
+                                            <span>
+                                                <span class="Button_children__raEW4">확인</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </div>
+          </main>
+      </div>
+<div class="modal">
+    <div class="warn-modal">
+        <div id="content-wrap"></div>
+    </div>
+</div>   <div id="naver_id_login" style="display:none"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/js/Join/Join.js"></script>
+<script src="/js/header/header.js"></script>
+<script src="/js/modal/modal.js"></script>
+    <script type="text/javascript">
+        var naver_id_login = new naver_id_login("ny2peuJ25fyfAu4Z7mI9", "http://localhost:10000/login/oauth2/code/naver");
+        var state = naver_id_login.getUniqState();
+        naver_id_login.setButton("white", 2,40);
+        naver_id_login.setDomain(".service.com");
+        naver_id_login.setState(state);
+        naver_id_login.init_naver_id_login();
+    </script>
+    <!-- 네이버아디디로로그인 Callback페이지 처리 Script -->
+</html>

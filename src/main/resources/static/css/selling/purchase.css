@@ -1,0 +1,1626 @@
+.PaymentLayout_paymentLayoutContainer__3Ef47 {
+    position: relative;
+    background-color: #f2f4f6;
+}
+
+@media screen and (min-width: 1097px) {
+    .PaymentLayout_paymentLayoutContainer__3Ef47 {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px auto 0;
+        background-color: #fff;
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1097px) {
+    .PaymentLayout_paymentLayoutContainer__3Ef47 .PaymentLayout_paymentContainer__2T2nr {
+        width: 100%;
+        max-width: 729px;
+    }
+}
+
+
+@media screen and (min-width: 1097px) {
+    .PaymentLayout_paymentLayoutContainer__3Ef47 .PaymentLayout_paymentContainer__2T2nr .PaymentLayout_pageTitle__2MXof {
+        line-height: 38px;
+        letter-spacing: -.6px;
+        font-size: 28px;
+        font-weight: 700;
+        padding: 0 16px 24px;
+    }
+}
+
+.MessageBox_messageBox__2WX5N.MessageBox_basic__1zukz {
+    background-color: #f9fafb;
+    color: #495057;
+}
+.StorePaymentNotice_storePaymentNotice__1bIo9 {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    letter-spacing: -.3px;
+}
+.MessageBox_messageBox__2WX5N {
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+}
+.MessageBox_messageBox__2WX5N.MessageBox_basic__1zukz .MessageBox_icon__1NYKB {
+    color: #868e96;
+}
+.MessageBox_messageBox__2WX5N .MessageBox_icon__1NYKB {
+    flex-shrink: 0;
+    margin-top: 2px;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
+.StorePaymentSection_container__1SdwL {
+    margin-bottom: 12px;
+    background-color: #fff;
+    padding: 16px;
+}
+
+.StorePaymentSection_container__1SdwL .StorePaymentSection_titleContainer__gkoqg {
+    position: relative;
+}
+
+.StorePaymentSection_container__1SdwL .StorePaymentSection_titleContainer__gkoqg .StorePaymentSection_title__DLi4F {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1097px) {
+    .StorePaymentSection_container__1SdwL .StorePaymentSection_titleContainer__gkoqg .StorePaymentSection_title__DLi4F {
+        line-height: 30px;
+        letter-spacing: -.6px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.StorePaymentSection_container__1SdwL .StorePaymentSection_sectionContent__1a3aW {
+    margin-top: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+.StorePaymentSection_container__1SdwL .StorePaymentSection_sectionContent__1a3aW.StorePaymentSection_active__2fVyM {
+    margin-top: 8px;
+    height: auto;
+    overflow: visible;
+    word-break: break-all;
+}
+
+.StorePaymentInformation_storePaymentInformation__nBaVr {
+    background-color: #f9fafb;
+    padding: 16px;
+}
+
+.StorePaymentInformation_storePaymentInformation__nBaVr .StorePaymentInformation_row__OF_TS:first-child {
+    margin-top: 0;
+}
+
+.StorePaymentInformation_storePaymentInformation__nBaVr .StorePaymentInformation_row__OF_TS {
+    margin-top: 8px;
+}
+.StorePaymentInformation_storePaymentInformation__nBaVr .StorePaymentInformation_row__OF_TS span.StorePaymentInformation_label__3Pxe0 {
+    width: 90px;
+}
+.StorePaymentInformation_storePaymentInformation__nBaVr .StorePaymentInformation_row__OF_TS span {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.StorePaymentInformation_storePaymentInformation__nBaVr .StorePaymentInformation_row__OF_TS {
+    margin-top: 8px;
+}
+
+
+
+.StorePaymentInformation_storePaymentInformation__nBaVr .StorePaymentInformation_row__OF_TS span {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.Tab_tab__1n-pz span {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    padding: 9px 4px;
+    height: 100%;
+    color: #495057;
+}
+
+.Tab_tab__1n-pz.Tab_active__1ZWPp span {
+    color: #212529;
+    font-weight: 700;
+    border-bottom: 0.5px solid black;
+}
+.Tab_tab__1n-pz {
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    height: 100%;
+    min-height: 48px;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+
+.Tab_tab__1n-pz.Tab_active__1ZWPp span:after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #212529;
+    width: 100%;
+    height: 2px;
+    content: "";
+}
+
+.TabPanels_tabPanels__3fp_a {
+    width: 100%;
+}
+
+@media screen and (min-width: 1097px) {
+    .StorePaymentNewShippingAddress_storePaymentNewDelivery__Izd2f {
+        padding: 0 16px;
+    }
+}
+
+.StorePaymentNewShippingAddress_storePaymentNewDelivery__Izd2f .StorePaymentNewShippingAddress_label__3bBOI {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 24px;
+    color: #212529;
+}
+.StorePaymentNewShippingAddress_storePaymentNewDelivery__Izd2f .StorePaymentNewShippingAddress_input__3Jy1Z {
+    margin-top: 8px;
+}
+.Input_input__3VoZt.Input_md__3OkuQ {
+    height: 48px;
+    min-height: 48px;
+}
+.StorePaymentNewShippingAddress_storePaymentNewDelivery__Izd2f .StorePaymentNewShippingAddress_input__3Jy1Z {
+    margin-top: 8px;
+}
+.StorePaymentSafeNumber_container__1aAw5 {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #f9fafb;
+    padding: 8px 12px;
+    color: #868e96;
+}
+.StorePaymentSafeNumber_container__1aAw5>div {
+    display: inline;
+}
+.StorePaymentNewShippingAddress_storePaymentNewDelivery__Izd2f .StorePaymentNewShippingAddress_button__2oGSX {
+    margin-top: 4px;
+}
+
+.StorePaymentNewShippingAddress_storePaymentNewDelivery__Izd2f .StorePaymentNewShippingAddress_input__3Jy1Z {
+    margin-top: 8px;
+}
+
+.PaymentLayout_paymentLayoutContainer__3Ef47 .PaymentLayout_deliveryRequestLabel__2fM1D {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 4px;
+}
+.StorePaymentSection_container__1SdwL .StorePaymentSection_titleContainer__gkoqg .StorePaymentSection_title__DLi4F {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 1097px) {
+    .StorePaymentSection_container__1SdwL .StorePaymentSection_titleContainer__gkoqg .StorePaymentSection_title__DLi4F {
+        line-height: 30px;
+        letter-spacing: -.6px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+
+    .StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T {
+        position: relative;
+    }
+
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_productInfoContainer__3ulGA .StorePaymentProductInfo_productInfoTextContainer__CId20 {
+    float: left;
+    width: 100%;
+}
+
+
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T.StorePaymentProductInfo_imageType__2zH2h .StorePaymentProductInfo_productInfoTextContainer__CId20 {
+    width: calc(100% - 140px);
+}
+
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_productInfoContainer__3ulGA .StorePaymentProductInfo_productInfoTextContainer__CId20 .StorePaymentProductInfo_productName__1TK1V {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_productInfoContainer__3ulGA .StorePaymentProductInfo_productInfoTextContainer__CId20 .StorePaymentProductInfo_productDescription__3-3a_ {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_productInfoContainer__3ulGA .StorePaymentProductInfo_thumbnail__2jE3X {
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right;
+    margin-left: 76px;
+    border-radius: 8px;
+    background-color: gray;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+}
+@media screen and (min-width: 1097px) {
+    .StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_productInfoContainer__3ulGA .StorePaymentProductInfo_thumbnail__2jE3X {
+        margin-left: 60px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+    .StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T.StorePaymentProductInfo_imageType__2zH2h .StorePaymentProductInfo_productInfoContainer__3ulGA .StorePaymentProductInfo_thumbnail__2jE3X {
+        display: block;
+    }
+
+
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_productInfoContainer__3ulGA .StorePaymentProductInfo_thumbnail__2jE3X img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+}
+
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_priceInfo__35XLT {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_priceInfo__35XLT .StorePaymentProductInfo_qty__3MWOa {
+    vertical-align: bottom;
+    line-height: 28px;
+}
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_priceInfo__35XLT .StorePaymentProductInfo_price__2pYbN {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 700;
+    float: right;
+}
+.StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T .StorePaymentProductInfo_divider__2dEYa {
+    margin: 14px 0 16px;
+    background-color: #e6eaed;
+    width: 100%;
+    height: 1px;
+}
+
+.StorePaymentDeliveryNotice_storePaymentDeliveryNotice__1486h {
+    margin-top: 24px;
+}
+.StorePaymentDeliveryNotice_storePaymentDeliveryNotice__1486h .StorePaymentDeliveryNotice_deliveryNoticeField__3kuo2 {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+.StorePaymentDeliveryNotice_storePaymentDeliveryNotice__1486h .StorePaymentDeliveryNotice_deliveryNotice__koswG {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.select-menu-hidden-input-box input {
+    width: 100%;
+    height: 100%;
+}
+.css-14jk2my-container {
+    pointer-events: none;
+    position: relative;
+    box-sizing: border-box;
+}
+.css-7pg0cj-a11yText {
+    z-index: 9999;
+    border: 0px;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    padding: 0px;
+    white-space: nowrap;
+}
+.css-1hwfws3 {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex: 1 1 0%;
+    flex-wrap: wrap;
+    padding: 2px 8px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.css-1wa3eu0-placeholder {
+    color: rgb(128, 128, 128);
+    margin-left: 2px;
+    margin-right: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+}
+
+.css-62g3xt-dummyInput {
+    background: 0px center;
+    border: 0px;
+    font-size: inherit;
+    outline: 0px;
+    padding: 0px;
+    width: 1px;
+    color: transparent;
+    left: -100px;
+    opacity: 0;
+    position: relative;
+    transform: scale(0);
+}
+
+.css-1wy0on6 {
+    -webkit-box-align: center;
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.css-tlfecz-indicatorContainer {
+    color: rgb(204, 204, 204);
+    display: flex;
+    padding: 8px;
+    transition: color 150ms ease 0s;
+    box-sizing: border-box;
+}
+.StorePaymentChooseMode_storePaymentChooseMode__2yXk6 ul li {
+    margin-top: 16px;
+}
+
+.StorePaymentNicePay_storePaymentNicePay__1Yb59.StorePaymentNicePay_checked__14ngZ {
+    border-color: #6B95FC;
+    padding: 12px 16px;
+}
+.StorePaymentNicePay_storePaymentNicePay__1Yb59 {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #dde2e6;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 12px 16px;
+    width: 100%;
+    max-width: 343px;
+    height: auto;
+    color: #495057;
+}
+.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    line-height: 24px;
+}
+
+.StorePaymentNicePay_storePaymentNicePay__1Yb59.StorePaymentNicePay_single__3-vFW .StorePaymentNicePay_checkIcon__3gaNh {
+    margin-right: 12px;
+    color: #6B95FC;
+}
+.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay svg {
+    display: inline-block;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay * {
+    vertical-align: top;
+}
+.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay .StorePaymentNicePay_radio__2Zx3M {
+    display: inline-block;
+    margin: 0 12px 0 0;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+.StorePaymentNicePay_storePaymentNicePay__1Yb59.StorePaymentNicePay_single__3-vFW .StorePaymentNicePay_radio__2Zx3M {
+    display: none;
+}
+.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay * {
+    vertical-align: top;
+}
+
+label.Radio_radio__qgo5c.Radio_lg__3pVSs>span {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+label.Radio_radio__qgo5c .Radio_label__3ufjh {
+    vertical-align: -1px;
+    color: #495057;
+}
+.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay>span {
+    vertical-align: middle;
+}
+
+.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_notification__D1ZcP {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+    padding-left: 36px;
+    color: #adb5bd;
+}
+
+@media screen and (min-width: 1097px) {
+    .PaymentLayout_paymentLayoutContainer__3Ef47 .PaymentLayout_floatingSectionContainer__2QCzS {
+        margin-top: 24px;
+        width: 343px;
+    }
+}
+@media screen and (min-width: 1097px) {
+    .PaymentLayout_paymentLayoutContainer__3Ef47 .PaymentLayout_floatingSectionContainer__2QCzS .PaymentLayout_floatingSection__31pLD {
+        position: sticky;
+        top: 40px;
+    }
+}
+@media screen and (min-width: 1097px) {
+    .PaymentLayout_paymentLayoutContainer__3Ef47 .PaymentLayout_floatingSectionContainer__2QCzS .PaymentLayout_floatingSection__31pLD .PaymentLayout_floating__3iHN0 {
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.DefaultPrice_container__1gf10 {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 8px;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    cursor: pointer;
+    padding: 16px;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+.DefaultPrice_container__1gf10 .DefaultPrice_title__3iw65 {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-flex;
+    margin-bottom: 8px;
+    color: #212529;
+}
+.DefaultPrice_container__1gf10 .DefaultPrice_title__3iw65 .DefaultPrice_radioButton__1nTXN {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+
+.TitleValuePrice_container__Hcpla {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.TitleValuePrice_container__Hcpla dl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: #495057;
+}
+
+.TitleValuePrice_container__Hcpla dd {
+    display: inline-flex;
+    align-items: center;
+}
+
+.TitleValuePrice_container__Hcpla .TitleValuePrice_money__1Tu-B {
+    margin-right: 4px;
+}
+
+.TitleValuePrice_container__Hcpla .TitleValuePrice_details__24aoz {
+    margin-top: 8px;
+}
+
+.TitleValuePrice_container__Hcpla .TitleValuePrice_divide__2bMnX {
+    margin: 12px -16px 2px!important;
+    border: 1px solid #e6eaed;
+}
+.TitleValuePrice_container__Hcpla .TitleValuePrice_total__oJwm4 {
+    margin-top: 12px;
+    color: #212529;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+.TitleValuePrice_container__Hcpla .TitleValuePrice_total__oJwm4 em {
+    line-height: 28px;
+    letter-spacing: -.6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 20px;
+}
+.SupporterClubPrice_containerWrapper__20-UN {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 8px;
+    border: solid 1px #8be4e4;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+SupporterClubPrice_containerWrapper__20-UN .SupporterClubPrice_container__3QK17 {
+    padding: 14px 16px 10px;
+}
+.SupporterClubPrice_containerWrapper__20-UN .SupporterClubPrice_title__2_fsN {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #212529;
+}
+.SupporterClubPrice_containerWrapper__20-UN .SupporterClubPrice_title__2_fsN .SupporterClubPrice_radioButton__3-LQf {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+
+label.Radio_radio__qgo5c>input {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.SupporterClubPrice_containerWrapper__20-UN .SupporterClubPrice_title__2_fsN .SupporterClubPrice_text__3YlC8 {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.TitleValuePrice_container__Hcpla .TitleValuePrice_total__oJwm4 {
+    margin-top: 12px;
+    color: #212529;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.BasePrice_badge__34S9J {
+    margin-right: 8px;
+}
+
+.TitleValuePrice_container__Hcpla .TitleValuePrice_total__oJwm4 em {
+    line-height: 28px;
+    letter-spacing: -.6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.BasePrice_promotion__10cmV {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    border-top: 1px solid #dde2e6;
+    border-radius: 0 0 8px 8px;
+    background-color: #f9fafb;
+    cursor: pointer;
+    padding: 12px 16px;
+}
+.BasePrice_promotion__10cmV {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    border-top: 1px solid #dde2e6;
+    border-radius: 0 0 8px 8px;
+    background-color: #f9fafb;
+    cursor: pointer;
+    padding: 12px 16px;
+}
+
+.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsCheckbox__3gruT {
+    cursor: pointer;
+}
+
+.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i {
+    margin-top: 16px;
+    padding: 0 8px;
+}
+.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    margin-top: 24px;
+    padding-left: 24px;
+}
+.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 * {
+    vertical-align: middle;
+}
+
+.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 .StorePaymentTerms_smallCheckBox__YwfQ5 {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    cursor: pointer;
+}
+
+.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 .StorePaymentTerms_text__1tYhe {
+    display: block;
+}
+
+
+.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    margin-top: 24px;
+    padding-left: 24px;
+}
+
+.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 .StorePaymentTerms_termsDetailButton__29smA {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 0;
+}
+.PaymentLayout_paymentLayoutContainer__3Ef47 .PaymentLayout_submitButton__1fQJ4 {
+    margin-top: 26px;
+}
+
+.CommentTitle_container__1Zdwo * {
+    vertical-align: middle;
+}
+
+.CommentTitle_container__1Zdwo .CommentTitle_title__2RXrf {
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: rgb(33, 37, 41);
+}
+
+@media screen and (min-width: 769px) {
+    .CommentTitle_container__1Zdwo .CommentTitle_title__2RXrf {
+        line-height: 30px;
+        letter-spacing: -0.6px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.SatisfactionScore_container__3J8eY {
+    display: inline-flex;
+    align-items: center;
+}
+
+.SatisfactionScore_container__3J8eY .SatisfactionScore_label__38YDt {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(73, 80, 87);
+    margin-right: 4px;
+}
+
+.SatisfactionScore_container__3J8eY .SatisfactionScore_icon__3vqi2 {
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzRweCIgaGVpZ2h0PSIzM3B4IiB2aWV3Qm94PSIwIDAgMzQgMzMiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+U3RhcjwvdGl0bGU+CiAgICA8ZyBpZD0i66eI7J207JmA65SU7KaIIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iU1ZDUkVRLTIyNTIt66eM7KGx64+ELe2PieqwgC3snpHshLF+7IKt7KCcLeuPmeyEoCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE5MDcuMDAwMDAwLCAtMzExLjAwMDAwMCkiIGZpbGw9IiNGRkJFMUEiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5MDMuMDAwMDAwLCAzMDguMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjEsMzAuNDUgTDEyLjc2MDE1NTcsMzUuNDgyODY1NSBDMTEuODE3NTE0NiwzNi4wNTg2MjcxIDEwLjU4NjYwNTksMzUuNzYxMjEyNSAxMC4wMTA4NDQzLDM0LjgxODU3MTQgQzkuNzM1NDA3NTQsMzQuMzY3NjI0MyA5LjY0OTYyMjY3LDMzLjgyNiA5Ljc3MjIyODI5LDMzLjMxMjAwOTIgTDEyLjAxMjUxNTksMjMuOTIwMjEwNiBMMTIuMDEyNTE1OSwyMy45MjAyMTA2IEw0LjY3OTcyNDQ3LDE3LjYzODg5NCBDMy44NDA4NTA0OSwxNi45MjAzMDkxIDMuNzQzMzM2OTEsMTUuNjU3NzM5MiA0LjQ2MTkyMTc5LDE0LjgxODg2NTMgQzQuODA1NjgzMzEsMTQuNDE3NTU5IDUuMjk0Mjg5NjYsMTQuMTY4NjAxNiA1LjgyMTAxMTE5LDE0LjEyNjM3NDYgTDE1LjQ0NTQyOTQsMTMuMzU0Nzg5NCBMMTUuNDQ1NDI5NCwxMy4zNTQ3ODk0IEwxOS4xNTMzNTkzLDQuNDM5ODU2NzMgQzE5LjU3NzU0NzgsMy40MTk5ODUyMiAyMC43NDgxODk3LDIuOTM3MDg4NzUgMjEuNzY4MDYxMywzLjM2MTI3NzI3IEMyMi4yNTU5NTQzLDMuNTY0MjAzNDYgMjIuNjQzNzE0NSwzLjk1MTk2MzY1IDIyLjg0NjY0MDcsNC40Mzk4NTY3MyBMMjYuNTU0NTcwNiwxMy4zNTQ3ODk0IEwyNi41NTQ1NzA2LDEzLjM1NDc4OTQgTDM2LjE3ODk4ODgsMTQuMTI2Mzc0NiBDMzcuMjgwMDI1NywxNC4yMTQ2NDQyIDM4LjEwMTAzNTgsMTUuMTc4NzY3NyAzOC4wMTI3NjYyLDE2LjI3OTgwNDYgQzM3Ljk3MDUzOTEsMTYuODA2NTI2MSAzNy43MjE1ODE4LDE3LjI5NTEzMjUgMzcuMzIwMjc1NSwxNy42Mzg4OTQgTDI5Ljk4NzQ4NDEsMjMuOTIwMjEwNiBMMjkuOTg3NDg0MSwyMy45MjAyMTA2IEwzMi4yMjc3NzE3LDMzLjMxMjAwOTIgQzMyLjQ4NDA2MTQsMzQuMzg2NDM0MyAzMS44MjA4MzE2LDM1LjQ2NTE5MTggMzAuNzQ2NDA2NSwzNS43MjE0ODE1IEMzMC4yMzI0MTU3LDM1Ljg0NDA4NzEgMjkuNjkwNzkxNCwzNS43NTgzMDIzIDI5LjIzOTg0NDMsMzUuNDgyODY1NSBMMjEsMzAuNDUgTDIxLDMwLjQ1IFoiIGlkPSJTdGFyIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+    background-size: contain;
+}
+
+.SatisfactionScore_container__3J8eY .SatisfactionScore_score__2hXr0 {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(52, 58, 64);
+    margin-left: 2px;
+}
+
+.SatisfactionScore_container__3J8eY.SatisfactionScore_disabled__1UagU .SatisfactionScore_icon__3vqi2 {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNXB4IiB2aWV3Qm94PSIwIDAgMTYgMTUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+U3RhcjwvdGl0bGU+CiAgICA8ZyBpZD0i66eI7J207JmA65SU7KaIIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0i7IOB7IS4X+unjOyhseuPhO2PieqwgO2DrS1jb3B5LTIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTkuMDAwMDAwLCAtMjc0LjAwMDAwMCkiIGZpbGw9IiNDREQzRDgiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMi1Db3B5LTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcxLjAwMDAwMCwgMjcyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTM2LDE0LjA1IEwzMi43NjE3NTU3LDE2LjAyNzkwNzMgQzMyLjI5MDQzNTIsMTYuMzE1Nzg4MSAzMS42NzQ5ODA4LDE2LjE2NzA4MDggMzEuMzg3MSwxNS42OTU3NjAyIEMzMS4yNDkzODE2LDE1LjQ3MDI4NjYgMzEuMjA2NDg5MiwxNS4xOTk0NzQ1IDMxLjI2Nzc5MiwxNC45NDI0NzkxIEwzMi4xNDgyMjExLDExLjI1MTUxODggTDMyLjE0ODIyMTEsMTEuMjUxNTE4OCBMMjkuMjY2NDQ3LDguNzgyOTcyNDggQzI4Ljg0NzAxLDguNDIzNjgwMDQgMjguNzk4MjUzMiw3Ljc5MjM5NTExIDI5LjE1NzU0NTcsNy4zNzI5NTgxMiBDMjkuMzI5NDI2NCw3LjE3MjMwNSAyOS41NzM3Mjk2LDcuMDQ3ODI2MzEgMjkuODM3MDkwNCw3LjAyNjcxMjggTDMzLjYxOTQ2OTcsNi43MjM0ODExNyBMMzMuNjE5NDY5Nyw2LjcyMzQ4MTE3IEwzNS4wNzY2Nzk2LDMuMjE5OTI4MzYgQzM1LjI4ODc3MzksMi43MDk5OTI2MSAzNS44NzQwOTQ5LDIuNDY4NTQ0MzggMzYuMzg0MDMwNiwyLjY4MDYzODYzIEMzNi42Mjc5NzcyLDIuNzgyMTAxNzMgMzYuODIxODU3MywyLjk3NTk4MTgzIDM2LjkyMzMyMDQsMy4yMTk5MjgzNiBMMzguMzgwNTMwMyw2LjcyMzQ4MTE3IEwzOC4zODA1MzAzLDYuNzIzNDgxMTcgTDQyLjE2MjkwOTYsNy4wMjY3MTI4IEM0Mi43MTM0MjgxLDcuMDcwODQ3NjEgNDMuMTIzOTMzMSw3LjU1MjkwOTMzIDQzLjA3OTc5ODMsOC4xMDM0Mjc3OCBDNDMuMDU4Njg0OCw4LjM2Njc4ODU0IDQyLjkzNDIwNjEsOC42MTEwOTE3MiA0Mi43MzM1NTMsOC43ODI5NzI0OCBMMzkuODUxNzc4OSwxMS4yNTE1MTg4IEwzOS44NTE3Nzg5LDExLjI1MTUxODggTDQwLjczMjIwOCwxNC45NDI0NzkxIEM0MC44NjAzNTI4LDE1LjQ3OTY5MTcgNDAuNTI4NzM3OSwxNi4wMTkwNzA0IDM5Ljk5MTUyNTQsMTYuMTQ3MjE1MyBDMzkuNzM0NTMsMTYuMjA4NTE4MSAzOS40NjM3MTc4LDE2LjE2NTYyNTYgMzkuMjM4MjQ0MywxNi4wMjc5MDczIEwzNiwxNC4wNSBMMzYsMTQuMDUgWiIgaWQ9IlN0YXIiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+");
+}
+
+.SatisfactionScore_container__3J8eY.SatisfactionScore_disabled__1UagU .SatisfactionScore_score__2hXr0 {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(173, 181, 189);
+}
+
+.SatisfactionSummary_container__3szWc {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(33, 37, 41);
+}
+
+.SatisfactionSummary_container__3szWc .SatisfactionSummary_title__27vSu {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.SatisfactionSummary_container__3szWc .SatisfactionSummary_summary__18JyH {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.SatisfactionSummary_container__3szWc .SatisfactionSummary_detail__asZRS {
+    margin-top: 2px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.SatisfactionSummary_container__3szWc .SatisfactionSummary_detail__asZRS .SatisfactionSummary_empty__cNIad {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(205, 211, 216);
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.SatisfactionSummary_container__3szWc .SatisfactionSummary_detail__asZRS .SatisfactionSummary_item__12Mm_ {
+    display: inline-block;
+    position: relative;
+    margin-top: 4px;
+}
+
+.SatisfactionSummary_container__3szWc .SatisfactionSummary_detail__asZRS .SatisfactionSummary_item__12Mm_ .SatisfactionSummary_tooltipWrap__2F3fN {
+    position: absolute;
+    top: 4px;
+    right: -19px;
+}
+
+.SatisfactionSummary_container__3szWc .SatisfactionSummary_detail__asZRS .SatisfactionSummary_item__12Mm_ .SatisfactionSummary_tooltipWrap__2F3fN .SatisfactionSummary_tooltip__2frYz {
+    line-height: 18px;
+    font-size: 14px;
+    display: inline-flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    align-items: center;
+    color: rgb(52, 58, 64);
+}
+
+.SatisfactionSummary_container__3szWc .SatisfactionSummary_detail__asZRS .SatisfactionSummary_item__12Mm_ .SatisfactionSummary_tooltipWrap__2F3fN .SatisfactionSummary_tooltip__2frYz svg:first-child {
+    color: rgb(173, 181, 189);
+}
+
+.SatisfactionSummary_container__3szWc.SatisfactionSummary_disabled__1cXZq {
+    color: rgb(205, 211, 216);
+}
+
+.SatisfactionSummary_container__3szWc.SatisfactionSummary_disabled__1cXZq .SatisfactionSummary_summary__18JyH {
+    opacity: 0.24;
+}
+
+.SatisfactionSummary_container__3szWc.SatisfactionSummary_disabled__1cXZq .SatisfactionSummary_detail__asZRS .SatisfactionSummary_label__2WbbD {
+    color: rgb(205, 211, 216);
+}
+
+.SatisfactionSummary_container__3szWc.SatisfactionSummary_disabled__1cXZq .SatisfactionSummary_detail__asZRS .SatisfactionSummary_icon__1gmPp {
+    opacity: 0.4;
+}
+
+.SatisfactionSummary_container__3szWc.SatisfactionSummary_disabled__1cXZq .SatisfactionSummary_detail__asZRS .SatisfactionSummary_score__eQR1j {
+    color: rgb(205, 211, 216);
+}
+
+.SatisfactionTabs_container__28MSj {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgb(233, 236, 239);
+    background-color: rgb(249, 250, 251);
+    color: rgb(134, 142, 150);
+}
+
+.SatisfactionTabs_container__28MSj .SatisfactionTabs_item__2jVmh {
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.SatisfactionTabs_container__28MSj .SatisfactionTabs_item__2jVmh .SatisfactionTabs_count__2zWkx {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.SatisfactionTabs_container__28MSj .SatisfactionTabs_item__2jVmh.SatisfactionTabs_active__1PFX2 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 37, 41);
+    font-weight: 700;
+    outline: rgb(233, 236, 239) solid 1px;
+}
+
+.SatisfactionTabs_container__28MSj .SatisfactionTabs_item__2jVmh.SatisfactionTabs_active__1PFX2 .SatisfactionTabs_count__2zWkx {
+    color: rgb(0, 178, 178);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1097px) {
+    .SatisfactionTabs_container__28MSj {
+        height: 48px;
+    }
+
+    .SatisfactionTabs_container__28MSj .SatisfactionTabs_item__2jVmh {
+        font-size: 16px;
+    }
+
+    .SatisfactionTabs_container__28MSj .SatisfactionTabs_item__2jVmh .SatisfactionTabs_count__2zWkx {
+        font-size: 14px;
+    }
+}
+
+.SortingSelect_sortingSelect__2zf4r {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+}
+
+.SortingSelect_sortingSelect__2zf4r .SortingSelect_select__21qNT {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.SortingSelect_sortingSelect__2zf4r .SortingSelect_icon__28ocK {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 16px;
+}
+
+.RatingCommentFilter_container__2t3wf {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.RatingCommentFilter_container__2t3wf .RatingCommentFilter_imageFilter__1vJng .RatingCommentFilter_imageFilterText__CBz5r {
+    cursor: pointer;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.RatingCommentFilter_container__2t3wf .RatingCommentFilter_selectBox__2Gt7m i {
+    margin-left: 7px;
+}
+
+.RatingCommentFilter_container__2t3wf .RatingCommentFilter_selectBox__2Gt7m select {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1097px) {
+    .RatingCommentFilter_container__2t3wf .RatingCommentFilter_selectBox__2Gt7m select {
+        line-height: 20px;
+        letter-spacing: 0px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.SatisfactionNoReview_container__1xzoJ {
+    padding: 8px 0px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1097px) {
+    .SatisfactionNoReview_container__1xzoJ {
+        padding: 55px 0px 8px;
+    }
+}
+
+.SatisfactionNoReview_container__1xzoJ .SatisfactionNoReview_icon__1sDe_ {
+    display: inline-block;
+    position: relative;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABQBAMAAABbkW52AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURUdwTNPW3s7U2c3U2s7U2s3T2Ons7wQxmCkAAAAFdFJOUwAe1pJZqmluVwAAAH9JREFUSMftlrsNhUAMBBdBAYhPAQSXvxeQQwkc2hbovwRMiuTbECQ88ciytMkA6BMd8h9GzQI/E1JJyOLAdWJkXuEwJG6YOcGl424vLL7Q2BNk6wsVaQIKfE047jwgxBaxxXu3eE6ILUII4X2CCAyZKDJyZCbJ0JKppmNP5OIJ0SrzczLvQKgAAAAASUVORK5CYII=") center 100% / 32px 40px no-repeat;
+    width: 32px;
+    height: 40px;
+}
+
+.SatisfactionNoReview_container__1xzoJ p.SatisfactionNoReview_text__N24Pm {
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 12px;
+    color: rgb(173, 181, 189);
+}
+
+@media screen and (min-width: 1097px) {
+    .SatisfactionNoReview_container__1xzoJ p.SatisfactionNoReview_text__N24Pm {
+        padding-top: 8px;
+    }
+}
+
+.StoreSatisfactionCard_container__3TDTr {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_divider__Zh8Se {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(242, 244, 246);
+}
+
+.StoreSatisfactionCard_container__3TDTr:first-child .StoreSatisfactionCard_divider__Zh8Se {
+    margin-bottom: 16px;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV {
+    width: calc(100% - 48px);
+    margin-left: 8px;
+    position: relative;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_titleArea__1S3zk {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_titleArea__1S3zk .StoreSatisfactionCard_nickName__16JEX {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(33, 37, 41);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_titleArea__1S3zk .StoreSatisfactionCard_sideArea__jGJma {
+    display: flex;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_titleArea__1S3zk .StoreSatisfactionCard_sideArea__jGJma .StoreSatisfactionCard_dateArea__2nNep {
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_titleArea__1S3zk .StoreSatisfactionCard_sideArea__jGJma .StoreSatisfactionCard_dateArea__2nNep .StoreSatisfactionCard_updatedDate__1PmK7 {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(173, 181, 189);
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_titleArea__1S3zk .StoreSatisfactionCard_sideArea__jGJma .StoreSatisfactionCard_dateArea__2nNep .StoreSatisfactionCard_modified__AVlVZ {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(173, 181, 189);
+    margin-left: 4px;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_titleArea__1S3zk .StoreSatisfactionCard_sideArea__jGJma .StoreSatisfactionCard_moreWrap__3zYcp {
+    cursor: pointer;
+    margin: 4px 0px 4px 12px;
+    font-size: 12px;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_ratingArea__2RBSe {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_ratingArea__2RBSe .StoreSatisfactionCard_badges__2Q8Zp {
+    display: inline-flex;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_ratingArea__2RBSe .StoreSatisfactionCard_badges__2Q8Zp .StoreSatisfactionCard_badge__35nf6 {
+    line-height: 14px;
+    letter-spacing: 0px;
+    font-size: 10px;
+    height: 18px;
+    padding: 2px 6px;
+    border-radius: 9px;
+    background-color: rgb(240, 244, 255);
+    color: rgb(51, 100, 255);
+    font-weight: 500;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_header__156AH .StoreSatisfactionCard_rightPanel__XCjpV .StoreSatisfactionCard_ratingArea__2RBSe .StoreSatisfactionCard_badges__2Q8Zp .StoreSatisfactionCard_badge__35nf6:nth-child(n+1) {
+    margin-left: 4px;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_content__2izM4 {
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_content__2izM4 .StoreSatisfactionCard_thumbnails__3fwAc {
+    margin-top: 16px;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_content__2izM4 .StoreSatisfactionCard_comment__2d9RM {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_content__2izM4 .StoreSatisfactionCard_options__P2kzd {
+    margin-top: 12px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_content__2izM4 .StoreSatisfactionCard_options__P2kzd .StoreSatisfactionCard_option__2pjHI {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    color: rgb(173, 181, 189);
+    font-weight: 500;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (min-width: 1097px) {
+    .StoreSatisfactionCard_container__3TDTr .StoreSatisfactionCard_divider__Zh8Se {
+        margin-bottom: 32px;
+    }
+}
+
+.StoreSatisfactionList_container__9dez2 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.StoreReport_container__R-jF6 {
+    display: flex;
+    margin-top: 32px;
+    border-radius: 8px;
+    background: rgb(249, 250, 251);
+    padding: 8px 16px;
+    color: rgb(73, 80, 87);
+}
+
+.StoreReport_container__R-jF6 .StoreReport_title__2LbBR {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    flex-basis: 76%;
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguOTU1NTEgMTkuNzEzNUM4Ljg5OTYzIDE5LjcxMDEgOC44NDUyNyAxOS42OTc0IDguNzk0NTIgMTkuNjc2M0w4Ljc1MjMxIDE5LjY1NTlMOC41NjU2OCAxOS41OTA4QzguMzQ0MzEgMTkuNTA5MSA4LjA2NjU3IDE5LjM5MjkgNy43NDQ5NiAxOS4yMzgyTDcuNjE4NzYgMTkuMTc2NUM2LjY5OTQzIDE4LjcyMTIgNS43ODExOSAxOC4xMTY4IDQuOTIzNTYgMTcuMzQyN0MxLjk4MTAyIDE0LjY4NjggMC40NzM0NTcgMTAuNzYwNiAxLjE2NzA0IDUuMzc3NjhDMS4xOTc4NCA1LjEzODYxIDEuMzkzNjIgNC45NTg1NSAxLjYyODY4IDQuOTQyNTVMMS43MTU0OCA0Ljk0MjkyQzIuMDM1MzYgNC45NTEyOSAyLjQ5MTY3IDQuOTI2NzYgMy4wMzQ1MSA0Ljg0MDUzQzMuODcwNTUgNC43MDc3MyA0LjY5NzEyIDQuNDU3MTUgNS40NjU1MyA0LjA2MjRDNi43MzMyNyAzLjQxMTE0IDcuNzM1NDUgMi40MjQ2MyA4LjM4ODQ2IDEuMDM0NzVMOC40ODYyIDAuODE1OTgyTDguNDkyMTggMC43NjU4NzZDOC41Mjg4NCAwLjU1NTQ1NCA4LjY5OTg3IDAuMzc5NjQ3IDguOTI3NTEgMC4zNTM4NDVMOC45ODU1NiAwLjM1MDU4Nkg5LjAxNDQ0QzkuMjcwNjkgMC4zNTA1ODYgOS40NjgxIDAuNTM3OTE5IDkuNTA3ODIgMC43NjU4NzZMOS41MTQxMSAwLjgxNjk4Mkw5LjUyODM1IDAuODUxMTcxQzEwLjE1MDggMi4yNzYyNiAxMS4xMjYxIDMuMjk1IDEyLjM3MDYgMy45NzU1NUwxMi41MzQ1IDQuMDYyNEMxMy4zMDI5IDQuNDU3MTUgMTQuMTI5NCA0LjcwNzczIDE0Ljk2NTUgNC44NDA1M0MxNS40NTQgNC45MTgxMyAxNS44NzI1IDQuOTQ1NzcgMTYuMTg0NSA0Ljk0NDQyTDE2LjMxMTggNC45NDIwM0MxNi41NzI2IDQuOTI4OTUgMTYuNzk5NiA1LjExODY5IDE2LjgzMyA1LjM3NzY4QzE3LjUyNjUgMTAuNzYwNiAxNi4wMTkgMTQuNjg2OCAxMy4wNzY0IDE3LjM0MjdDMTIuMjE4OCAxOC4xMTY4IDExLjMwMDYgMTguNzIxMiAxMC4zODEyIDE5LjE3NjVDOS45NTc3OCAxOS4zODYzIDkuNjAyOCAxOS41MzI2IDkuMzQyMDUgMTkuNjI0MUw5LjI0NiAxOS42NTY0TDkuMjA1NDggMTkuNjc2M0M5LjE1NDczIDE5LjY5NzQgOS4xMDAzNyAxOS43MTAxIDkuMDQ0NDkgMTkuNzEzNUg4Ljk1NTUxWk04Ljk5OTkgMi4wMjU0Nkw4LjkzNzE4IDIuMTM0NTdDOC4xOTU4NyAzLjM4NTIyIDcuMTY2ODMgNC4zMTMwOCA1LjkyMjY2IDQuOTUyMjRDNS4wNTI3MSA1LjM5OTE1IDQuMTI2MDIgNS42ODAwOCAzLjE5MTQ1IDUuODI4NTNDMi44MjY3NyA1Ljg4NjQ2IDIuNDk0OTMgNS45MTk2MyAyLjIwNjIxIDUuOTM0NzZMMi4xMDgyMSA1LjkzODQ5TDIuMDk5MSA2LjAyMzA2QzEuNjEzOTcgMTAuNzIgMi45MzYgMTQuMTIxOCA1LjQ1NTI1IDE2LjQ3MjlMNS41OTM4NSAxNi42MDAxQzYuMzc5MzYgMTcuMzA5IDcuMjIxNjEgMTcuODYzNCA4LjA2Mjc5IDE4LjI4MDFDOC4yOTcyNCAxOC4zOTYyIDguNTE3NjggMTguNDk0NSA4LjcyMDMzIDE4LjU3NjFMOC45NTY2NyAxOC42NjY5TDguOTk5OSAxOC42ODJMOS4xMzEwNyAxOC42MzQyQzkuMzcyOTggMTguNTQyNiA5LjY0NDE1IDE4LjQyNTIgOS45MzcyMSAxOC4yODAxQzEwLjc3ODQgMTcuODYzNCAxMS42MjA2IDE3LjMwOSAxMi40MDYyIDE2LjYwMDFDMTQuOTY4NyAxNC4yODcxIDE2LjM0NTIgMTAuOTI3OSAxNS45MjU2IDYuMjc3OThMMTUuODkxNiA1LjkzODQ5TDE1Ljc5MzggNS45MzQ3NkMxNS41NTMyIDUuOTIyMTUgMTUuMjgyNiA1Ljg5NzAyIDE0Ljk4ODEgNS44NTU0N0wxNC44MDg2IDUuODI4NTNDMTMuODc0IDUuNjgwMDggMTIuOTQ3MyA1LjM5OTE1IDEyLjA3NzMgNC45NTIyNEMxMC44MzMyIDQuMzEzMDggOS44MDQxMyAzLjM4NTIyIDkuMDYyODIgMi4xMzQ1N0w4Ljk5OTkgMi4wMjU0NloiIGZpbGw9IiM4NjhFOTYiLz4KPHBhdGggZD0iTTkgMi4wMjUzOUw4LjkzNzI4IDIuMTM0NUM4LjE5NTk2IDMuMzg1MTYgNy4xNjY5MyA0LjMxMzAyIDUuOTIyNzYgNC45NTIxOEM1LjA1MjgxIDUuMzk5MDkgNC4xMjYxMiA1LjY4MDAyIDMuMTkxNTUgNS44Mjg0N0MyLjgyNjg3IDUuODg2NCAyLjQ5NTAzIDUuOTE5NTcgMi4yMDYzMSA1LjkzNDdMMi4xMDgzIDUuOTM4NDJMMi4wOTkyIDYuMDIzQzEuNjE0MDcgMTAuNzE5OSAyLjkzNjEgMTQuMTIxNyA1LjQ1NTM1IDE2LjQ3MjhMNS41OTM5NSAxNi42QzYuMzc5NDYgMTcuMzA5IDcuMjIxNzEgMTcuODYzNCA4LjA2Mjg5IDE4LjI4QzguMjk3MzQgMTguMzk2MSA4LjUxNzc4IDE4LjQ5NDUgOC43MjA0MyAxOC41NzYxTDguOTU2NzcgMTguNjY2OEw5IDE4LjY4MTlMOS4xMzExNyAxOC42MzQyQzkuMzczMDggMTguNTQyNSA5LjY0NDI1IDE4LjQyNTIgOS45MzczMSAxOC4yOEMxMC43Nzg1IDE3Ljg2MzQgMTEuNjIwNyAxNy4zMDkgMTIuNDA2MyAxNi42QzE0Ljk2ODggMTQuMjg3MSAxNi4zNDUzIDEwLjkyNzggMTUuOTI1NyA2LjI3NzkxTDE1Ljg5MTcgNS45Mzg0MkwxNS43OTM5IDUuOTM0N0MxNS41NTMzIDUuOTIyMDkgMTUuMjgyNyA1Ljg5Njk1IDE0Ljk4ODIgNS44NTU0TDE0LjgwODcgNS44Mjg0N0MxMy44NzQxIDUuNjgwMDIgMTIuOTQ3NCA1LjM5OTA5IDEyLjA3NzQgNC45NTIxOEMxMC44MzMzIDQuMzEzMDIgOS44MDQyMyAzLjM4NTE2IDkuMDYyOTIgMi4xMzQ1TDkgMi4wMjUzOVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOC45NDkyMiAzLjA3ODEyQzguOTQ5MjIgMy4wNzgxMiAxMC4zOTMyIDcuMTI4ODUgMTUuMTE5MSA2Ljk5MzgyQzE1LjExOTEgNi45OTM4MiAxNS41MTI5IDE1LjUwMDMgOC45NDkyMiAxNy41MjU3VjMuMDc4MTJaIiBmaWxsPSIjRERFMkU2Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTEuNzgxNyA4LjU1NzYyTDEwLjgxNTUgMTEuNjcyNkw5Ljg0MTc5IDguNTU3NjJIOC44ODk5QzguNjEzNzcgOC41NTc2MiA4LjM2ODc4IDguNzQzNSA4LjI4MjggOS4wMTgxM0w3LjQ1MzExIDExLjY3MjZMNi40ODY5NiA4LjU1NzYySDUuMTMyODFMNi43MjI2NCAxMy41NTk2SDguMDgxODlMOS4xMzQ0NSAxMC4zNTA4TDEwLjE4NjkgMTMuNTU5NkgxMS41NDYxTDEzLjEzNTkgOC41NTc2MkgxMS43ODE3WiIgZmlsbD0iIzg2OEU5NiIvPgo8L3N2Zz4K") 0px 0px / 18px 20px no-repeat;
+    padding-left: 24px;
+}
+
+.StoreReport_container__R-jF6 .StoreReport_buttonArea__1PHh0 {
+    flex-basis: 24%;
+    text-align: right;
+}
+
+.StoreReport_container__R-jF6 .StoreReport_buttonArea__1PHh0 button {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(73, 80, 87);
+}
+
+.StoreReport_container__R-jF6 .StoreReport_buttonArea__1PHh0 button .StoreReport_chevronRightIcon__2lf3X {
+    display: inline-block;
+    margin-top: -0.03em;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+}
+
+@media screen and (min-width: 1097px) {
+    .StoreReport_container__R-jF6 {
+        margin-top: 40px;
+    }
+}
+
+.StoreReport_modalButtonColor__1Z1Vf {
+    background-color: rgb(242, 244, 246);
+}
+
+.StoreReport_modalContainer__3AV_f {
+    word-break: keep-all;
+    color: rgb(73, 80, 87);
+    overflow-wrap: break-word;
+}
+
+.StoreReport_modalContainer__3AV_f svg {
+    display: inline-block;
+}
+
+.StoreReport_modalContainer__3AV_f .StoreReport_message__3B7Wr {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.StoreReport_modalContainer__3AV_f .StoreReport_message__3B7Wr span {
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.StoreReport_modalContainer__3AV_f .StoreReport_message__3B7Wr span .StoreReport_mailOIcon__2h1DB {
+    margin-right: 9px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.StoreReport_modalContainer__3AV_f .StoreReport_modalSubTitle__1sAuE {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.StoreReport_modalContainer__3AV_f ul {
+    margin-bottom: 24px;
+}
+
+.StoreReport_modalContainer__3AV_f ul li > span {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.StoreReport_modalContainer__3AV_f ul li > span em {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(173, 181, 189);
+}
+
+.StoreReport_modalContainer__3AV_f ul li p {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 16px 4px;
+}
+
+.StoreReport_modalContainer__3AV_f ul + .StoreReport_message__3B7Wr {
+    margin-bottom: 4px;
+}
+
+.StoreReport_modalContainer__3AV_f .StoreReport_button__6uCG0 {
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    text-decoration: underline;
+    color: rgb(73, 80, 87);
+    font-weight: 400;
+}
+
+.StoreReport_modalContainer__3AV_f .StoreReport_button__6uCG0 .StoreReport_openLinkIcon__fEwT_ {
+    margin-left: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.DetailSatisfactionReportContent_container__3abXz {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    margin-top: 16px;
+    border-radius: 8px;
+    background: rgb(249, 250, 251);
+    padding: 16px;
+    color: rgb(73, 80, 87);
+}
+
+.DetailSatisfactionReportContent_container__3abXz .DetailSatisfactionReportContent_title__K39HT {
+    flex-basis: 76%;
+    background-size: 16px 16px;
+    padding-left: 21px;
+}
+
+.DetailSatisfactionReportContent_container__3abXz .DetailSatisfactionReportContent_buttonArea__1L7iy {
+    flex-basis: 24%;
+    text-align: right;
+}
+
+.DetailSatisfactionReportContent_container__3abXz .DetailSatisfactionReportContent_buttonArea__1L7iy button {
+    color: rgb(73, 80, 87);
+}
+
+.DetailSatisfactionReportContent_container__3abXz .DetailSatisfactionReportContent_buttonArea__1L7iy button .DetailSatisfactionReportContent_chevronRightIcon__1XqD2 {
+    display: inline-block;
+    margin-top: -0.03em;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+}
+
+@media screen and (min-width: 1097px) {
+    .DetailSatisfactionReportContent_container__3abXz {
+        margin-top: 40px;
+        padding: 16px 24px;
+    }
+
+    .DetailSatisfactionReportContent_container__3abXz .DetailSatisfactionReportContent_title__K39HT {
+        padding-left: 25px;
+    }
+}
+
+.DetailSatisfactionReportContent_modalButtonColor__2Tbo_ {
+    background-color: rgb(242, 244, 246);
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB {
+    word-break: keep-all;
+    color: rgb(73, 80, 87);
+    overflow-wrap: break-word;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB svg {
+    display: inline-block;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB .DetailSatisfactionReportContent_message__w4xV1 {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB .DetailSatisfactionReportContent_message__w4xV1 span {
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB .DetailSatisfactionReportContent_message__w4xV1 span .DetailSatisfactionReportContent_mailOIcon__3tFxK {
+    margin-right: 9px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB h5 {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB ol {
+    margin-bottom: 24px;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB ol li > span {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB ol li > span var {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(173, 181, 189);
+    font-style: normal;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB ol li p {
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 16px 4px;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB ol + .DetailSatisfactionReportContent_message__w4xV1 {
+    margin-bottom: 4px;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB .DetailSatisfactionReportContent_button__65ZTD {
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    text-decoration: underline;
+    color: rgb(73, 80, 87);
+    font-weight: 400;
+}
+
+.DetailSatisfactionReportContent_modalContainer__2IdvB .DetailSatisfactionReportContent_button__65ZTD .DetailSatisfactionReportContent_openLinkIcon__PHVJ8 {
+    margin-left: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.DetailSatisfactionReportModal_modal__1j4-O[class*="ReportModal"] {
+    padding: 0px;
+}
+
+.DetailSatisfactionReportModal_container__3O1Se {
+    display: flex;
+    flex-direction: column;
+}
+
+.DetailSatisfactionReportModal_container__3O1Se .DetailSatisfactionReportModal_divider__3NPme {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(242, 244, 246);
+}
+
+@font-face {
+    font-family: Pretendard;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://static.wadiz.kr/main/media/Pretendard-Regular.subset.0e570172.woff2") format("woff2"), url("https://static.wadiz.kr/main/media/Pretendard-Regular.subset.37eb0832.woff") format("woff"), url("https://static.wadiz.kr/main/media/Pretendard-Regular.subset.6e2a808d.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard;
+    font-weight: 500;
+    font-style: normal;
+    src: url("https://static.wadiz.kr/main/media/Pretendard-Medium.subset.201c9877.woff2") format("woff2"), url("https://static.wadiz.kr/main/media/Pretendard-Medium.subset.99418246.woff") format("woff"), url("https://static.wadiz.kr/main/media/Pretendard-Medium.subset.2277be81.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Pretendard;
+    font-weight: 700;
+    font-style: normal;
+    src: url("https://static.wadiz.kr/main/media/Pretendard-Bold.subset.0cc59186.woff2") format("woff2"), url("https://static.wadiz.kr/main/media/Pretendard-Bold.subset.9c1a831b.woff") format("woff"), url("https://static.wadiz.kr/main/media/Pretendard-Bold.subset.c8e804a9.otf") format("opentype");
+    font-display: swap;
+}
+
+.DetailSatisfaction_container__t8Ax_ {
+    width: 100%;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_summaryWrap__1ieLY {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_summaryWrap__1ieLY .DetailSatisfaction_summarySplitter__2oiTx {
+    width: 1px;
+    height: 90px;
+    margin: 32px 32px 0px;
+    background-color: rgb(237, 238, 240);
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_highScoreRateWrap__3spvO {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_highScoreRateWrap__3spvO .DetailSatisfaction_highScoreRate__8F0ZB {
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 375px;
+    padding: 16px 0px;
+    border-radius: 4px;
+    background-color: rgb(249, 250, 251);
+    color: rgb(33, 37, 41);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_highScoreRateWrap__3spvO .DetailSatisfaction_highScoreRate__8F0ZB .DetailSatisfaction_highlight__3wQZM {
+    color: rgb(0, 178, 178);
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_highScoreRateWrap__3spvO .DetailSatisfaction_highScoreRate__8F0ZB .DetailSatisfaction_tooltip__2ShKF {
+    line-height: 18px;
+    font-size: 14px;
+    display: inline-flex;
+    position: relative;
+    top: -2px;
+    right: 0px;
+    align-items: center;
+    color: rgb(52, 58, 64);
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_highScoreRateWrap__3spvO .DetailSatisfaction_highScoreRate__8F0ZB .DetailSatisfaction_tooltip__2ShKF svg:first-child {
+    color: rgb(173, 181, 189);
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_tabsWrap__1YI1J {
+    margin-top: 40px;
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_satisfactionList__3XBBJ {
+    margin-top: 32px;
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_messageBox__1Jf8H {
+    margin: 0px 16px;
+}
+
+@media screen and (min-width: 769px) {
+    .DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_messageBox__1Jf8H {
+        margin: 0px;
+    }
+}
+
+.DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_sidebarButton__B0jTI {
+    position: sticky;
+    top: 70px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 1097px) {
+    .DetailSatisfaction_container__t8Ax_ .DetailSatisfaction_tabsWrap__1YI1J {
+        margin-top: 56px;
+    }
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의게시판목록</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin-QnA.css">
+
+</head>
+<body>
+<main>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="/image/Logo.png" class="admin-logo">
+        </div>
+        <nav class="nav">
+            <ul class="side-menu">
+                <li class="site-shortcut">
+                    <input type="button" class="side-menu-button" value="사이트 바로가기"
+                           onclick="location.href='../mypage/main.html'">
+                </li>
+                <div class="management-title">사이트 관리</div>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="메인페이지"
+                           onclick="location.href='admin-main.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="회원목록"
+                           onclick="location.href='admin-member.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="프로그램목록"
+                           onclick="location.href='admin-program.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="상품관리"
+                           onclick="location.href='admin-product.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="신고내역"
+                           onclick="location.href='admin-report.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="문의게시판목록"
+                           onclick="location.href='admin-QnA.html'">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="management-main-content">
+        <div class="management-top">
+            <div class="page-name">문의게시판목록</div>
+        </div>
+
+        <div class="QnA-main">
+
+            <div class="QnA-box">
+
+                <div class="search-container">
+                    <select>
+                        <option value="content">내용</option>
+                        <option value="name">이름</option>
+                        <option value="id">ID</option>
+                    </select> <input type="text" name="search" id="search"/>
+                    <input
+                            type="image" class="search"
+                            src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png"/>
+                    <input type="button" class="delete" id="delete-button" name="delete" value="삭제"/>
+
+                </div>
+
+                <div class="table-content">
+                    <table>
+                        <tr>
+                            <th><input type="checkbox"  class="all"/></th>
+                            <th>문의 번호</th>
+                            <th>이름</th>
+                            <th>ID</th>
+                            <th>문의 내용</th>
+                            <th>작성일</th>
+                            <th>진행 상황</th>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+                        <tr onclick="location.href='admin-QnA-detail.html'">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="table-row" class="term"/>
+                            </td>
+                            <td>1</td>
+                            <td>오명근</td>
+                            <td>omg0223</td>
+                            <td></td>
+                            <td>2023-05-17</td>
+                            <td>답변대기중</td>
+                        </tr>
+
+                    </table>
+                    <p class="pages">
+                        < 1 2 3 4 5 >
+                    </p>
+
+                </div>
+            </div>
+
+    </section>
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../static/js/admin/checkbox.js"></script>
+<script src="../../static/js/admin/delete-button.js"></script>
+</script>
+</html>

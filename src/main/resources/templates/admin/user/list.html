@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleag.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원목록</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin-member.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/modal.css">
+</head>
+<body>
+<main>
+    <div class="modal">
+        <div class="warn-modal">
+            <div id="content-wrap"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="/image/Logo.png" class="admin-logo">
+        </div>
+        <nav class="nav">
+            <ul class="side-menu">
+                <li class="site-shortcut">
+                    <input type="button" class="side-menu-button" value="사이트 바로가기"
+                           onclick="location.href='/join/mainpage'">
+                </li>
+                <div class="management-title">사이트 관리</div>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="메인페이지"
+                           onclick="location.href='/admin/main'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="회원 목록"
+                           onclick="location.href='/admin/user/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="프로그램 목록"
+                           onclick="location.href='/admin/program/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="상품 목록"
+                           onclick="location.href='/admin/item/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="도란게시판 목록"
+                           onclick="location.href='/admin/doranBoard/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="문의게시판 목록"
+                           onclick="location.href='/admin/inquiry/list'">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="management-main-content">
+
+        <div class="management-top">
+            <div class="page-name">회원목록</div>
+        </div>
+        <div class="member-main">
+
+            <div class="member-box">
+
+                <div class="member-search-container">
+                    <form th:action="@{/admin/user/list}">
+                        <select name="type">
+                            <option value="n" th:selected="${search.type eq 'n'}">이름</option>
+                            <option value="i" th:selected="${search.type eq 'i'}">ID</option>
+                            <option value="s" th:selected="${search.type eq 's'}">계정상태</option>
+                        </select>
+                        <input type="text" name="keyword" id="search" th:value="${search.keyword}"/>
+                        <button type="submit" class="search"></button>
+                    </form>
+                    <div>
+                        <input type="button" onclick="deleteLectures(getSelectedLectureIds())" class="member-modify" value="수정"/>
+                        <input type="button" onclick="ChangeUser(getUserIds())" class="member-delete" id="delete-button" value="전환"/>
+                    </div>
+
+                </div>
+                <div class="table-content">
+                    <table>
+                        <tr>
+                            <thead>
+                            <th><input type="checkbox" id="allSelect" class="all"/></th>
+                            <th>회원 번호</th>
+                            <th>이름</th>
+                            <th>ID</th>
+                            <th>주소</th>
+                            <th>전화번호</th>
+                            <th>계정상태</th>
+                            </thead>
+                            <tbody>
+                            <!--                                </tr>-->
+                            <!--                                <tr th:each="users : ${users}">-->
+                            <!--                                    <td>-->
+                            <!--                                        <input type="checkbox" name="table-row" class="term"/>-->
+                            <!--                                    </td>-->
+                            <!--                                    <td th:text="${users.id]"></td>-->
+                            <!--                                    <td th:text="${users.name}"></td>-->
+                            <!--                                    <td th:text="${users.identification}"></td>-->
+                            <!--                                    <td th:text="${users.address}"></td>-->
+                            <!--                                    <td th:text="${users.phoneNumber}"></td>-->
+                            <!--                                    <td th:text="${users.status}"></td>-->
+                            <!--                                </tr>-->
+                            </tbody>
+                    </table>
+                    <div id="paging-wrap">
+                        <a th:if="${pagination.prev}" th:href="${pagination.startPage - 1}" class="change-page paging paging-move">
+                            <img src="/image/prev.png" width="15px"></a>
+                        <th:block th:each="page:${#numbers.sequence(pagination.startPage, pagination.endPage)}">
+                            <a th:if="${page eq pagination.page}" class="paging paging-checked" th:text="${page}"></a>
+                            <a th:unless="${page eq pagination.page}" th:href="${page}" class="change-page paging" th:text="${page}"></a>
+                        </th:block>
+                        <a th:if="${pagination.next}" th:href="${pagination.endPage + 1}" class="change-page paging paging-move">
+                            <img src="/image/next.png" width="15px"></a>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/js/admin/checkbox.js"></script>
+<script th:inline="javascript">
+    let users = [[${users}]];
+    console.log(users);
+    let pagination = [[${pagination}]];
+</script>
+<script src="/js/admin/userlist.js"></script>
+<script src="/js/admin/userpaging.js"></script>
+<script src="/js/admin/modal.js"></script>
+<script src="/js/admin/allcheckbox.js"></script>
+
+
+</html>

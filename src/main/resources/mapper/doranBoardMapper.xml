@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tikkeul.app.mapper.DoranBoardMapper">
+    <!--도란도란 최보근-->
+    <sql id="search">
+        <if test="search.type != null and !search.type.equals('')">
+            <trim prefix="AND (" prefixOverrides="OR" suffix=")">
+                <foreach item="type" collection="search.types">
+                    <trim prefix="OR">
+                        <choose>
+                            <when test="type == 't'.toString()">
+                                TITLE LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type == 'c'.toString()">
+                                CONTENT LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type == 'w'.toString()">
+                                NAME LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                        </choose>
+                    </trim>
+                </foreach>
+            </trim>
+        </if>
+    </sql>
+
+
+    <select id="selectAll" resultType="DoranBoardDTO">
+        SELECT D.ID, TITLE, CONTENT, VIEWCOUNT, REGISTERDATE, UPDATEDATE, USER_ID, NAME
+        FROM (
+                SELECT ROWNUM R, D.ID, D.TITLE, D.CONTENT, D.VIEWCOUNT, D.REGISTERDATE, D.UPDATEDATE, D.USER_ID ,D.ITEM_ID, NAME
+                FROM
+                (
+                    SELECT D.ID, D.TITLE, D.CONTENT, D.VIEWCOUNT, D.REGISTERDATE, D.UPDATEDATE, D.USER_ID, D.ITEM_ID,NAME
+                    FROM DORANBOARD D JOIN USERS U
+                    ON U.ID = D.USER_ID
+                    ORDER BY
+                    D.ID
+                    DESC
+                ) D
+        <![CDATA[
+            WHERE ROWNUM <= #{pagination.page} * #{pagination.rowCount}
+        ]]>
+        <include refid="search"/>
+        <![CDATA[
+        ) D WHERE R > (#{pagination.page} - 1) * #{pagination.rowCount}
+        ]]>
+    </select>
+
+
+<!--    <select id="selectAll" resultType="DoranBoardDTO">-->
+<!--        SELECT D.ID, D.TITLE, D.CONTENT, D.VIEWCOUNT, D.REGISTERDATE, D.UPDATEDATE, D.USER_ID, D.NAME-->
+<!--        FROM (-->
+<!--                SELECT ROWNUM R, D.ID, D.TITLE, D.CONTENT, D.VIEWCOUNT, D.REGISTERDATE, D.UPDATEDATE, D.USER_ID, D.ITEM_ID, U.NAME-->
+<!--                FROM DORANBOARD D JOIN USERS U ON U.ID = D.USER_ID-->
+<!--        <![CDATA[-->
+<!--        WHERE U.ID = D.USER_ID AND ROWNUM <= #{pagination.page} * #{pagination.rowCount}-->
+<!--        ]]>-->
+<!--        <include refid="search"/>-->
+<!--        <![CDATA[-->
+<!--        ORDER BY D.ID DESC-->
+<!--        ) D WHERE R > (#{pagination.page} - 1) * #{pagination.rowCount}-->
+<!--        ]]>-->
+<!--    </select>-->
+
+    <!--게시글 추가 -->
+    <insert id="insert">
+        <selectKey keyProperty="id" order="BEFORE" resultType="long">
+            SELECT SEQ_DORANBOARD.NEXTVAL FROM DUAL
+        </selectKey>
+        INSERT INTO DORANBOARD(ID, TITLE, CONTENT, VIEWCOUNT,USER_ID, ITEM_ID)
+        VALUES(#{id}, #{title}, #{content}, 0,#{userId}, 1)
+    </insert>
+
+    <!--게시글 조회-->
+    <select id="select" resultType="DoranBoardDTO">
+        SELECT D.ID, TITLE, CONTENT, VIEWCOUNT, REGISTERDATE, UPDATEDATE, USER_ID, ITEM_ID,U.NAME
+        FROM USERS U JOIN DORANBOARD D
+        ON U.ID = D.USER_ID  AND D.ID = #{id}
+    </select>
+
+    <!--게시글 수정-->
+    <update id="update">
+        UPDATE DORANBOARD
+        SET TITLE = #{title}, CONTENT =  #{content}, UPDATEDATE = SYSDATE
+        WHERE ID = #{id}
+      </update>
+
+    <!--게시글 삭제-->
+    <delete id="delete">
+        DELETE FROM DORANBOARD WHERE ID = #{id}
+    </delete>
+
+    <select id="selectCountOfPost" resultType="_int">
+        SELECT COUNT(D.ID)
+        FROM DORANBOARD D
+        JOIN USERS U ON U.ID = D.USER_ID
+        JOIN ITEM I ON I.ID = D.ITEM_ID
+    </select>
+</mapper>

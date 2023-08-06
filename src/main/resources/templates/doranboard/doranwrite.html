@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleag.org">
+<head>
+    <meta charset="UTF-8">
+    <title>doranwrite</title>
+    <link rel="stylesheet" href="/css/dorandoran/doranwrite1.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranwrite2.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranwrite3.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranwrite4.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranwrite5.css">
+    <!--   <link rel="stylesheet" href="/css/dorandoran/doranwrite.css">-->
+
+</head>
+<body>
+<main role="main">
+
+    <section class="breadcrumbs__block">
+        <div class="container">
+            <nav class="sub-nav">
+                <ol class="breadcrumbs">
+
+                    <li title="도움말 센터">
+
+                        <a th:href="@{/doranboard/doranboard}">도란도란</a>
+
+                    </li>
+
+                    <li title="문의 등록">
+
+                        글쓰기
+
+                    </li>
+
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <h1 class="new-request-title">
+            글 작성하기
+            <span class="follow-up-hint">
+
+                    </span>
+        </h1>
+        <div id="main-content" class="form">
+            <form th:action="@{/doranboard/doranwrite}" id="new_request" class="request-form" data-form=""
+                  data-form-type="request"
+                  accept-charset="UTF-8" method="post" name="writeForm">
+                <input name="utf8" type="hidden" value="✓" autocomplete="off">
+                <div class="form-field select optional request_ticket_form_id">
+                    <label for="request_issue_type_select">게시판 선택</label>
+                    <select name="request[ticket_form_id]" id="request_issue_type_select" autofocus="autofocus">
+                        <option data-url="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=6459260738329"
+                                selected="selected" value="6459260738329">씨앗
+                        </option>
+                        <option data-url="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=6476663180185"
+                                value="6476663180185">새싹
+                        </option>
+                        <option data-url="https://helpcenter.wadiz.kr/hc/ko/requests/new?ticket_form_id=6476688975513"
+                                value="6476688975513">열매
+                        </option>
+                    </select>
+                </div>
+                <div class="form-field string required request_anonymous_requester_email"><label
+                        for="request_anonymous_requester_email">제목</label>
+                    <input  name="title" id="request_anonymous_requester_email"
+                            aria-required="true">
+                </div>
+                <div class="form-field text  required  request_description">
+                    <label id="request_description_label">내용</label>
+                    <textarea name="content" id="request_description_mimetype" aria-required="true" autocomplete="off"
+                              aria-describedby="request_description_hint"
+                              aria-labelledby="request_description_label"></textarea>
+
+                </div>
+
+                <script data-conditional-fields="[{&quot;parent_field_id&quot;:&quot;request_custom_fields_6760067845017&quot;,&quot;value&quot;:&quot;펀딩서포터&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_6477991452185&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_6478000522777&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_6477667492761&quot;,&quot;is_required&quot;:false},{&quot;id&quot;:&quot;request_custom_fields_8959218269849&quot;,&quot;is_required&quot;:true}]},{&quot;parent_field_id&quot;:&quot;request_custom_fields_6760067845017&quot;,&quot;value&quot;:&quot;펀딩메이커&quot;,&quot;child_fields&quot;:[{&quot;id&quot;:&quot;request_custom_fields_6824920025625&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_6477991452185&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_6478000522777&quot;,&quot;is_required&quot;:true},{&quot;id&quot;:&quot;request_custom_fields_6824739764505&quot;,&quot;is_required&quot;:false}]}]"></script>
+
+                <div class="form-field">
+                    <label for="request-attachments">
+                        첨부 파일<span class="optional">(선택 사항)</span>
+                    </label>
+                    <div id="upload-dropzone" class="upload-dropzone">
+                        <input type="file" multiple="true" id="request-attachments" class="upload" >
+                        <span>
+                        <a>파일 추가</a> 또는 파일을 여기로 드래그
+                        </span>
+                    </div>
+                    <div style="text-align: center;">
+                        <img id="tool" src="" class="thumbnail" width="300" height="300" style="display: none; max-width:100%; height: auto; margin-top: 34px;">
+                    </div>
+
+                    <div id="upload-error" class="notification notification-error notification-inline"
+                         style="display: none;">
+                        <span data-upload-error-message=""></span>
+                    </div>
+
+
+                    <ul id="request-attachments-pool" class="upload-pool" data-template="upload-template"></ul>
+
+                    <script type="text/html" id="upload-template">
+                        <li class="upload-item" data-upload-item>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false"
+                                 viewBox="0 0 12 12" aria-hidden="true" class="upload-item-icon">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                      d="M2.5 4v4.5c0 1.7 1.3 3 3 3s3-1.3 3-3v-6c0-1.1-.9-2-2-2s-2 .9-2 2v6c0 .6.4 1 1 1s1-.4 1-1V4"/>
+                            </svg>
+                            <div aria-hidden="true" class="upload-item-icon-spacer"></div>
+                            <a class="upload-link" target="_blank" data-upload-link></a>
+                            <p class="upload-path" data-upload-path></p>
+                            <p class="upload-path" data-upload-size></p>
+                            <p data-upload-issue class="notification notification-alert notification-inline"
+                               aria-hidden="true"></p>
+                            <span class="upload-remove" aria-label="첨부 파일 제거" role="button" tabindex="0"
+                                  data-upload-remove>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false"
+                                 viewBox="0 0 12 12"
+                                 class="upload-item-icon">
+                              <path stroke="currentColor" stroke-linecap="round" d="M3 9l6-6m0 6L3 3"/>
+                            </svg>
+                          </span>
+                            <div class="upload-progress" data-upload-progress></div>
+                            <input type="hidden">
+                        </li>
+                    </script>
+                </div>
+                <footer><input type="submit" name="commit" value="제출"></footer>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+<script src="/js/doranboard/write.js"></script>
+<script th:inline="javascript">
+    let memberId = [[${session.id}]];
+    let write = [[${doranboard}]];
+
+    console.log(memberId);
+</script>
+</html>

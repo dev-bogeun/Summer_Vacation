@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품관리</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin-product-registration.css">
+</head>
+<body>
+<main>
+    <div class="sidebar sidebar-main">
+        <div class="logo-container">
+            <img src="/image/Logo.png" class="admin-logo">
+        </div>
+        <nav class="nav">
+            <ul class="side-menu">
+                <li class="site-shortcut">
+                    <input type="button" class="side-menu-button" value="사이트 바로가기"
+                           onclick="location.href='../mypage/main.html'">
+                </li>
+                <div class="management-title">사이트 관리</div>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="메인페이지"
+                           onclick="location.href='admin-main.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="회원목록"
+                           onclick="location.href='admin-member.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="프로그램목록"
+                           onclick="location.href='admin-program.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="상품관리"
+                           onclick="location.href='admin-product.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="신고내역"
+                           onclick="location.href='admin-report.html'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="문의게시판목록"
+                           onclick="location.href='admin-QnA.html'">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <section class="management-main-content">
+        <div class="management-top">
+            <div class="page-name">상품등록</div>
+        </div>
+
+        <div class="registration-main">
+
+            <div class="registration-box">
+
+                <table class="table-contents">
+                    <tr>
+                        <td>상품번호</td>
+                        <td>
+                            <input type="text" name="" value="" class="registration-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>수량</td>
+                        <td>
+                            <input type="text" name="" value="" class="registration-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>레벨</td>
+                        <td>
+                            <input type="text" name="" value="" class="registration-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>상품명</td>
+                        <td>
+                            <input type="text" name="" value="" class="registration-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>가격</td>
+                        <td>
+                            <input type="text" name="" value="" class="registration-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>썸네일 이미지</td>
+                        <td>
+                            <form method="post" enctype="multipart/form-data">
+                                <input type="file" id="chooseFile" name="chooseFile" accept="image/*"
+                                       onchange="loadFile(this)">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>상세 이미지</td>
+                        <td>
+                            <form method="post" enctype="multipart/form-data">
+                                <input type="file" id="chooseFile" name="chooseFile" accept="image/*"
+                                       onchange="loadFile(this)">
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+                <div class="button-box">
+                    <input type="button" name="report-list" value="상품목록" onClick="location.href='admin-product.html'"/>
+                    <input type="button" name="report-answer" value="등록완료" onclick="'"/>
+                </div>
+
+
+            </div>
+
+    </section>
+</main>
+</body>
+</html>

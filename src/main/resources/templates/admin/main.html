@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleag.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin-main.css">
+</head>
+<body>
+
+<main>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="/image/Logo.png" class="admin-logo">
+        </div>
+        <nav class="nav">
+            <ul class="side-menu">
+                <li class="site-shortcut">
+                    <input type="button" class="side-menu-button" value="사이트 바로가기"
+                           onclick="location.href='/join/mainpage'">
+                </li>
+                <div class="management-title">사이트 관리</div>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="메인페이지"
+                           onclick="location.href='/admin/main'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="회원 목록"
+                           onclick="location.href='/admin/user/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="프로그램 목록"
+                           onclick="location.href='/admin/program/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="상품 목록"
+                           onclick="location.href='/admin/item/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="도란게시판 목록"
+                           onclick="location.href='/admin/doranBoard/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="문의게시판 목록"
+                           onclick="location.href='/admin/inquiry/list'">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="management-main-content">
+        <div class="management-top">
+            <div class="page-name">관리자 페이지</div>
+        </div>
+        <div class="management-big-box">
+            <div class="management-medium-box">
+                <div class="management-boxes" th:onclick="|location.href='@{/admin/user/list}'|">
+                    <div>
+                        <p>최근 가입한 회원</p>
+
+                        <input type="image"
+                               src="https://cdn1.iconfinder.com/data/icons/essentials-pack/96/add_create_new_plus_positive-512.png"
+                               class="see-details"
+                               onClick="location.href='admin-member.html'"/>
+                    </div>
+                    <div>
+                        <table class="management-table-main userstable">
+                            <thead>
+                            <tr>
+                                <th>이름</th>
+                                <th>ID</th>
+                                <th>가입일</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+                <div class="management-boxes" th:onclick="|location.href='@{/admin/program/list}'|">
+                    <div>
+                        <p>프로그램 목록</p>
+                        <input type="image"
+                               src="https://cdn1.iconfinder.com/data/icons/essentials-pack/96/add_create_new_plus_positive-512.png"
+                               class="see-details"
+                               onClick="location.href='admin-program.html'"/>
+                    </div>
+                    <div>
+                        <table class="management-table-main programtable">
+                            <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>레벨</th>
+                                <th>목표 금액</th>
+                                <th>일일 금액</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+            <div class="management-medium-box" th:onclick="|location.href='@{/admin/item/list}'|">
+                <div class="management-boxes">
+                    <div>
+                        <p>상품관리</p>
+
+                        <input type="image"
+                               src="https://cdn1.iconfinder.com/data/icons/essentials-pack/96/add_create_new_plus_positive-512.png"
+                               class="see-details"
+                               onClick="location.href='admin-product.html'"/>
+                    </div>
+                    <div>
+                        <table class="management-table-main itemtable">
+                            <thead>
+                            <tr>
+                                <th>상품번호</th>
+                                <th>수량</th>
+                                <th>레벨</th>
+                                <th>상품명</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="management-boxes" th:onclick="|location.href='@{/admin/inquiry/list}'|">
+                    <div>
+                        <p>문의게시판목록</p>
+
+                        <input type="image"
+                               src="https://cdn1.iconfinder.com/data/icons/essentials-pack/96/add_create_new_plus_positive-512.png"
+                               class="see-details"
+                               onClick="location.href='admin-QnA.html'"/>
+                    </div>
+                    <div>
+                        <table class="management-table-main maininquiry">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>문의내역</th>
+                                <th>작성일</th>
+                                <th>진행상황</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script th:inline="javascript">
+    let mainusers = [[${mainusers}]];
+    console.log(mainusers);
+    let mainsavinglevels = [[${mainsavinglevels}]];
+    console.log(mainsavinglevels);
+    let mainitems = [[${mainitems}]];
+    console.log(mainitems);
+    let maininquirys = [[${maininquirys}]];
+    console.log(maininquirys);
+</script>
+<script src="/js/admin/mainuser.js"></script>
+<script src="/js/admin/mainprogram.js"></script>
+<script src="/js/admin/mainitem.js"></script>
+<script src="/js/admin/maininquiry.js"></script>
+
+</html>

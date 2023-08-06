@@ -1,0 +1,427 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: inherit;
+    color: inherit;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    font-weight: 400;
+}
+body, button, input, select, textarea {
+    font-family: 'Pretendard';
+}
+li, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+a, button {
+    outline: none;
+}
+body, button, input, select, textarea {
+    font-family: Pretendard;
+}
+
+#page-container{
+    transform-origin: 50% 0;
+    transition-property: opacity,transform;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+
+.web-header{
+    transition: top .25s;
+    width: 100%;
+}
+
+.web-header .web-header-simple {
+    display: block;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+}
+.web-header .header-wrapper .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100%;
+}
+.web-header .web-header-simple .wadiz-logo {
+    display: inline-block;
+    position: static;
+}
+.web-header .wadiz-logo {
+    margin: 0;
+    line-height: 22px;
+    font-size: 32px;
+}
+
+.web-header .wadiz-logo>a {
+    display: block;
+    padding: 11px 0 13px;
+}
+.web-header .wadiz-logo>a svg {
+    max-width: none;
+}
+.web-header .web-header-simple .header-container .gnb-large {
+    position: absolute;
+    right: 80px;
+    left: auto;
+    color: #495057;
+}
+
+
+.web-header .gnb-large {
+    bottom: 0;
+    z-index: 1;
+    padding: 0;
+    list-style: none;
+    vertical-align: top;
+}
+.web-header .gnb-large li {
+    float: left;
+    width: auto;
+    margin-bottom: 15px;
+}
+.web-header .web-header-simple .header-container .gnb-large .item {
+    margin-left: 16px;
+    padding: 0;
+}
+
+.web-header .gnb-large .item {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #495057;
+}
+.web-header .web-header-simple .header-container .gnb-large .item span {
+    font-size: 15px;
+    font-weight: 400;
+}
+.web-header .gnb-large .item span {
+    display: block;
+}
+
+.web-header .header-wrapper {
+        position: relative;
+        border-bottom: 1px solid #f2f4f6;
+        padding: 0;
+        height: 56px;
+        text-align: left;
+    }
+
+.account-intro-login .user-sign-container {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+    padding-right: 0;
+    width: 100%;
+    max-width: 400px;
+}
+.wz.container.form-container {
+    margin: 0 auto;
+    padding-bottom: 96px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.wz.container {
+    position: relative;
+    padding: 40px 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.wz.container .wz.text.display2 {
+    margin-bottom: 12px;
+    color: rgba(0, 0, 0, 0.84);
+}
+h1.wz.text.display2, h2.wz.text.display2, h3.wz.text.display2, h4.wz.text.display2, h5.wz.text.display2, h6.wz.text.display2, p.wz.text.display2, span.wz.text.display2, em.wz.text.display2, label.wz.text.display2 {
+    line-height: 44px;
+    letter-spacing: -0.7px;
+    font-size: 36px;
+}
+
+.user-sign-container .wz.container.form-container.form-login .wz.form {
+    margin-top: 24px;
+}
+
+.user-sign-container .wz.container.form-container.form-login .wz.form .field {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.wz.form .field {
+    margin: 24px 0;
+}
+
+.wz.input {
+    display: block;
+    position: relative;
+    font-size: 17px;
+}
+.wz.input > input {
+    height: 48px;
+    line-height: 1.2em;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.wz.input > input, .wz.input > textarea {
+    transition-property: border-color, height, padding-right, color;
+    transition-duration: 0.2s, 0s;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: #fff;
+    padding: 0 0.9411764706em;
+    width: 100%;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.84);
+}
+
+.wz.input > input, .wz.input > textarea, .wz.input.icon > i.icon {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+.user-sign-container .wz.container.form-container.form-login .login-action .forgot {
+    color: #adb5bd;
+    float: right;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+.account-intro-login .wz.text {
+    color: #0000008a;
+}
+
+.wz.container.form-container .wz.form .submit-button {
+    margin: 32px 0 0;
+}
+
+.wz.button.primary {
+    background-color: #6B95FC;
+    color: #fff;
+}
+
+.wz.button.primary, .wz.button.primary-outline {
+    border-color: #6B95FC;
+}
+
+.wz.button.block, .wz.button.fluid {
+    width: 100%;
+    text-align: center;
+}
+
+.wz.button {
+    padding-top: 0.07em;
+    text-decoration: none;
+}
+
+.wz.button {
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 1.4117647059em;
+    height: 48px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 17px;
+    font-weight: 400;
+    box-sizing: border-box !important;
+    -webkit-appearance: none;
+}
+
+.Button_button__3MO4n.Button_lg__D7OVb {
+    padding: 9px 24px;
+    line-height: 1.75;
+    font-size: 16px;
+}
+
+.Button_button__3MO4n.Button_block__3npc4 {
+    width: 100%;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.SNSButtonList_spacer__38ac5 {
+    margin-top: 12px;
+}
+
+.SNSButtonList_kakaoButton__2lTDs {
+    border-color: #fee500;
+    background-color: #fee500;
+}
+.Button_button__3MO4n {
+    position: relative;
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #495057;
+    font-weight: 500;
+    box-sizing: border-box!important;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.Button_button__3MO4n span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.SNSButtonList_kakaoIcon__1s6gw {
+    position: absolute;
+    left: 16px;
+    width: 22px;
+    height: 22px;
+}
+
+.withIcon_icon__2KxnX {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+}
+
+.SNSButtonList_naverButton__1rzZ_ {
+    border-color: #00d337;
+    background-color: #00d337;
+    color: #fff;
+}
+
+.SNSButtonList_appleIcon__e42Y0, .SNSButtonList_googleIcon__1DgBx, .SNSButtonList_naverIcon__3TjPM, .SNSButtonList_kakaoIcon__1s6gw {
+    position: absolute;
+    left: 16px;
+    width: 22px;
+    height: 22px;
+}
+
+.SNSButtonList_circularButtonWrapper__hZCKN {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+.Button_button__3MO4n.Button_circular__2OlVa {
+    border-radius: 999em;
+}
+.SNSButtonList_circularButton__2WsLD {
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px;
+}
+
+.SNSButtonList_googleButton__1u6eV {
+    border-color: #ced4da;
+    background-color: #fff;
+}
+.Button_button__3MO4n {
+    position: relative;
+    transition-property: background-color, border-color, color, opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 500;
+    box-sizing: border-box!important;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+.SNSButtonList_circularButton__2WsLD span {
+    vertical-align: text-top;
+}
+
+.user-sign-container .wz.container.form-container.form-login .bottom-message {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 12px;
+    box-shadow: none;
+    background: none;
+    height: 56px;
+    line-height: 56px;
+}
+.user-sign-container .wz.container.form-container.form-login .bottom-message {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.user-sign-container .wz.container.form-container.form-login .bottom-message a {
+    margin-left: 6px;
+    text-decoration: underline;
+    color: #6B95FC;
+}
+
+#pemail, #ppassword {
+    font-size: 13px;
+    color: #f66;
+}
+
+.wz.input > input:hover {
+    border-color: #6B95FC;
+}
+
+.wz .primary:hover {
+    border-color: #4874e1;
+    background-color: #4874e1;
+}
+
+input::placeholder {
+    color: #adb5bd;
+}
+
+.SNSButtonList_naverButton__1rzZ_:hover {
+    color: black;
+    border-color: #868e96;
+}
+
+.SNSButtonList_kakaoButton__2lTDs:hover {
+    border-color: #868e96;
+}
+#naver_id_login{
+    display:none;
+}

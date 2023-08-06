@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="/css/Join/login.css">
+    <link rel="stylesheet" href="/css/modal/modal.css">
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+</head>
+    <body>
+        <div id="page-container">
+            <div class="web-header">
+                <header class="header-wrapper web-header-simple">
+                    <div class="header-container">
+                        <h1 class="wadiz-logo">
+                            <a th:href="@{/join/mainpage}">
+                                <img src="/image/Logo.png">
+                            </a>
+                        </h1>
+                    </div>
+                </header>
+            </div>
+            <main class="account-intro-login">
+                <div class="user-sign-container">
+                    <div class="wz container form-container form-login">
+                        <h2 class="wz text display2">로그인</h2>
+                        <form  method="post" th:action="@{/join/login}" name="login" class="wz form" th:object="${userVO}">
+                            <div class="field">
+                                <div id="emailwrap" class="wz input">
+                                    <input th:field="*{identification}" method="post" type="email" id="email" class="input-text" placeholder="이메일 입력" required>
+                                    <p id="pemail"></p>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="wz input">
+                                    <input th:field="*{password}" type="password" id="password" class="input-text" maxlength="20" placeholder="비밀번호 입력">
+                                    <p id="ppassword"></p>
+                                </div>
+                            </div>
+                            <div class="login-action">
+                                <p class="forgot">
+                                    <a class="wz text" href="/join/findid" data-event="iam.signin.goto.forgot">로그인 정보를 잊으셨나요?</a>
+                                </p>
+                            </div>
+                            <button type="button" id="btnLogin" class="wz button primary block submit-button" onclick="send()">로그인</button>
+                        </form>
+                        <div>
+                            <button class="Button_button__3MO4n Button_lg__D7OVb Button_block__3npc4 SNSButtonList_kakaoButton__2lTDs SNSButtonList_spacer__38ac5" type="button" onclick="location.href='https://kauth.kakao.com/oauth/authorize?client_id=98ad659e9ee57a8f915dfab301a25608&redirect_uri=http://localhost:10000/kakao/login&response_type=code' ">
+                                <span>
+                                    <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__2KxnX SNSButtonList_kakaoIcon__1s6gw" aria-hidden="true">
+                                        <path d="M16 4.64c-6.96 0-12.64 4.48-12.64 10.08 0 3.52 2.32 6.64 5.76 8.48l-.96 4.96 5.44-3.6 2.4.16c6.96 0 12.64-4.48 12.64-10.08S22.96 4.56 16 4.64z"></path>
+                                    </svg>
+                                    카카오로 시작하기
+                                </span>
+                            </button>
+                            <button class="Button_button__3MO4n Button_lg__D7OVb Button_block__3npc4 SNSButtonList_naverButton__1rzZ_ SNSButtonList_spacer__38ac5" onclick="location.href='https://nid.naver.com/oauth2.0/authorize?response_type=token&client_id=ny2peuJ25fyfAu4Z7mI9&redirect_uri=http%3A%2F%2Flocalhost%3A10000%2Flogin%2Foauth2%2Fcode%2Fnaver&state=6d1726f6-864f-457c-a722-58f04da57f8d'">
+                                <span>
+                                    <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__2KxnX SNSButtonList_naverIcon__3TjPM" aria-hidden="true">
+                                        <path d="M19.52 5.76v10.32L12.48 5.76H4.8v20.48h7.68V15.92l7.12 10.32h7.6V5.76z"></path>
+                                    </svg>
+                                    네이버로 시작하기
+                                </span>
+
+                            </button>
+                            <div id="naver_id_login"></div>
+                            <div class="bottom-message">
+                                <p>아직 티끌 계정이 없나요?
+                                    <a th:href="@{/join/join}">회원가입</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="modal">
+            <div class="warn-modal">
+                <div id="content-wrap"></div>
+            </div>
+        </div>
+    </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/js/Join/Login.js"></script>
+<script src="/js/modal/modal.js"></script>
+<script th:inline="javascript">
+    let check = [[${login}]];
+    if(check){
+        showWarnModal("<span>아이디 또는 비밀번호를</span><span>확인해주세요.</span>");
+    }
+
+</script>
+<script type="text/javascript">
+    var naver_id_login = new naver_id_login("ny2peuJ25fyfAu4Z7mI9", "http://localhost:10000/login/oauth2/code/naver");
+    var state = naver_id_login.getUniqState();
+    naver_id_login.setButton("white", 2,40);
+    naver_id_login.setDomain(".service.com");
+    naver_id_login.setState(state);
+    naver_id_login.init_naver_id_login();
+</script>
+<!-- 네이버아디디로로그인 Callback페이지 처리 Script -->
+</html>

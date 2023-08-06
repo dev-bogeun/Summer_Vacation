@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tikkeul.app.mapper.AdminMapper">
+    <sql id="search">
+        <if test="search.type != null and !search.type.equals('')">
+            <trim prefix="AND(" prefixOverrides="OR" suffix=")">
+                <foreach item="type" collection="search.types">
+                    <trim prefix="OR">
+                        <choose>
+                            <when test="type=='c'.toString()">
+                                INQUIRE_CONTENT LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='n'.toString()">
+                                NAME LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='i'.toString()">
+                                IDENTIFICATION LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                        </choose>
+                    </trim>
+                </foreach>
+            </trim>
+        </if>
+    </sql>
+
+    <!--도란보드 검색-->
+    <sql id="searchdoranboard">
+        <if test="search.type != null and !search.type.equals('')">
+            <trim prefix="AND(" prefixOverrides="OR" suffix=")">
+                <foreach item="type" collection="search.types">
+                    <trim prefix="OR">
+                        <choose>
+                            <when test="type=='t'.toString()">
+                                TITLE LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='c'.toString()">
+                                CONTENT LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='i'.toString()">
+                                IDENTIFICATION LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                        </choose>
+                    </trim>
+                </foreach>
+            </trim>
+        </if>
+    </sql>
+    <!--상품 검색-->
+    <sql id="searchitem">
+        <if test="search.type != null and !search.type.equals('')">
+            <trim prefix="AND(" prefixOverrides="OR" suffix=")">
+                <foreach item="type" collection="search.types">
+                    <trim prefix="OR">
+                        <choose>
+                            <when test="type=='n'.toString()">
+                                NAME LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='i'.toString()">
+                                ID LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                        </choose>
+                    </trim>
+                </foreach>
+            </trim>
+        </if>
+    </sql>
+    <!--유저 검색-->
+    <sql id="searchuser">
+        <if test="search.type != null and !search.type.equals('')">
+            <trim prefix="AND(" prefixOverrides="OR" suffix=")">
+                <foreach item="type" collection="search.types">
+                    <trim prefix="OR">
+                        <choose>
+                            <when test="type=='n'.toString()">
+                                NAME LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='i'.toString()">
+                                IDENTIFICATION LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='s'.toString()">
+                                STATUS LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                        </choose>
+                    </trim>
+                </foreach>
+            </trim>
+        </if>
+    </sql>
+
+    <!--   괸리자 유저 조회 -->
+    <select id="adminSelectUserAll" resultType="userVO">
+        SELECT U.ID, NAME , IDENTIFICATION, ADDRESS, PHONENUMBER, STATUS
+        FROM
+        (
+        SELECT ROWNUM R, ID, NAME, IDENTIFICATION, ADDRESS, PHONENUMBER, STATUS
+        FROM USERS
+        <![CDATA[
+            WHERE ROWNUM <= #{pagination.page} * #{pagination.rowCount}
+            ]]>
+        <include refid="searchuser"/>
+        ORDER BY ID
+        )
+        <![CDATA[
+        U WHERE R > (#{pagination.page} - 1) * #{pagination.rowCount}
+        ]]>
+
+
+    </select>
+
+    <!-- 관리자 페이지 회원 총 수   -->
+    <select id="adminCountOfUser" resultType="_int">
+        SELECT COUNT(ID)
+        FROM USERS
+        <if test="search.type != null and !search.type.equals('')">
+            <trim prefix="WHERE(" prefixOverrides="OR" suffix=")">
+                <foreach item="type" collection="search.types">
+                    <trim prefix="OR">
+                        <choose>
+                            <when test="type=='n'.toString()">
+                                NAME LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='i'.toString()">
+                                IDENTIFICATION LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='s'.toString()">
+                                STATUS LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                        </choose>
+                    </trim>
+                </foreach>
+            </trim>
+        </if>
+    </select>
+
+    <!--관리자페이지에서 유저 수정-->
+    <update id="adminUpdateUser">
+        UPDATE USERS
+        SET STATUS = '휴먼 계정'
+        WHERE ID = #{id}
+    </update>
+
+    <!--  관리자페이지 유저 전환  -->
+    <update id="adminChangeUser">
+        UPDATE USERS
+        SET STATUS = '일반 계정'
+        WHERE ID = #{id}
+    </update>
+    <!--    관리자 문의 내역 전체 조회 -->
+    <select id="adminSelectInquiryAll" resultType="inquiryBoardDTO">
+        SELECT  I.ID, NAME, IDENTIFICATION, INQUIRE_CONTENT, INQUIRE_DATE, I.STATUS, I.USER_ID
+        FROM
+        (
+        SELECT ROWNUM R, I.ID, NAME, IDENTIFICATION, INQUIRE_CONTENT, INQUIRE_DATE, I.STATUS, I.USER_ID
+        FROM USERS U JOIN INQUIRE_BOARD I
+        <![CDATA[
+            ON I.USER_ID = U.ID AND ROWNUM <= #{pagination.page} * #{pagination.rowCount}
+    ]]>
+        <include refid="search"/>
+        <![CDATA[
+        ORDER BY I.ID
+    ) I WHERE R > (#{pagination.page} - 1) * #{pagination.rowCount}
+    ]]>
+    </select>
+
+
+    <!--  관리자 문의 내역 상세 조회-->
+    <select id="adminSelectInquiry" resultType="inquiryBoardDTO">
+        SELECT I.ID, U.NAME, U.IDENTIFICATION, I.INQUIRE_DATE, I.INQUIRE_CONTENT
+        FROM USERS U JOIN INQUIRE_BOARD I
+        ON I.USER_ID = U.ID AND I.ID = #{id}
+    </select>
+
+    <!--답변 여부 조회-->
+    <update id="adminUpdateInquiry">
+        UPDATE INQUIRE_BOARD
+        SET STATUS = '답변 완료'
+        WHERE ID = #{id}
+    </update>
+
+    <!--    관리자 문의 삭제-->
+
+    <delete id="adminDeleteInquiry">
+        DELETE FROM INQUIRE_BOARD WHERE ID = #{id}
+    </delete>
+
+    <!-- 관리자 문의 내역 답변 달기-->
+    <insert id="adminInsertAnswer">
+        INSERT INTO ANSWER(ID, ANSWER_CONTENT, INQUIRE_ID)
+        VALUES(SEQ_ANSWER.NEXTVAL, #{answerContent}, #{inquireId})
+    </insert>
+
+
+    <!--  관리자 문의 내역 총 개수  -->
+    <select id="selectCountOfInquiry" resultType="_int">
+        SELECT COUNT(I.ID)
+        FROM USERS U JOIN INQUIRE_BOARD I
+        ON I.USER_ID = U.ID
+        <include refid="search"/>
+    </select>
+
+    <!--   관리자 도란도란 게시판 목록 조회 -->
+    <select id="adminSelectDoranBoardAll" resultType="doranBoardDTO">
+        SELECT D.ID, IDENTIFICATION, TITLE, CONTENT, VIEWCOUNT, REGISTERDATE
+        FROM
+        (
+        SELECT ROWNUM R, D.ID, U.IDENTIFICATION, TITLE, CONTENT, VIEWCOUNT, REGISTERDATE
+        FROM USERS U JOIN DORANBOARD D
+        <![CDATA[
+        ON D.USER_ID = U.ID AND ROWNUM <= #{pagination.page} * #{pagination.rowCount}
+    ]]>
+        <include refid="searchdoranboard"/>
+        <![CDATA[
+        ORDER BY D.ID
+    ) D WHERE R > (#{pagination.page} - 1) * #{pagination.rowCount}
+    ]]>
+    </select>
+
+
+    <!--관리자 도란 게시판 목록 총 개수-->
+    <select id="selectCountOfDoranBoard" resultType="_int">
+        SELECT COUNT(D.ID)
+        FROM DORANBOARD D JOIN USERS U
+        ON U.ID = D.USER_ID
+        <include refid="searchdoranboard"/>
+    </select>
+
+
+    <!--   관리자 도란 게시판 상세 보기 -->
+    <select id="adminSelectDoranBoard" resultType="doranBoardDTO">
+        SELECT D.ID, U.IDENTIFICATION, TITLE, CONTENT, REGISTERDATE, VIEWCOUNT
+        FROM USERS U JOIN DORANBOARD D
+        ON U.ID = D.USER_ID AND D.ID = #{id}
+    </select>
+
+    <!-- 관리자 도란 게시판 삭제   -->
+    <delete id="adminDeleteDoranBoard">
+        DELETE FROM DORANBOARD WHERE ID = #{id}
+    </delete>
+
+    <!-- 관리자 제품 목록   -->
+    <select id="adminSelectItemAll" resultType="itemDTO">
+        SELECT I.ID, ORIGIN_STOCK, SAVINGLEVEL_ID, NAME, PRICE
+        FROM
+        (
+        SELECT ROWNUM R, ID, ORIGIN_STOCK, SAVINGLEVEL_ID, NAME, PRICE
+        FROM ITEM
+        <![CDATA[
+            WHERE ROWNUM <= #{pagination.page} * #{pagination.rowCount}
+        ]]>
+        <include refid="searchitem"/>
+        ORDER BY ID
+        )
+        <![CDATA[
+        I WHERE R > (#{pagination.page} - 1) * #{pagination.rowCount}
+        ]]>
+    </select>
+
+    <!-- 관리자 제품 목록 총 개수   -->
+    <select id="selectCountOfItem" resultType="_int">
+        SELECT COUNT(ID)
+        FROM ITEM
+        <if test="search.type != null and !search.type.equals('')">
+            <trim prefix="WHERE(" prefixOverrides="OR" suffix=")">
+                <foreach item="type" collection="search.types">
+                    <trim prefix="OR">
+                        <choose>
+                            <when test="type=='n'.toString()">
+                                NAME LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                            <when test="type=='i'.toString()">
+                                ID LIKE '%'||#{search.keyword}||'%'
+                            </when>
+                        </choose>
+                    </trim>
+                </foreach>
+            </trim>
+        </if>
+    </select>
+
+    <!--관리자 메인 페이지-->
+    <select id="adminMainSelectUser" resultType="userVO">
+        SELECT NAME, IDENTIFICATION, CREATEDDATE
+        FROM USERS
+        ORDER BY CREATEDDATE DESC
+    </select>
+
+    <select id="adminMainSelectSavingLevel" resultType="savingLevelVO">
+        SELECT ID, NAME, GOAL_MONEY, DAILY_MONEY
+        FROM SAVINGLEVEL
+    </select>
+
+    <select id="adminMainSelectItem" resultType="itemDTO">
+        SELECT I.ID, I.ORIGIN_STOCK, S.NAME as savingLevelName, I.NAME
+        FROM SAVINGLEVEL S JOIN ITEM I
+        ON I.SAVINGLEVEL_ID = S.ID
+    </select>
+
+    <select id="adminMainSelectInquiry" resultType="inquiryBoardDTO">
+        SELECT U.IDENTIFICATION, I.INQUIRE_CONTENT, I.INQUIRE_DATE, I.STATUS
+        FROM USERS U JOIN INQUIRE_BOARD I
+        ON I.USER_ID = U.ID
+    </select>
+</mapper>

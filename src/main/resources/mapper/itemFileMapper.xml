@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tikkeul.app.mapper.ItemFileMapper">
+<!--    <select id="selectitemfile" resultType="ItemFileSavingLevelDTO">-->
+<!--        SELECT I.ID ITEM_ID, I.NAME ITEM_NAME, PRICE, CURRENT_STOCK, ORIGIN_STOCK, STATUS, BRAND, CATEGORY, REGISTERDATE, UPDATEDATE, SAVINGLEVEL_ID, F.ID FILE_ID, FILE_SIZE, ORIGIN_NAME, FILE_PATH, UUID FILE_UUID, FILE_TYPE, S.ID SAVINGLEVEL_ID, S.NAME SAVINGLEVELNAME, GOAL_MONEY, DAILY_MONEY-->
+<!--        FROM ITEM I JOIN ITEMFILE ITF ON I.ID=ITF.ITEM_ID JOIN FILES F ON F.ID = ITF.ID JOIN SAVINGLEVEL S ON S.ID = I.SAVINGLEVEL_ID-->
+<!--    </select>-->
+
+
+    <insert id="insertItem">
+        INSERT INTO ITEMFILE
+        (ID, ITEM_ID)
+        VALUES(#{id}, #{itemId})
+    </insert>
+</mapper>

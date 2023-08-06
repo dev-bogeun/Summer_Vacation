@@ -1,0 +1,990 @@
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+}
+
+html,
+body {
+    padding: 0;
+}
+#root {
+    background-color: white;
+    box-sizing: border-box;
+    font-family: NotoSansKR;
+}
+
+body {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+button > svg, button > p {
+    pointer-events: none;
+}
+
+div.MuiBox-root.css-1lh1jyd > div > hr:nth-child(2), div.MuiBox-root.css-1lh1jyd > div > div:nth-child(3) {
+    display: none;
+}
+
+div.MuiBox-root.css-1lh1jyd > p:nth-child(5) {
+    display: none;
+}
+
+.css-ldo4d5 {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.css-nh5bnw {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 1300px;
+    width: 1300px;
+}
+
+.css-1opn9x3 {
+    margin: 0px 0px 16px;
+    font-family: NotoSansKR;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 52px;
+    color: rgb(33, 37, 41);
+}
+
+.css-xjfrmp {
+    overflow: hidden;
+    min-height: 48px;
+    display: flex;
+}
+
+.css-1anid1y {
+    position: relative;
+    display: inline-block;
+    flex: 1 1 auto;
+    white-space: nowrap;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.css-k008qs {
+    display: flex;
+}
+
+.css-1anid1y {
+    white-space: nowrap;
+}
+
+.css-1bqb22h {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: NotoSansKR;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    max-width: 360px;
+    position: relative;
+    min-height: 48px;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0px;
+}
+
+.css-8y9zzg {
+    margin: 0px;
+    font-family: NotoSansKR;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+}
+
+.css-w0pj6f {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+
+.css-1bqb22h.Mui-selected {
+    color: #4874e1;
+}
+
+.css-eskagx {
+    margin: 0px;
+    font-family: NotoSansKR;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 16px;
+    color: #4874e1;
+}
+
+.css-mxlzig {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #4874e1;
+    height: 0px;
+}
+
+.css-old1by {
+    padding: 0px;
+}
+
+.css-1blc3e2 {
+    min-width: 292px;
+}
+
+.css-1w5ios0 {
+    min-width: 230px;
+}
+
+.css-70qvj9 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-1eif5ff {
+    text-align: start;
+}
+
+.css-1yhok3l {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.css-148fdm8 {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 0px;
+}
+
+.css-wiqwfh {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(33, 37, 41);
+    margin-left: 24px;
+}
+
+.css-1078xfp {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: rgb(33, 37, 41);
+    margin-left: 16px;
+}
+
+.css-lsblp0 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: rgb(33, 37, 41);
+}
+
+.css-10w96l {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px 0px 0px 24px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 0px;
+}
+
+.css-2q6tks {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    height: 16px;
+}
+
+.css-geek62 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.css-uyd12s {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(73, 80, 87);
+}
+
+.css-1qxmfv1 {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.css-hj3rcl {
+    background-color: rgb(242, 85, 85);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.css-15fzge {
+    margin-left: 4px;
+}
+
+.css-x368b0 {
+    background-color: rgb(238, 157, 61);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.css-d6o49q {
+    background-color: #4874e1;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.css-1ce186b {
+    background-color: rgb(65, 103, 217);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.css-18biwo {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-1oh1g4b {
+    background-color: rgb(141, 74, 225);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.css-ksdpwo {
+    margin-left: 40px;
+    height: 24px;
+    line-height: 0;
+}
+
+.css-rtwasj {
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-tdrz19 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(33, 37, 41);
+    margin-left: 6px;
+}
+
+.css-1xaekgw {
+    margin-top: 20px;
+}
+
+.css-131fpon {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(33, 37, 41);
+    border-top: 2px solid rgb(33, 37, 41);
+    border-bottom: 1px solid rgb(230, 234, 237);
+    display: flex;
+}
+
+.css-1krivpx {
+    flex: 1 1 1px;
+    -webkit-box-flex: 1;
+    padding: 10px 0px;
+    text-align: center;
+    color: rgb(255, 102, 102);
+}
+
+.css-1r79mm0 {
+    width: 1px;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: rgb(230, 234, 237);
+}
+
+.css-1j7k84j {
+    flex: 1 1 1px;
+    -webkit-box-flex: 1;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.css-tbu39m {
+    flex: 1 1 1px;
+    -webkit-box-flex: 1;
+    padding: 10px 0px;
+    text-align: center;
+    color: rgb(85, 124, 242);
+}
+
+.css-1jbe5pk {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(33, 37, 41);
+    border-bottom: 1px solid rgb(230, 234, 237);
+    display: flex;
+}
+
+.css-1oonxpb {
+    flex: 1 1 1px;
+    -webkit-box-flex: 1;
+}
+
+.css-tc0gpt {
+    min-height: 164px;
+    padding-top: 16px;
+    background-color: rgb(249, 250, 251);
+    cursor: pointer;
+}
+
+.css-9jz9d7 {
+    width: 32px;
+    height: 32px;
+    padding: 6px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px auto 12px;
+    border-radius: 50%;
+    color: rgb(173, 181, 189);
+}
+
+.css-vennll {
+    width: 1px;
+    height: 24px;
+    position: relative;
+}
+
+.css-m8wmaw {
+    background-color: transparent;
+    width: 1300px;
+    padding: 1px 8px;
+    position: absolute;
+    cursor: default;
+}
+
+.css-bgkfvb {
+    height: 22px;
+    background-color: rgb(231, 249, 249);
+    color: #4874e1;
+    border-radius: 11px;
+    padding-left: 12px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-1h2ruwl {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.css-1mvlj9y {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 3px 4px;
+}
+
+.css-vubbuv {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+}
+
+.css-1hiuhpa {
+    height: 22px;
+    background-color: rgb(255, 241, 241);
+    color: rgb(242, 85, 85);
+    border-radius: 11px;
+    padding-left: 12px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-ucwdk4 {
+    min-height: 164px;
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.css-lpcdan {
+    width: 32px;
+    height: 32px;
+    padding: 6px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px auto 12px;
+    border-radius: 50%;
+    color: rgb(33, 37, 41);
+}
+
+.css-1mthwg6 {
+    width: 1px;
+    height: 24px;
+}
+
+.css-1k9pbks {
+    width: 32px;
+    height: 32px;
+    padding: 6px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px auto 12px;
+    border-radius: 50%;
+    color: rgb(255, 102, 102);
+}
+
+.css-1irq5n2 {
+    width: 32px;
+    height: 32px;
+    padding: 6px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px auto 12px;
+    border-radius: 50%;
+    color: rgb(85, 124, 242);
+}
+
+.css-1tqfssg {
+    background-color: transparent;
+    width: 370.714px;
+    padding: 1px 8px;
+    position: absolute;
+    cursor: default;
+}
+
+.css-59hgkz {
+    background-color: transparent;
+    width: 184.857px;
+    padding: 1px 8px;
+    position: absolute;
+    cursor: default;
+}
+
+.css-1nkbxq3 {
+    background-color: transparent;
+    width: 742.429px;
+    padding: 1px 8px;
+    position: absolute;
+    cursor: default;
+}
+
+.css-qy5kay {
+    min-height: 164px;
+    padding-top: 16px;
+    border: 2px solid #4874e1;
+    cursor: pointer;
+}
+
+.css-k8penq {
+    width: 32px;
+    height: 32px;
+    padding: 6px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px auto 12px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    background-color: #4874e1;
+}
+
+.css-1l4w6pd {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.css-12w09e1 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+}
+
+.css-1fr9cog {
+    white-space: nowrap;
+}
+
+.css-ow7y2u {
+    padding: 0px;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgb(230, 234, 237);
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.css-h8ll1l {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.css-11g45qq {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.css-mdbjnq {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.css-17u6k3b {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px 43px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: NotoSansKR;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    min-width: 64px;
+    border-radius: 4px;
+    color: #4874e1;
+    transition: none 0s ease 0s;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.css-17n0ufa {
+    margin: 0px 7.5px 0px 0px;
+    font-family: NotoSansKR;
+    font-weight: 400;
+    color: rgb(33, 37, 41);
+}
+
+.css-13o7eu2 {
+    display: block;
+}
+
+.css-cs7apb {
+    display: flex;
+    padding: 0px;
+}
+
+.css-1mhvclz {
+    flex-flow: row wrap;
+    display: flex;
+    padding: 0px;
+}
+
+.css-1o40euz {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 2px 43px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: NotoSansKR;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    min-width: 64px;
+    border-radius: 4px;
+    color: #4874e1;
+    transition: none 0s ease 0s;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.css-h3oepk {
+    position: relative;
+    box-sizing: border-box;
+    width: 48px !important;
+}
+
+.css-zaxfpy {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: NotoSansKR;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    min-width: 64px;
+    border-radius: 4px;
+    color: #4874e1;
+    transition: none 0s ease 0s;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.css-ukmjeh {
+    background: rgb(255, 255, 255);
+}
+
+.css-8o1b75 {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: NotoSansKR;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    min-width: 64px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: #4874e1;
+    background-color: rgb(33, 37, 41);
+    border-radius: 30px;
+}
+
+.css-1dw5g2w {
+    margin: 0px 0px 0px 8px;
+    font-family: NotoSansKR;
+    line-height: 1.5;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.css-1ni2qm7 {
+    margin-left: 13px;
+}
+
+.css-xi606m {
+    text-align: center;
+}
+
+.css-1i1bx2g {
+    margin: 0px;
+    font-family: NotoSansKR;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(73, 80, 87);
+}
+
+.css-jkmjle {
+    margin: 3px 0px 0px;
+    font-family: NotoSansKR;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+    line-height: 26px;
+    text-align: center;
+}
+
+.css-taw0f7 {
+    flex-shrink: 0;
+    border-width: 0px thin 0px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    align-self: stretch;
+    margin: 3px 20px 0px;
+    height: 48px;
+}
+
+.css-1r7lepo {
+    margin: 8px 0px 0px;
+    font-family: NotoSansKR;
+    color: rgb(144, 148, 156);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+}
+
+.css-jmusfq {
+    margin: 24px 0px 0px;
+    font-family: NotoSansKR;
+    line-height: 1.5;
+    color: rgb(73, 80, 87);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.css-1fqpyuo {
+    margin: 8px 0px 0px;
+    font-family: NotoSansKR;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: rgb(73, 80, 87);
+}
+.css-1vekul3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.css-1ozfwd6 {
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-1apw4wz {
+    margin: 0px;
+    font-family: NotoSansKR;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 12px;
+    color: rgb(144, 148, 156);
+}
+
+.css-1ysmh82 {
+    flex-shrink: 0;
+    border-width: 0px thin 0px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    margin: 0px 10px;
+    height: 10px;
+}
+
+.css-jc8hnx {
+    flex-shrink: 0;
+    border-width: 0px thin 0px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    margin: 0px 10px;
+    height: 10px;
+}
+
+.css-1hw29i9{
+    margin-top: 12px;
+}
+
+.css-bpi3s1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.css-vlt1vv {
+    width: 120px;
+    text-align: center;
+}
+
+.css-1is8dfo {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-transform: none;
+    font-family: NotoSansKR;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    min-width: 64px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: #4874e1;
+}
+
+.css-h6f9l6 {
+    margin: 0px 0px 0px 8px;
+    font-family: NotoSansKR;
+    line-height: 1.5;
+    color: rgb(33, 37, 41);
+    font-size: 12px;
+    font-weight: 400;
+}

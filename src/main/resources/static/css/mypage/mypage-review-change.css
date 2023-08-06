@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+#wz-header .web-header-large {
+    display: block;
+}
+
+.web-header .web-header-simple {
+    display: block;
+    position: relative;
+    text-align: cdenter;
+}
+
+.web-header .header-wrapper {
+    position: relative;
+    border-bottom: 1px solid #f2f4f6;
+    padding: 0;
+    height: 56px;
+    text-align: left;
+}
+
+.web-header .header-wrapper {
+    position: relative;
+    top: 0;
+    z-index: 9998;
+    background-color: #fff;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+}
+
+.web-header .header-wrapper .header-container {
+    padding: 0 80px;
+}
+
+.web-header .header-wrapper .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1440px;
+    height: 100%;
+}
+
+.web-header .web-header-simple .wadiz-logo {
+    display: inline-block;
+    position: static;
+}
+
+.web-header .wadiz-logo {
+    position: static;
+}
+
+.web-header .wadiz-logo {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    margin: 0;
+    line-height: 22px;
+    font-size: 32px;
+}
+
+.web-header .wadiz-logo > a {
+    padding: 14px 0 18px;
+}
+
+.web-header .wadiz-logo .label {
+    display: block;
+    position: absolute;
+    left: -9999px;
+    visibility: none;
+    height: 1px;
+}
+
+.web-header .wadiz-logo > a svg {
+    max-width: none;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Pretendard';
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: NotoSansKR;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+사용자 에이전트 스타일시트
+body {
+    display: block;
+    margin: 8px;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+사용자 에이전트 스타일시트
+div {
+    display: block;
+}
+
+
+
+.align-items-center {
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-size-md {
+    font-size: 0.9375rem;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+ol, ul {
+    padding: 0 0 0 1.5rem;
+}
+
+ol, ul, dl {
+    margin: 0 0 1rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.breadcrumbs li {
+    color: #4A5568;
+}
+
+a {
+    color: rgba(0, 1, 1, 1);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 1.5rem;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+h1, .h1 {
+    font-size: 3.25rem;
+    font-weight: 500;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin: 1.5rem 0 1rem;
+    font-family: 'Noto Sans Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    color: rgba(8, 8, 8, 1);
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.font-size-md {
+    font-size: 0.9375rem;
+}
+
+.media-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.list-divider {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.row-lg > [class*="col"] {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.mt-6, .my-6 {
+    margin-top: 2rem;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.mb-6, .my-6 {
+    margin-bottom: 2rem;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+p {
+    margin-top: 4px;
+    margin-bottom: 3rem;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 34px 1%;
+    max-width: 865px;
+}
+.new-request-title {
+    font-weight: 600;
+}
+h1 {
+    font-size: 32px;
+    margin: 0.67em 0;
+}
+.form {
+    background-color: #efefef;
+    padding: 30px;
+    border-radius: 3px;
+}
+.request-form textarea {
+    min-height: 120px;
+}
+
+.form-field textarea {
+    vertical-align: middle;
+}
+.form footer {
+    margin-top: 0;
+    padding-top: 30px;
+    text-align: right;
+}
+input[type="submit"] {
+    width: auto;
+}
+.button-large, input[type="submit"] {
+    cursor: pointer;
+    background-color: #6B95FC;
+    border: 0;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.72;
+    min-width: 190px;
+    padding: 0 1.9286em;
+    width: 100%;
+}
+input:not([type="checkbox"]) {
+    outline: none;
+}
+.button-large, input[type="submit"] {
+    width: auto;
+}
+.new-request-title {
+    font-weight: 600;
+}
+h1 {
+    font-size: 32px;
+}
+.form-field ~ .form-field {
+    margin-top: 25px;
+}
+.form-field label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.upload-dropzone {
+    background-color: #fff;
+    border-radius: 3px;
+}
+.upload-dropzone {
+    border: 1px solid #ddd;
+    font-size: 12px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.upload-dropzone input[type=file] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.form-field input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+}
+input:not([type="checkbox"]) {
+    outline: none;
+}
+.upload-dropzone span {
+    color: #666;
+}
+
+.upload-dropzone span {
+    color: #d1d1d1;
+    display: inline-block;
+    line-height: 24px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

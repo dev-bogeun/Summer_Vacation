@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mytikkle</title>
+    <link rel="stylesheet" href="/css/mypage/mytikkle.css">
+    <link rel="stylesheet" href="/css/mypage/mytikkleMedia.css">
+    <link rel="stylesheet" href="/css/mypage/mytikkleSwiper.css">
+    <link rel="stylesheet" href="/css/mypage/mytikkleNavigation.css">
+    <link rel="stylesheet" href="/css/mypage/dalryuk.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui-grid/latest/tui-grid.css">
+</head>
+<body>
+<div class="MuiBox-root css-ldo4d5" data-gtm-vis-recent-on-screen-97083289_157="17887"
+     data-gtm-vis-first-on-screen-97083289_157="17887" data-gtm-vis-total-visible-time-97083289_157="2000"
+     data-gtm-vis-has-fired-97083289_157="1">
+    <div class="MuiBox-root css-nh5bnw" data-gtm-vis-recent-on-screen-97083289_157="17887"
+         data-gtm-vis-first-on-screen-97083289_157="17887" data-gtm-vis-total-visible-time-97083289_157="2000"
+         data-gtm-vis-has-fired-97083289_157="1"><p class="MuiTypography-root MuiTypography-body1 css-1opn9x3">
+        나의 티끌</p>
+
+    </div>
+</div>
+<div>
+    <!-- main/header.html -->
+    <div id="header" style="position: sticky; top: 0; z-index: 100"></div>
+
+    <div>
+        <div class="mypage-all-wrap">
+            <!-- user-header.html -->
+            <div id="mypage-header"></div>
+
+            <div class="mypage-content-wrap">
+                <!-- side-menu.html -->
+                <div id="side-menu"></div>
+
+                <div class="mypage-content-container">
+                    <div class="mypage-content-box">
+                        <section>
+                            <div class="diary-list-box">
+                                <div class="calendar-box">
+                                    <div style="display: flex">
+                                        <h3 class="calendar-year year">2023년</h3>
+                                        <h3 class="calendar-year month">5월</h3>
+                                    </div>
+                                    <div style="display: flex">
+                                        <div class="calendar-button-box">
+                                            <button type="button" class="btn btn-padding" id="today">
+                                                <p class="auto-flex">TODAY</p>
+                                            </button>
+                                        </div>
+                                        <div class="calendar-button-box">
+                                            <button type="button" id="calender-prev" class="btn">
+                            <span class="auto-flex">
+                              <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                              >
+                                <path
+                                        fill-rule="evenodd"
+                                        d="M15.5 5.5l-6 6.5 6 6.5L14 20l-7.5-8L14 4l1.5 1.5z"
+                                        fill="#1a1a1a"
+                                ></path>
+                              </svg>
+                            </span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" id="calender-next" class="btn">
+                            <span class="auto-flex">
+                              <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                              >
+                                <path
+                                        fill-rule="evenodd"
+                                        d="M8.5 18.5l6-6.5-6-6.5L10 4l7.5 8-7.5 8-1.5-1.5z"
+                                        fill="#1a1a1a"
+                                ></path>
+                              </svg>
+                            </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div id="calendar" style="height: 600px">
+                                        <div
+                                                class="toastui-calendar-layout toastui-calendar-month"
+                                                style="height: 100%; background-color: white"
+                                        >
+                                            <div
+                                                    data-testid="grid-header-month"
+                                                    class="toastui-calendar-day-names toastui-calendar-month"
+                                                    style="background-color: rgb(51, 102, 255)"
+                                            >
+                                                <div
+                                                        class="toastui-calendar-day-name-container"
+                                                        style="margin-left: 0px"
+                                                >
+                                                    <div
+                                                            class="toastui-calendar-day-name-item toastui-calendar-month"
+                                                            style="width: 14.2857%; left: 0%; border-left: none"
+                                                    >
+                                <span
+                                        class=""
+                                        data-testid="dayName-month-mon"
+                                        style="color: rgb(51, 51, 51)"
+                                ><div class="toastui-calendar-template-monthDayName">
+                                    Mon
+                                  </div></span
+                                >
+                                                    </div>
+                                                    <div
+                                                            class="toastui-calendar-day-name-item toastui-calendar-month"
+                                                            style="width: 14.2857%; left: 14.2857%; border-left: none"
+                                                    >
+                                <span
+                                        class=""
+                                        data-testid="dayName-month-tue"
+                                        style="color: rgb(51, 51, 51)"
+                                ><div class="toastui-calendar-template-monthDayName">
+                                    Tus
+                                  </div></span
+                                >
+                                                    </div>
+                                                    <div
+                                                            class="toastui-calendar-day-name-item toastui-calendar-month"
+                                                            style="width: 14.2857%; left: 28.5714%; border-left: none"
+                                                    >
+                                <span
+                                        class=""
+                                        data-testid="dayName-month-wed"
+                                        style="color: rgb(51, 51, 51)"
+                                ><div class="toastui-calendar-template-monthDayName">
+                                    Wen
+                                  </div></span
+                                >
+                                                    </div>
+                                                    <div
+                                                            class="toastui-calendar-day-name-item toastui-calendar-month"
+                                                            style="width: 14.2857%; left: 42.8571%; border-left: none"
+                                                    >
+                                <span
+                                        class=""
+                                        data-testid="dayName-month-thu"
+                                        style="color: rgb(51, 51, 51)"
+                                ><div class="toastui-calendar-template-monthDayName">
+                                    Thr
+                                  </div></span
+                                >
+                                                    </div>
+                                                    <div
+                                                            class="toastui-calendar-day-name-item toastui-calendar-month"
+                                                            style="width: 14.2857%; left: 57.1429%; border-left: none"
+                                                    >
+                                <span
+                                        class=""
+                                        data-testid="dayName-month-fri"
+                                        style="color: rgb(51, 51, 51)"
+                                ><div class="toastui-calendar-template-monthDayName">
+                                    Fri
+                                  </div></span
+                                >
+                                                    </div>
+                                                    <div
+                                                            class="toastui-calendar-day-name-item toastui-calendar-month"
+                                                            style="width: 14.2857%; left: 71.4286%; border-left: none"
+                                                    >
+                                <span
+                                        class="toastui-calendar-holiday-sat"
+                                        data-testid="dayName-month-sat"
+                                        style="color: rgb(51, 51, 51)"
+                                ><div class="toastui-calendar-template-monthDayName">
+                                    Sat
+                                  </div></span
+                                >
+                                                    </div>
+                                                    <div
+                                                            class="toastui-calendar-day-name-item toastui-calendar-month"
+                                                            style="width: 14.2857%; left: 85.7143%; border-left: none"
+                                                    >
+                                <span
+                                        class="toastui-calendar-holiday-sun"
+                                        data-testid="dayName-month-sun"
+                                        style="color: rgb(255, 64, 64)"
+                                ><div class="toastui-calendar-template-monthDayName">
+                                    Sun
+                                  </div></span
+                                >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="toastui-calendar-month-daygrid">
+                                                <div class="toastui-calendar-month-week-item" style="height: 20%">
+                                                    <div class="toastui-calendar-weekday">
+                                                        <div
+                                                                class="toastui-calendar-weekday-grid"
+                                                                style="border-top: 1px solid rgb(229, 229, 229)"
+                                                        >
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="width: 14.2857%; left: 0%; background-color: inherit"
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >1</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 14.2857%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >2</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 28.5714%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >3</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 42.8571%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >4</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 57.1429%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >5</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 71.4286%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >6</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 85.7143%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 64, 64)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >7</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 64, 64)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="toastui-calendar-weekday-events"></div>
+                                                        <div class="toastui-calendar-accumulated-grid-selection"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="toastui-calendar-month-week-item" style="height: 20%">
+                                                    <div class="toastui-calendar-weekday">
+                                                        <div
+                                                                class="toastui-calendar-weekday-grid"
+                                                                style="border-top: 1px solid rgb(229, 229, 229)"
+                                                        >
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="width: 14.2857%; left: 0%; background-color: inherit"
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >8</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 14.2857%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >9</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 28.5714%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >10</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 42.8571%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >11</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 57.1429%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >12</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 71.4286%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >13</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 85.7143%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 64, 64)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >14</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 64, 64)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="toastui-calendar-weekday-events"></div>
+                                                        <div class="toastui-calendar-accumulated-grid-selection"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="toastui-calendar-month-week-item" style="height: 20%">
+                                                    <div class="toastui-calendar-weekday">
+                                                        <div
+                                                                class="toastui-calendar-weekday-grid"
+                                                                style="border-top: 1px solid rgb(229, 229, 229)"
+                                                        >
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="width: 14.2857%; left: 0%; background-color: inherit"
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >15</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 14.2857%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 255, 255)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-weekday-grid-date-decorator toastui-calendar-template-monthGridHeader"
+                                      >16</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 255, 255)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 28.5714%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >17</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 42.8571%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >18</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 57.1429%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >19</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 71.4286%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >20</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 85.7143%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 64, 64)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >21</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 64, 64)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="toastui-calendar-weekday-events"></div>
+                                                        <div class="toastui-calendar-accumulated-grid-selection"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="toastui-calendar-month-week-item" style="height: 20%">
+                                                    <div class="toastui-calendar-weekday">
+                                                        <div
+                                                                class="toastui-calendar-weekday-grid"
+                                                                style="border-top: 1px solid rgb(229, 229, 229)"
+                                                        >
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="width: 14.2857%; left: 0%; background-color: inherit"
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >22</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 14.2857%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >23</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 28.5714%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >24</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 42.8571%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >25</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 57.1429%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >26</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 71.4286%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >27</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 85.7143%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 64, 64)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >28</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(255, 64, 64)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="toastui-calendar-weekday-events"></div>
+                                                        <div class="toastui-calendar-accumulated-grid-selection"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="toastui-calendar-month-week-item" style="height: 20%">
+                                                    <div class="toastui-calendar-weekday">
+                                                        <div
+                                                                class="toastui-calendar-weekday-grid"
+                                                                style="border-top: 1px solid rgb(229, 229, 229)"
+                                                        >
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="width: 14.2857%; left: 0%; background-color: inherit"
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >29</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 14.2857%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >30</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 28.5714%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >31</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgb(51, 51, 51)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 42.8571%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgba(51, 51, 51, 0.4)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >1</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgba(51, 51, 51, 0.4)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 57.1429%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgba(51, 51, 51, 0.4)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >2</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgba(51, 51, 51, 0.4)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 71.4286%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgba(51, 51, 51, 0.4)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >3</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgba(51, 51, 51, 0.4)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                    class="toastui-calendar-daygrid-cell"
+                                                                    style="
+                                      width: 14.2857%;
+                                      left: 85.7143%;
+                                      background-color: inherit;
+                                    "
+                                                            >
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-header"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgba(255, 64, 64, 0.4)"
+                                      ><span
+                                              class="toastui-calendar-weekday-grid-date toastui-calendar-template-monthGridHeader"
+                                      >4</span
+                                      ></span
+                                      >
+                                                                </div>
+                                                                <div
+                                                                        class="toastui-calendar-grid-cell-footer"
+                                                                        style="height: 31px"
+                                                                >
+                                      <span
+                                              class="toastui-calendar-grid-cell-date"
+                                              style="color: rgba(255, 64, 64, 0.4)"
+                                      ><div
+                                              class="toastui-calendar-template-monthGridFooter"
+                                      ></div
+                                      ></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="toastui-calendar-weekday-events"></div>
+                                                        <div class="toastui-calendar-accumulated-grid-selection"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="toastui-calendar-popup-overlay" style="display: none"></div>
+                                        <div class="toastui-calendar-floating-layer">
+                                            <div class="toastui-calendar-see-more-popup-slot"></div>
+                                            <div class="toastui-calendar-event-form-popup-slot"></div>
+                                            <div class="toastui-calendar-event-detail-popup-slot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main/footer.html -->
+    <div id="footer"></div>
+</div>
+
+<!-- 다이어리 입력 창 -->
+<div class="diary-modal-display">
+    <div class="diary-modal">
+        <div class="modal-back"></div>
+        <div class="diary-modal-box">
+            <h1 class="diary-main-title">
+                <div style="flex-grow: 1" class="title">저축내역 작성하기</div>
+                <div class="exit-icon exit-withdraw">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                    >
+                        <path
+                                d="M18.5 4L12 10.5 5.5 4 4 5.5l6.5 6.5L4 18.5 5.5 20l6.5-6.5 6.5 6.5 1.5-1.5-6.5-6.5L20 5.5 18.5 4z"
+                                fill="#cacaca"
+                        ></path>
+                    </svg>
+                </div>
+            </h1>
+            <div>
+                <div class="box">
+                    <h4 class="date"></h4>
+                    <div class="flex-box">
+                        <div>
+                            <label>
+                                <input type="file" style="display: none" class="file" multiple="" />
+                                <div class="file-image-box">
+                                    <img src="/static/image/mypage/instagram_icon.png" />
+                                    <p>사진 첨부</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" style="display: none" />
+                                <div class="private-check-box">
+                                    <div class="private-check-layout">
+                                        <p>비공개</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <button type="button" class="insert-button">저장</button>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="align-flex">
+                        <div>
+                            <!-- <input type="text" placeholder="제목을 입력하세요." class="diary-title" /> -->
+                            <select class="diary-title" id="box2" style="border-color: white;
+                  width: 100%;
+                  font-size: 16px;
+                  height: 47px;">
+                                <option value="">레벨을 선택해주세요</option>
+                                <option value="LV 1">LV 1</option>
+                                <option value="LV 2">LV 2</option>
+                                <option value="LV 3">LV 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="diary-content-box">
+                        <div>
+                  <textarea
+                          name=""
+                          placeholder="내용을 입력해주세요."
+                          class="diary-content"
+                  >
+                </textarea>
+                        </div>
+                    </div>
+                    <div class="attachment-box">
+                        <ul class="attachment-layout sumnail-box">
+                            <!-- 썸네일 들어가는 부분 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 잠깐 나왓다 사라지는 알람창 -->
+<div class="alert-modal-display">
+    <div class="diary-modal">
+        <div class="alert-modal-box" style="width: 500px">
+            <div style="text-align: center">
+                <div style="margin-top: 12px">
+                    <span class="alert"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 다이어리 상세보기 모달 -->
+<div class="diary-detail-display">
+    <div class="diary-modal">
+        <div class="modal-back"></div>
+        <div class="diary-modal-box">
+            <h2 class="diary-main-title">
+                <div style="flex-grow: 1">📖 저축내역</div>
+                <div class="exit-icon exit-withdraw">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                    >
+                        <path
+                                d="M18.5 4L12 10.5 5.5 4 4 5.5l6.5 6.5L4 18.5 5.5 20l6.5-6.5 6.5 6.5 1.5-1.5-6.5-6.5L20 5.5 18.5 4z"
+                                fill="#cacaca"
+                        ></path>
+                    </svg>
+                </div>
+            </h2>
+            <div class="diary-detail-title-box">
+                <h2 class="diary-main-title space-between">
+                    <div style="flex-grow: 1" class="diary-content-title">다이어리 제목</div>
+                    <div class="diary-detail-modify-box">
+                        <p class="modify-button">수정</p>
+                        <p class="delete-button">삭제</p>
+                    </div>
+                </h2>
+                <div class="diary-detail-date-box">
+                    <h4 class="diary-detail-date"></h4>
+                </div>
+                <div class="flex">
+                    <div>
+                        <ul class="sumnail-layout" style="padding: 0; margin-top: 30px">
+                            <li>
+                                <div style="position: relative">
+                                    <img src="/static/image/mypage/test.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div style="position: relative">
+                                    <img src="/static/image/mypage/test.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div style="position: relative">
+                                    <img src="/static/image/mypage/test.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div style="position: relative">
+                                    <img src="/static/image/mypage/test.jpg" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="diary-detail-content-box">
+                    <ul class="diary-detail-ul">
+                        <!-- 상세보기 내용 들어가는 부분 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.js"></script>
+<script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.js"></script>
+<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+<script src="https://uicdn.toast.com/tui-grid/latest/tui-grid.js"></script>
+<script src="https://uicdn.toast.com/tui.pagination/latest/tui-pagination.js"></script>
+<script>
+
+
+    $(document).ready(() => {
+        $('#header').load('../main/header.html');
+        $('#footer').load('../main/footer.html');
+        $('#mypage-header').load('user-header.html');
+        $('#side-menu').load('side-menu.html');
+    });
+
+    const $alertModal = $('.alert-modal-display');
+
+    // 이미지 파일
+    let inputFiles = [];
+
+    $('.file').change((e) => {
+        let errorMsg = '확장자는 이미지 확장자만 가능합니다.';
+        let index = 0;
+        let files = e.target.files;
+        let filesArr = Array.prototype.slice.call(files);
+
+        inputFiles = [];
+
+        filesArr.forEach((file) => {
+            if (!file.type.match('image.*')) {
+                alertModal(errorMsg);
+                return;
+            }
+            inputFiles.push(file);
+
+            var reader = new FileReader();
+            reader.onload = (e) => {
+                let text = `
+                            <li id="${index}">
+                                <div style="position:relative;">
+                                    <div class="image-cancel-box">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                                            <path d="M18.5 4L12 10.5 5.5 4 4 5.5l6.5 6.5L4 18.5 5.5 20l6.5-6.5 6.5 6.5 1.5-1.5-6.5-6.5L20 5.5 18.5 4z"
+                                                fill="#cacaca"></path>
+                                        </svg>
+                                    </div>
+                           `;
+                text += '<img src="' + e.target.result + '" />';
+                text += `</div>
+                            </li>
+                `;
+                $('.attachment-layout').append(text);
+                index++;
+            };
+            reader.readAsDataURL(file);
+        });
+    });
+
+    // 이미지 제거
+    $('.attachment-layout').on('click', '.image-cancel-box', (e) => {
+        let index = $(e.target).closest('li').attr('id');
+        deleteImage(index);
+    });
+
+
+</script>
+<script>
+    // 여기는 신경 안써도 됨
+    const Calendar = tui.Calendar;
+    const container = document.getElementById('calendar');
+    const options = {
+        defaultView: 'month',
+        isReadOnly: true,
+        month: {
+            dayNames: ['Sun', 'Mon', 'Tus', 'Wen', 'Thr', 'Fri', 'Sat'],
+            isAlways6Weeks: false,
+            startDayOfWeek: 1,
+        },
+        timezone: {
+            zones: [
+                {
+                    timezoneName: 'Asia/Seoul',
+                    displayLabel: 'Seoul',
+                },
+            ],
+        },
+        theme: {
+            month: {
+                dayName: {
+                    borderLeft: 'none',
+                    backgroundColor: '#36f',
+                },
+                moreView: {
+                    border: '1px solid grey',
+                    boxShadow: '0 2px 6px 0 grey',
+                    backgroundColor: 'white',
+                    width: 320,
+                    height: 200,
+                },
+                gridCell: {
+                    footerHeight: 31,
+                },
+            },
+        },
+        calendars: [
+            {
+                id: '1',
+                name: '개인',
+                backgroundColor: '#03bd9e',
+            },
+            {
+                id: '2',
+                name: '개인',
+                backgroundColor: '#36f',
+            },
+            {
+                id: '3',
+                name: '개인',
+                backgroundColor: 'rgb(255, 64, 64)',
+            },
+            {
+                id: '4',
+                name: '개인',
+                backgroundColor: 'rgb(255, 85, 131)',
+            },
+        ],
+    };
+
+    const calendar = new Calendar(container, options);
+
+    let datas = [
+        {
+            id: '1', // 다이어리의 번호 값 넣어주기
+            calendarId: 2,
+            title: '안녕',
+            start: '2023-04-19',
+            end: '2023-04-19',
+        },
+    ];
+    datas.forEach((e, i) => {
+        calendar.createEvents([e]);
+    });
+
+    // ==================================================== 캘린더 버튼
+
+    const month = calendar.getDate().getMonth() + 1;
+    const year = calendar.getDate().getFullYear();
+    const day = calendar.getDate().getDate();
+
+    $('.year').text(year + '년');
+    $('.month').text(month + '월');
+
+    // prev button
+    $('#calender-prev').click(() => {
+        currentDate = calendar.getDate();
+
+        var prevDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
+        var prevYear = prevDate.getFullYear();
+        var prevMonthIndex = prevDate.getMonth();
+
+        $('.year').text(prevYear + '년');
+        $('.month').text(prevMonthIndex + 1 + '월');
+
+        calendar.prev();
+    });
+
+    // next button
+    $('#calender-next').click(() => {
+        currentDate = calendar.getDate();
+
+        var nextDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
+        var nextMonthIndex = nextDate.getMonth();
+        var nextYear = nextDate.getFullYear();
+
+        $('.year').text(nextYear + '년');
+        $('.month').text(nextMonthIndex + 1 + '월');
+
+        calendar.next();
+    });
+
+    // today button
+    $('#today').click(() => {
+        $('.year').text(year + '년');
+        $('.month').text(month + '월');
+
+        calendar.today();
+    });
+
+    $(document).ready(() => {
+        // 각 day박스 인덱스, 아이템
+        $('.toastui-calendar-daygrid-cell').each((i, e) => {
+            let errorMsg = '오늘 날짜의 일기만 작성이 가능합니다.';
+
+            $(e).click(() => {
+                currentDate = calendar.getDate();
+                let calendarYear = currentDate.getFullYear();
+
+                let calendarMonth = currentDate.getMonth() + 1;
+                calendarMonth = calendarMonth < 10 ? '0' + calendarMonth : calendarMonth;
+
+                let calendarDay = $($('.toastui-calendar-daygrid-cell')[i]).text();
+                calendarDay = calendarDay < 10 ? '0' + calendarDay : calendarDay;
+
+                var date = calendarYear + '-' + calendarMonth + '-' + calendarDay;
+
+                $('.title').text('다이어리 작성하기');
+                $('.diary-modal-display').show();
+                $('.date').text(date);
+            });
+        });
+    });
+
+    $('.insert-button').click((e) => {
+        let alertMsg = '저장 완료';
+        let title = $('.diary-title').val();
+        let content = $('.diary-content').val();
+        let date = $('.date').text();
+        let index = $(e.target).attr('id');
+        let calendarId = Math.floor(Math.random() * 4) + 1 + '';
+
+        let errorMsg = '';
+
+        if (!$('.diary-title').val() && !$('.diary-content').val()) {
+            errorMsg = '내용을 입력해주세요.';
+            alertModal(errorMsg);
+            return;
+        } else if (!$('.diary-title').val()) {
+            errorMsg = '제목을 입력해주세요.';
+            alertModal(errorMsg);
+            return;
+        } else if (!$('.diary-content').val()) {
+            errorMsg = '내용을 입력해주세요.';
+            alertModal(errorMsg);
+            4;
+            return;
+        }
+
+        /* AJAX로 이미지랑, 제목 내용 등 DB에 먼저 저장 후 */
+        /* ID값만 리턴 받아서  */
+        let datas = [
+            {
+                id: '1', // 다이어리의 번호 값 넣어주기
+                calendarId: calendarId,
+                title: title,
+                start: date,
+                end: date,
+            },
+        ];
+        // 데이터를 담아서 화면에 뿌려줌
+        calendar.createEvents(datas);
+
+        diaryModal(index);
+        alertModal(alertMsg);
+    });
+
+    // 제목 클릭 시 발생하는 이벤트
+    calendar.on('clickEvent', function (e) {
+        // id 값으로 다이어리 상세조회 ajax써야함 모델 객체가 아닌 rest
+        // 해당 id값의 정보를 가져와서 상세보기쪽에 뿌려야함 가져와야할 정보 이미지 정보, 제목, 내용
+        let id = e.event.id;
+        let date = new Date(e.event.start);
+
+        // 예시 내용 \n은 애초에 신경 안써도 textarea에서 작성하면 알아서 들어가는 거임 신경 ㄴㄴ
+
+
+        let content =
+            '오늘의 도전\n 너무너무 재미가 있었어서\n내 마음이 너무나도 편안해 지고\n나의 마음이 좀더 강해지고 있어서\n우울증이 점점 극복된다.';
+        date = dateFomat(date);
+
+        // 날짜 담아주기
+        $('.diary-detail-date').text(date);
+        contentPrint(content);
+        $('.diary-detail-display').show();
+    });
+
+    //input 창
+    let $diaryTitle = $('.diary-title');
+    let $diaryContent = $('.diary-content');
+    let $diaryButton = $('.insert-button');
+
+    $diaryTitle.keyup(() => {
+        inputCheck();
+    });
+
+    $diaryContent.keyup(() => {
+        inputCheck();
+    });
+
+    // 공개 비공개
+    const $check = $('input[type=checkbox]');
+    const $checkbox = $('.private-check-box');
+    const $checkText = $('.private-check-layout p');
+
+    $checkbox.click(() => {
+        if (!$check.is(':checked')) {
+            $checkbox.addClass('check-active');
+            $checkText.text('공개');
+        } else {
+            $checkbox.removeClass('check-active');
+            $checkText.text('비공개');
+        }
+    });
+
+    // =========================================================================
+    // function
+
+    function diaryModal(index) {
+        $('.diary-title').val('');
+        $('.diary-content').val('');
+        $('.date').text('');
+        $('.diary-modal-display').hide();
+        $($('.toastui-calendar-daygrid-cell')[index]).css('pointer-events', 'none');
+    }
+
+    function dateFomat(date) {
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        month = month < 10 ? '0' + month : month;
+        let day = date.getDate();
+        day = day < 10 ? '0' + day : day;
+
+        return year + '년 ' + month + '월 ' + day + '일';
+    }
+
+    function contentPrint(content) {
+        let test = content.replaceAll('\n', '<br/>').split('<br/>');
+        let text = '';
+        let $ul = $('.diary-detail-ul');
+
+        test.forEach((e, i) => {
+            text += `
+                        <li class="diary-detail-content">${e}</li>
+            `;
+        });
+        $ul.html(text);
+    }
+
+    function content() {
+        let text = '';
+        $('.diary-detail-content').each((i, e) => {
+            text += $(e).text() + '\n';
+        });
+        return text;
+    }
+
+    function alertModal(errorMsg) {
+        $('.alert').text(errorMsg);
+        $alertModal.fadeIn();
+        setTimeout(function () {
+            $alertModal.fadeOut();
+        }, 2000);
+    }
+
+    function deleteImage(index) {
+        inputFiles.splice(index, 1);
+
+        var imageId = '#' + index;
+        $(imageId).remove();
+    }
+
+    function inputCheck() {
+        if (!$diaryTitle.val() || !$diaryContent.val()) {
+            $diaryButton.removeClass('save-active');
+        } else {
+            $diaryButton.addClass('save-active');
+        }
+    }
+
+    // =================================================
+    // 모달
+
+    // 다이어리 나가기 버튼
+    $('.exit-icon').click(() => {
+        $('.diary-modal-display').hide();
+        $('.diary-detail-display').hide();
+        $('.diary-title').val('');
+        $('.diary-content').val('');
+        $diaryButton.removeClass('save-active');
+    });
+
+    // #f1d89f;
+
+    // 다이어리 나가기 버튼
+    $('.modal-back').click(() => {
+        $('.diary-modal-display').hide();
+    });
+
+    $('.modify-button').click(() => {
+        $checkbox.addClass('check-active');
+        $diaryButton.addClass('save-active');
+        $checkText.text('공개');
+
+        $('.title').text('다이어리 수정하기');
+        $('.date').text($('.diary-detail-date').text());
+
+        $('.diary-content').val(content());
+        $('.diary-title').val($('.diary-content-title').text());
+
+        $('.diary-modal-display').show();
+        $('.diary-detail-display').hide();
+    });
+
+    // ================================================
+</script>
+<script src="../../static/js/mypage/mytikkle.js"></script>
+</body>
+</html>

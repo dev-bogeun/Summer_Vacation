@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleag.org">
+<head>
+    <meta charset="UTF-8">
+    <title>dorandetail</title>
+    <link rel="stylesheet" href="/css/dorandoran/doranboard5.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranboard6.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranboard7.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranboard8.css">
+    <link rel="stylesheet" href="/css/dorandoran/doranboard9.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+<div id="newContainer">
+    <div id="wcommunityWrap">
+        <div class="wcommunity-wrap">
+            <div class="web-header">
+                <div class="web-header">
+                    <header class="header-wrapper web-header-simple">
+                        <div class="header-container">
+                            <h1 class="wadiz-logo">
+                                <a href="/join/mainpage">
+                                    <img src="/image/Logo.png">
+                                </a>
+                            </h1>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <!— //wcommunity-detail-bottom —>
+    </div><!-- //wcommunity-top -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.new-header .gnb > li:eq(3)').addClass('menu-on');
+        });
+
+        /* 말머리 클릭시 */
+        function searchByHeadWord(boardId, headWordId) {
+            $('#searchSelect1').val('');
+            $('#searchText1').val('');
+            $('#searchSelect5').val(boardId);
+            $('#searchSelect4').val(headWordId);
+            $('#cPage').val(1);
+            $('#formSearch').attr('action', '/web/wcast/list/' + boardId + '/' + headWordId);
+            $('#formSearch').submit();
+        }
+
+        /* 내가 쓴 글 검색 */
+        function searchByUserNameInViewN(userId) {
+            $('#searchSelect1').val('ui');
+            $('#searchText1').val(userId);
+            $('#searchText6').val('N');
+            $('#formSearch').attr('action', '/web/wcast/search');
+            $('#formSearch').submit();
+        }
+    </script>
+    <div class="wcommunity-content-wrap">
+        <div class="wcommunity-section1">
+            <div class="wcommunity-detail-info">
+                <div class="story-info">
+                    <em class="category">도란도란</em>
+                    <p class="title" th:text="${doranboard.title}">제목</p>
+                    <p class="editor" th:text="${doranboard.name}">이름</p>
+                    <p class="date" th:text="${doranboard.registerDate}">시간</p>
+                    <li class="active" th:if="${session.id == doranboard.userId}">
+                        <a type="button" class="change" th:href="@{/doranboard/doranmodify(id=${doranboard.id})}">수정</a>
+                        <a type="button" th:href="@{/doranboard/remove(id=${doranboard.id})}">삭제</a>
+                    </li>
+                    <p id="topSympCount" class="symp"></p>
+                </div>
+            </div>
+
+            <!-- 도란도란 게시글 내용을 나타내는 부분 -->
+            <div class="wcommunity-detail-content">
+                <div class="inner-contents">
+                    <p><br></p>
+                    <p class="content" th:text="${doranboard.content}">내용</p>
+                    <!--                    <th:block th:text="${doranboard.content}"></th:block>-->
+                </div>
+                <div class="attach-list">
+                    <!-- 첨부 파일 목록 등을 표시 -->
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div><!-- //wcommunity-section1 -->
+    </div><!-- //wcommunity-content-wrap -->
+    <div class="wcommunity-detail-bottom">
+        <div class="wcommunity-comment-wrap">
+
+
+            <section id="reply-write-wrap">
+                <div class="profile">
+                    <h6 class="writer" th:text="*{name}"></h6>
+                </div>
+                <textarea class="reply-bye" cols="30" rows="1" placeholder="내 댓글"></textarea>
+                <button>작성완료</button>
+            </section>
+            <section id="replies-wrap">
+                <ul></ul>
+            </section>
+        </div><!-- //wcommunity-detail-bottom -->
+    </div>
+</div>
+
+<form id="formSearch" name="formSearch" action="/web/wcast/search" method="post">
+    <input id="searchText1" name="searchText1" type="hidden" value="">
+    <input id="searchText6" name="searchText6" type="hidden">
+    <input id="searchSelect1" name="searchSelect1" type="hidden" value="">
+    <input id="searchSelect2" name="searchSelect2" type="hidden" value="">
+    <input id="searchSelect4" name="searchSelect4" type="hidden" value="37">
+    <input id="searchSelect5" name="searchSelect5" type="hidden" value="BRD0000013">
+</form>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+<script th:inline="javascript">
+    let doranboardId = [[${doranboard.id}]];
+    let doranboard = [[${doranboard.userId}]];
+    let userId = [[${session.id}]];
+    let detail = [[${doranboard}]];
+
+    console.log(doranboard)
+    console.log(detail)
+</script>
+<script src="/js/doranboard/comment.js"></script>
+<script src="/js/doranboard/detail.js"></script>
+</html>

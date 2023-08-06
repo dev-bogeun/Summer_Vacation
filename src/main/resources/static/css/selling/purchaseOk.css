@@ -1,0 +1,116 @@
+.PaymentSuccessPage_paymentSuccessPage__3OQvo {
+    background-color: #f2f4f6;
+    padding-top: 28px;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (min-width: 1097px) {
+    .PaymentSuccessPage_paymentSuccessPage__3OQvo {
+        padding: 0;
+    }
+}
+.PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL {
+     position: relative;
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+.PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_textContainer__20NEP {
+    text-align: center;
+}
+
+
+.PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_textContainer__20NEP p {
+line-height: 28px;
+letter-spacing: -.6px;
+font-size: 18px;
+font-weight: 700;
+}
+@media screen and (min-width: 1097px) {
+    .PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_textContainer__20NEP p {
+        line-height: 34px;
+        letter-spacing: -.51px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+
+.FollowingMakerSection_container__1jzRX {
+    display: inline-flex;
+    justify-content: space-between;
+    border: solid 1px #e9ecef;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: Pretendard,Apple SD Gothic Neo,Segoe UI,Malgun Gothic,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,-apple-system,blinkmacsystemfont,sans-serif;
+}
+.PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_followingSection__1o8Of {
+    margin-top: 16px;
+    width: 304px;
+}
+
+
+@media screen and (min-width: 769px) {
+    .PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_followingSection__1o8Of, .PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_buttonContainer__lYJii {
+        width: 332px;
+    }
+}
+
+.PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_buttonContainer__lYJii {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    width: 304px;
+}
+.FollowingMakerSection_container__1jzRX .FollowingMakerSection_leftArea__2uiqI {
+    display: inline-flex;
+    cursor: pointer;
+    width: calc(100% - 80px);
+}
+
+@media screen and (min-width: 769px) {
+    .PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_followingSection__1o8Of, .PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_buttonContainer__lYJii {
+        width: 332px;
+    }
+}
+
+.PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_buttonContainer__lYJii .PaymentSuccessPage_buttonDetail__19S9E {
+    color: #495057;
+}
+
+.PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_buttonContainer__lYJii a {
+    flex-grow: 1;
+}
+.PaymentSuccessPage_paymentSuccessPage__3OQvo .PaymentSuccessPage_container__1TgiL .PaymentSuccessPage_buttonContainer__lYJii a:last-child {
+    margin-left: 8px;
+}
+.FollowingMakerSection_container__1jzRX .FollowingMakerSection_leftArea__2uiqI {
+     display: inline-flex;
+     cursor: pointer;
+     width: calc(100% - 80px);
+ }
+
+.FollowingMakerSection_container__1jzRX .FollowingMakerSection_leftArea__2uiqI .FollowingMakerSection_content__3q5JJ {
+    margin-left: 6px;
+    width: calc(100% - 42px);
+    text-align: left;
+    color: #212529;
+}
+.FollowingMakerSection_container__1jzRX .FollowingMakerSection_leftArea__2uiqI .FollowingMakerSection_content__3q5JJ .FollowingMakerSection_title__15O-2 {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.FollowingMakerSection_container__1jzRX .FollowingMakerSection_leftArea__2uiqI .FollowingMakerSection_content__3q5JJ .FollowingMakerSection_description__1OvFd {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    font-size: 12px;
+}
+

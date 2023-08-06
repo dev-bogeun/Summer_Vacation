@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleag.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그램목록</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin-program.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/modal.css">
+</head>
+
+
+<body>
+<main>
+    <div class="modal">
+        <div class="warn-modal">
+            <div id="content-wrap"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="/image/Logo.png" class="admin-logo">
+        </div>
+        <nav class="nav">
+            <ul class="side-menu">
+                <li class="site-shortcut">
+                    <input type="button" class="side-menu-button" value="사이트 바로가기"
+                           onclick="location.href='/join/mainpage'">
+                </li>
+                <div class="management-title">사이트 관리</div>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="메인페이지"
+                           onclick="location.href='/admin/main'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="회원 목록"
+                           onclick="location.href='/admin/user/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="프로그램 목록"
+                           onclick="location.href='/admin/program/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="상품 목록"
+                           onclick="location.href='/admin/item/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="도란게시판 목록"
+                           onclick="location.href='/admin/doranBoard/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="문의게시판 목록"
+                           onclick="location.href='/admin/inquiry/list'">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="management-main-content">
+        <div class="management-top">
+            <div class="page-name">프로그램목록</div>
+        </div>
+
+        <div class="program-main">
+
+            <div class="program-box">
+
+                <div class="search-container">
+                    <select>
+                        <option value="content">프로그램명</option>
+                        <option value="name">번호</option>
+                        <option value="id">레벨</option>
+                    </select> <input type="text" name="search" id="search"/>
+                    <input
+                            type="image" class="search"
+                            src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png"/>
+                    <div>
+                        <input type="button" class="registration" name="registration" value="등록"
+                               onclick="location.href='/admin/program/write'"/>
+                        <input type="button" class="delete"  value="삭제" onclick="deletePrograms(getSelectedProgramIds())"/>
+                    </div>
+                </div>
+
+                <div class="table-content">
+                    <table>
+                        <tr>
+                            <th><input type="checkbox" id="allSelect"/></th>
+                            <th>번호</th>
+                            <th>레벨</th>
+                            <th>목표 금액</th>
+                            <th>일일 금액</th>
+                        </tr>
+                        <tr th:onclick="|location.href='@{/admin/program/detail(id=${programs.id})}'|" th:each="programs : ${programs}">
+                            <td onclick="event.cancelBubble=true" style="cursor: default">
+                                <input type="checkbox" name="check" class="term programCheckbox" th:value="${programs.id}"/>
+                            </td>
+                            <td th:text="${programs.id}"></td>
+                            <td th:text="${programs.name}"></td>
+                            <td th:text="${programs.goalMoney}+원"></td>
+                            <td th:text="${programs.dailyMoney}+원"></td>
+                        </tr>
+                    </table>
+                    <p class="pages">
+                        < 1 2 3 4 5 >
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/js/admin/allcheckbox.js"></script>
+<script src="/js/admin/deleteprogram.js"></script>
+<script src="/js/admin/modal.js"></script>
+<script th:inline="javascript">
+    let programs = [[${programs}]];
+</script>
+
+</html>

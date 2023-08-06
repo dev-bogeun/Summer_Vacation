@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleag.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도란도란</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin-dorandoran.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/modal.css">
+
+</head>
+<body>
+<main>
+    <div class="modal">
+        <div class="warn-modal">
+            <div id="content-wrap"></div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="/image/Logo.png" class="admin-logo">
+        </div>
+        <nav class="nav">
+            <ul class="side-menu">
+                <li class="site-shortcut">
+                    <input type="button" class="side-menu-button" value="사이트 바로가기"
+                           onclick="location.href='/join/mainpage'">
+                </li>
+                <div class="management-title">사이트 관리</div>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="메인페이지"
+                           onclick="location.href='/admin/main'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="회원 목록"
+                           onclick="location.href='/admin/user/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="프로그램 목록"
+                           onclick="location.href='/admin/program/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="상품 목록"
+                           onclick="location.href='/admin/item/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="도란게시판 목록"
+                           onclick="location.href='/admin/doranBoard/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="문의게시판 목록"
+                           onclick="location.href='/admin/inquiry/list'">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <section class="management-main-content">
+        <div class="management-top">
+            <div class="page-name">도란도란</div>
+        </div>
+
+        <div class="doran-main">
+
+            <div class="doran-box">
+                <form th:action="@{/admin/doranBoard/list}">
+                    <div class="search-container">
+                        <select name="type">
+                            <option value="t" th:selected="${search.type eq 't'}">제목</option>
+                            <option value="c" th:selected="${search.type eq 'c'}">내용</option>
+                            <option value="i" th:selected="${search.type eq 'i'}">ID</option>
+                        </select>
+                        <input type="text" name="keyword" id="search" th:value="${search.keyword}"/>
+                        <button type="submit" class="search"></button>
+                        <input type="button" class="delete" id="delete-button" onclick="deleteDoranBoards(getSelectedDoranBoardIds())" value="삭제"/>
+
+                    </div>
+                </form>
+                <div class="table-content">
+                    <table>
+                        <tr>
+                            <th><input type="checkbox" id="allSelect" class="all"/></th>
+                            <th>글 번호</th>
+                            <th>ID</th>
+                            <th>제목</th>
+                            <th>내용</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                        </tr>
+                        <tr class="tr"></tr>
+
+                    </table>
+                    <div id="paging-wrap">
+                        <a th:if="${pagination.prev}" th:href="${pagination.startPage - 1}" class="change-page paging paging-move">
+                            <img src="/image/prev.png" width="15px"></a>
+                        <th:block th:each="page:${#numbers.sequence(pagination.startPage, pagination.endPage)}">
+                            <a th:if="${page eq pagination.page}" class="paging paging-checked" th:text="${page}"></a>
+                            <a th:unless="${page eq pagination.page}" th:href="${page}" class="change-page paging" th:text="${page}"></a>
+                        </th:block>
+                        <a th:if="${pagination.next}" th:href="${pagination.endPage + 1}" class="change-page paging paging-move">
+                            <img src="/image/next.png" width="15px"></a>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script th:inline="javascript">
+    let doranBoards = [[${doranBoards}]]
+    let pagination = [[${pagination}]];
+</script>
+<script src="/js/admin/doranboardlist.js"></script>
+<script src="/js/admin/modal.js"></script>
+<script src="/js/admin/doranboardpaging.js"></script>
+<script src="/js/admin/allcheckbox.js"></script>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleag.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그램목록</title>
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/admin/admin-program-registration.css">
+</head>
+<body>
+<main>
+    <div class="sidebar sidebar-main">
+        <div class="logo-container">
+            <img src="/image/Logo.png" class="admin-logo">
+        </div>
+        <nav class="nav">
+            <ul class="side-menu">
+                <li class="site-shortcut">
+                    <input type="button" class="side-menu-button" value="사이트 바로가기"
+                           onclick="location.href='/join/mainpage'">
+                </li>
+                <div class="management-title">사이트 관리</div>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="메인페이지"
+                           onclick="location.href='/admin/main'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="회원 목록"
+                           onclick="location.href='/admin/user/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="프로그램 목록"
+                           onclick="location.href='/admin/program/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="상품 목록"
+                           onclick="location.href='/admin/item/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="도란게시판 목록"
+                           onclick="location.href='/admin/doranBoard/list'">
+                </li>
+                <li class="management-menu-list">
+                    <input type="button" class="side-menu-button" value="문의게시판 목록"
+                           onclick="location.href='/admin/inquiry/list'">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <section class="management-main-content">
+        <div class="management-top">
+            <div class="page-name">프로그램 등록</div>
+        </div>
+        <div class="registration-main">
+            <form th:action="@{/admin/program/write}" method="post" th:object="${savingLevelDTO}" name="writeForm">
+                <div class="registration-box">
+
+                    <table class="table-contents">
+                        <tr>
+                            <td>레벨</td>
+                            <td>
+                                <input th:field="*{name}" type="text" name="" value="" class="registration-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>목표 금액</td>
+                            <td>
+                                <input th:field="*{goalMoney}" type="text" name="" value="" class="registration-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>일일 저축 금액</td>
+                            <td>
+                                <input th:field="*{dailyMoney}" type="text" name="" value="" class="registration-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>썸네일 이미지</td>
+                            <td>
+                                <label for="upload1" class="attach">
+                                    <img src="" class="thumbnail">
+                                    <div class="x">
+                                        <img src="/image/x.png">
+                                    </div>
+                                    <h6 class="plus">+</h6>
+                                    <h6>대표 이미지</h6>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>내용 이미지</td>
+                            <td>
+                                <label for="upload2" class="attach">
+                                    <img src="" class="thumbnail">
+                                    <div class="x">
+                                        <img src="/image/x.png">
+                                    </div>
+                                    <h6 class="plus">+</h6>
+                                    <h6>이미지 추가</h6>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="file" id="upload1" class="upload" style="display: none;">
+                    <input type="file" id="upload2" class="upload" style="display: none;">
+                    <div class="button-box">
+                        <input type="button" name="report-list" value="프로그램목록"
+                               onClick="location.href='admin-program.html'"/>
+                        <input type="button"  class="ok-button" value="등록완료"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="/js/admin/write.js"></script>
+</html>

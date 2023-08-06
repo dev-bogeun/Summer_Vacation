@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0/EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias type="com.tikkeul.app.domain.vo.AnswerVO" alias="answerVO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.DoranBoardVO" alias="doranBoardVO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.DoranBoardDTO" alias="doranBoardDTO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.DoranCommentVO" alias="doranCommentVO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.DoranCommentDTO" alias="doranCommentDTO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.DoranFileVO" alias="doranFileVO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.FileVO" alias="fileVO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.InquiryBoardVO" alias="inquiryBoardVO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.InquiryBoardDTO" alias="inquiryBoardDTO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.ItemFileVO" alias="itemFileVO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.ItemVO" alias="itemVO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.ItemDTO" alias="itemDTO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.ItemFileSavingLevelDTO" alias="itemFileSavingLevelDTO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.LikeVO" alias="likeVO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.OrderVO" alias="orderVO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.ReviewVO" alias="reviewVO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.SavingLevelVO" alias="savingLevelVO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.SavingLevelDTO" alias="savingLevelDTO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.SavingLevelFileVO" alias="savingLevelFileVO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.SavingLevelFileDTO" alias="savingLevelFileDTO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.SavingVO" alias="savingVO"/>
+        <typeAlias type="com.tikkeul.app.domain.vo.UserVO" alias="userVO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.InquiryBoardDTO" alias="inquiryBoardDTO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.ItemDTO" alias="itemDTO"/>
+        <typeAlias type="com.tikkeul.app.domain.dto.OrderDTO" alias="orderDTO"/>
+    </typeAliases>
+</configuration>

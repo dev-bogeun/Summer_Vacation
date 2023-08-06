@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+.search-container {
+    display: flex;
+    width: 52%;
+    height: 40px;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+}
+
+.doran-main {
+    padding: 160px 20px;
+}
+
+.doran-box {
+    width: 90%;
+    margin: 0 auto;
+    height: 80%;
+    position: relative;
+}
+
+#search {
+    position: absolute;
+    width: 75%;
+    height: 40px;
+    padding: 0 22%;
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+}
+
+section div div select {
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px 0 0 2px;
+    z-index: 2;
+}
+
+.search {
+    height: 75%;
+    position: absolute;
+    z-index: 2;
+    right: 26%;
+    top: 7%;
+    background-image: url("/image/search.png");
+    background-repeat : no-repeat;
+    background-size: 100%;
+    width: 30px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    padding: 10px
+}
+
+.in-table {
+    padding: 5px 10px !important;
+}
+
+.table-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 70px;
+}
+
+table {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid #efefef;
+    height: 2rem;
+}
+
+th {
+    border-bottom: 1px solid #cdcdcd;
+    height: 2rem;
+}
+
+.pages {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+
+div#paging-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+}
+
+a.paging {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+a.paging-checked {
+    color: #0c48dc;
+    background: #4874e163;
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a.paging-move {
+    margin: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.tr {
+    cursor: pointer;
+}
