@@ -39,8 +39,8 @@ public class DoranFileMapperTests {
 
     @Test
     public void deleteTest(){
-        doranFileMapper.delete(24L);
-        assertThat(doranFileMapper.selectAll(362L)).hasSize(0);
+        doranFileMapper.delete(165L);
+        assertThat(doranFileMapper.selectAll(543L)).hasSize(0);
     }
 
     @Test

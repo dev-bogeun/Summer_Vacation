@@ -71,7 +71,7 @@ let replyService = (function() {
 /*=======================================================================*/
 /*이벤트, DOM, Ajax*/
 /*=======================================================================*/
-replyService.getList(showList);
+`replyService.getList(showList);`
 
 function showList(replys) {
     let text = ``;

@@ -72,7 +72,8 @@
                     <label id="request_description_label">내용</label>
                     <textarea name="content" id="request_description_mimetype" aria-required="true" autocomplete="off"
                               aria-describedby="request_description_hint"
-                              aria-labelledby="request_description_label"></textarea>
+                              aria-labelledby="request_description_label"
+                    ></textarea>
 
                 </div>
 
@@ -81,11 +82,12 @@
                 <div class="form-field">
                     <label for="request-attachments">
                         첨부 파일<span class="optional">(선택 사항)</span>
+                        <span class="file-size"></span>
                     </label>
                     <div id="upload-dropzone" class="upload-dropzone">
                         <input type="file" multiple="true" id="request-attachments" class="upload" >
                         <span>
-                        <a>파일 추가</a> 또는 파일을 여기로 드래그
+                            <a>파일 추가</a> 또는 파일을 여기로 드래그
                         </span>
                     </div>
                     <div style="text-align: center;">
@@ -126,7 +128,7 @@
                         </li>
                     </script>
                 </div>
-                <footer><input type="submit" name="commit" value="제출"></footer>
+                <footer><input type="submit" name="commit" class="sub" value="제출"></footer>
             </form>
         </div>
     </div>

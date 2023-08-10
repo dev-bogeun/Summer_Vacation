@@ -5,16 +5,14 @@ $(document).ready(function(){
         text += `
                     <li>
                 `
-
         if(file.fileType == "REPRESENTATIVE"){
-            text += `<img src="/files/display?fileName=${file.filePath}/t_${file.fileUuid}_${file.fileName}" class="preview">`
+            text += `<img src="/files/display?fileName=${file.filePath}/t_${file.fileUuid}_${file.fileName}" class="preview original">`
         }
-
-
     })
          text += `
                    </li>
         `
-
     $ul.html(text);
 });
+
+

@@ -1,5 +1,9 @@
 package com.tikkeul.app.controller;
 
+import com.tikkeul.app.service.doranBoard.DoranBoardService;
+import com.tikkeul.app.service.doranBoard.DoranFileService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import net.coobird.thumbnailator.Thumbnailator;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
@@ -10,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -23,7 +28,12 @@ import java.util.UUID;
 
 @Controller
 @RequestMapping("/files/*")
+@Slf4j
+@RequiredArgsConstructor
 public class DoranFileController {
+    private final DoranFileService doranFileService;
+    private final DoranBoardService doranBoardService;
+
     //    파일 업로드
     @PostMapping("upload")
     @ResponseBody
@@ -64,5 +74,23 @@ public class DoranFileController {
         headers.add("Content-Disposition", "attachment;filename=" + new String(fileName.substring(fileName.indexOf("_") + 1).getBytes("UTF-8"), "ISO-8859"));
         return new ResponseEntity<>(resource, headers, HttpStatus.OK);
     }
+
+    //    파일 삭제
+//    @DeleteMapping("{id}")
+//    public void remove(@PathVariable Long id){
+//        doranFileService.remove(id);
+//    }
+    //    파일 삭제
+//    @GetMapping("remove")
+//    public RedirectView delete(Long id){
+//        doranFileService.remove(id);
+//        return new RedirectView("/doranboard/doranmodify?id=544");
+//    }
+//    @GetMapping("remove")
+//    public RedirectView delete(@RequestParam Long id){
+//        doranBoardService.read(id);
+//        doranFileService.remove(id);
+//        return new RedirectView("/doranboard/doranboard");
+//    }
 
 }
